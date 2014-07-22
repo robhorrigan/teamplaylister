@@ -42,7 +42,11 @@ ActiveRecord::Schema.define(version: 20140721180345) do
   end
 
   create_table "users", force: true do |t|
+    t.string   "uid"
     t.string   "name"
+    t.text     "token"
+    t.text     "refresh_token"
+    t.text     "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

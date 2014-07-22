@@ -724,3 +724,1242 @@ ActionView::Template::Error (undefined local variable or method `party' for #<#<
   Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
   Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 11:48:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 997ms (Views: 960.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:20 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 11:48:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 11:48:20 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:48:22 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:48:22 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQBQPnndWTKp5MHsUkf7WgRaq0dXujEXf9NsZMO6IZMbiN7AXkc41fZaPtPLJm8NayaXDnMNWCtN8WVPCGF1HaZjzJ5ZmgjD0vf29Xq4pAIILN2T2Z3HTsP6J7c5AGK0hFkAE_B-zgDmXCUUKCE6fQMAn4ZXM_C7krFGLOJD1LzUBAARpUYIeL6hmQXOqecH5PSb0QgDuWIoPF0S7pN5uo-Y7a5xyVc7sgmZe-oJAEYsTTwARwOFhKunmStlfQk8nf_SX0MlbrJEyjQybDEntOL8iKCsaFQSrFxPX5K5-36x8-GJxCXdpTa0saJbmHCViOowqyNQLUJYsPhI0aOZp5sk1TibPXxDPe1WjlQtbREOwjDrRXEGig&state=2eb934e7d9ac1a598b58fc395c87d4ff166b7832b9f82cc2" for 127.0.0.1 at 2014-07-22 11:48:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/spotify/callback"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 11:52:17 -0400
+
+RuntimeError (You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"):
+  config/routes.rb:43:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 11:53:16 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:53:19 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:53:19 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQAlMBa4GJ3pjqE_qPyxS-2kcyIB7ItXMiymlp8gp0toveLh1ioqYMNw7hqJ0QmgN8Fn1OLTll33PRDygDRiWZ_G9UkFvOKwOICKC4e3TdRne3-_IuxKoZJU3e3ZiT3dkT0ziQLmelAKADt_b-qHz0q33EPAxRrYpoh1r4Jrj8gGLLFNenr-xUASCkCnawzaOD0c8vDqAbSun3K1eeakDCPkiSiyNEkyQJSSR6kPiN6spkClrUkLwpu5_RKf0f9PQ1sUX9yTasLRz4-tt5YAK5iFwpBR97UstNxN-9OvLW8JsUpb7HBsESusK8mc3ICY4HoOeWc4e4EM5ayNdE43---6w2xp3eMTgaZGVIPtsr3B9UCdIlf7OA&state=c07576de18979d7eb6de4edd6868e35f5f9ae7339f281860" for 127.0.0.1 at 2014-07-22 11:53:19 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAlMBa4GJ3pjqE_qPyxS-2kcyIB7ItXMiymlp8gp0toveLh1ioqYMNw7hqJ0QmgN8Fn1OLTll33PRDygDRiWZ_G9UkFvOKwOICKC4e3TdRne3-_IuxKoZJU3e3ZiT3dkT0ziQLmelAKADt_b-qHz0q33EPAxRrYpoh1r4Jrj8gGLLFNenr-xUASCkCnawzaOD0c8vDqAbSun3K1eeakDCPkiSiyNEkyQJSSR6kPiN6spkClrUkLwpu5_RKf0f9PQ1sUX9yTasLRz4-tt5YAK5iFwpBR97UstNxN-9OvLW8JsUpb7HBsESusK8mc3ICY4HoOeWc4e4EM5ayNdE43---6w2xp3eMTgaZGVIPtsr3B9UCdIlf7OA", "state"=>"c07576de18979d7eb6de4edd6868e35f5f9ae7339f281860"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f9e541ace90>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 97ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 11:54:06 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:54:08 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:54:08 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQAAT7X_lqVw_R_lR4XvuH6X0op617xF_ijyMlbAYtWPYTaaK6m3EJp0isZ4zW9v0_9sCYFtcYQVi_yDCClR1MQXOisAM7YxcyPs_tBmg8K9XCfpjVkR8rprCDgluZZkNJWUa2UGA7t4uea_4MGpxekTyNAZqTny6I-TS3HJJJjneg7fLrN3sFLCeOP9Fy_x7SF07rnRQ0T5bHatC7eNXbiCcqUjfMVZr8ceWM0_J09r7HJzTAVbWYDQtKqFz00yyU3rh8wY0yc-CpaBW4IgV9Wn-Jk-H16kEVaE5oEbRaqEAN_yJGGx5rCEIQu-OVknIbfXKBpp20YqHXpj7mM2zVa6xfrf6PPQiiD0z_EkbYWcivqE9bGvyA&state=08dfe2b9cf11057cd029a5d06b21c28d2dd448ce10c0aee0" for 127.0.0.1 at 2014-07-22 11:54:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAAT7X_lqVw_R_lR4XvuH6X0op617xF_ijyMlbAYtWPYTaaK6m3EJp0isZ4zW9v0_9sCYFtcYQVi_yDCClR1MQXOisAM7YxcyPs_tBmg8K9XCfpjVkR8rprCDgluZZkNJWUa2UGA7t4uea_4MGpxekTyNAZqTny6I-TS3HJJJjneg7fLrN3sFLCeOP9Fy_x7SF07rnRQ0T5bHatC7eNXbiCcqUjfMVZr8ceWM0_J09r7HJzTAVbWYDQtKqFz00yyU3rh8wY0yc-CpaBW4IgV9Wn-Jk-H16kEVaE5oEbRaqEAN_yJGGx5rCEIQu-OVknIbfXKBpp20YqHXpj7mM2zVa6xfrf6PPQiiD0z_EkbYWcivqE9bGvyA", "state"=>"08dfe2b9cf11057cd029a5d06b21c28d2dd448ce10c0aee0"}
+Completed 500 Internal Server Error in 89459ms
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/christinebeaubrun/teamplaylister/app/views"
+):
+  actionview (4.1.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.3) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.3) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.3) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:404:in `call_app!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 97ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 11:56:03 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:56:05 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 11:56:05 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQAlgaelYtxJkvrEZ7ZVVgSlzV3enTDSRRHrTlvksJylCAOgzxuHlKVOGRReb-UJFHtdr6UOeNLFeUuFRBXn-N3s1spsn0ENikhzDcsVcrg2GJEWbrzg-K9_4pJmMrJNZCPwGlM1Uinr9db8ubn0rsb_uDWtATOmJIxrVzqVJUNIqb53_uzwQbBtbOa7Fb9Af1o03AdjAf9xNj391nTJavgnI2kjp9klwfY5k5FPEW7P5kG20lG4zRAOp73nyLN6h7Erj0ylmhbAj4bKQShqd4OSCAHo1Prr5-DrtogXU8wd-9S16_q0VGxNdQALXCZob1M_UHvlPdL3JB7YrQ7Vtmg7O7Xx-74rBpUNqr5tOVsdiB13xtawzw&state=4ab7085aa7fe159282ce0bc5b5576fa5202d202655e63dc9" for 127.0.0.1 at 2014-07-22 11:56:06 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAlgaelYtxJkvrEZ7ZVVgSlzV3enTDSRRHrTlvksJylCAOgzxuHlKVOGRReb-UJFHtdr6UOeNLFeUuFRBXn-N3s1spsn0ENikhzDcsVcrg2GJEWbrzg-K9_4pJmMrJNZCPwGlM1Uinr9db8ubn0rsb_uDWtATOmJIxrVzqVJUNIqb53_uzwQbBtbOa7Fb9Af1o03AdjAf9xNj391nTJavgnI2kjp9klwfY5k5FPEW7P5kG20lG4zRAOp73nyLN6h7Erj0ylmhbAj4bKQShqd4OSCAHo1Prr5-DrtogXU8wd-9S16_q0VGxNdQALXCZob1M_UHvlPdL3JB7YrQ7Vtmg7O7Xx-74rBpUNqr5tOVsdiB13xtawzw", "state"=>"4ab7085aa7fe159282ce0bc5b5576fa5202d202655e63dc9"}
+Completed 500 Internal Server Error in 931582ms
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/christinebeaubrun/teamplaylister/app/views"
+):
+  actionview (4.1.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.3) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.3) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.3) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:404:in `call_app!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:12:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 108ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:12:38 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:12:40 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:12:40 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQBfNjxdC4wutOw1x8uLanplVP9YsLWxpW4Wty9vOQPbred5ElvhRgnkmAudAAJ2LHtZe9OVFbuDcXTnmjz6JShPjAf1zEDkGU1SHsO75CHdt_WGfBNJGizoEML0Ooh4SWOHQFPmMlMoJwH2pIjWTzBZxcFRYScpi5B5znehBGj0xGKZigrKgbrla8ms-1Yc4YA6Y8QDCHo5U-gbrNKZYFUmhMwnF7Lc_shBhoMHcKQ9Gv1VqLqorZeh0nKpAyhh1V1q74IH8S70MxzPqLV_tuiFr9eVEq3UsET38Rxg7rkrrtT6cCd8iV5oj7P5L3NCREFlqijAeUR3pxD3rnO6R6i9XeJtR1kOmN00CPUsMTRbuqliLrcwIA&state=0f05aec37ab0853fa3c5404e142eab8996554371eacbc9aa" for 127.0.0.1 at 2014-07-22 12:12:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBfNjxdC4wutOw1x8uLanplVP9YsLWxpW4Wty9vOQPbred5ElvhRgnkmAudAAJ2LHtZe9OVFbuDcXTnmjz6JShPjAf1zEDkGU1SHsO75CHdt_WGfBNJGizoEML0Ooh4SWOHQFPmMlMoJwH2pIjWTzBZxcFRYScpi5B5znehBGj0xGKZigrKgbrla8ms-1Yc4YA6Y8QDCHo5U-gbrNKZYFUmhMwnF7Lc_shBhoMHcKQ9Gv1VqLqorZeh0nKpAyhh1V1q74IH8S70MxzPqLV_tuiFr9eVEq3UsET38Rxg7rkrrtT6cCd8iV5oj7P5L3NCREFlqijAeUR3pxD3rnO6R6i9XeJtR1kOmN00CPUsMTRbuqliLrcwIA", "state"=>"0f05aec37ab0853fa3c5404e142eab8996554371eacbc9aa"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/christinebeaubrun/teamplaylister/app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+	has_many: :parties
+	         ^
+/Users/christinebeaubrun/teamplaylister/app/models/user.rb:3: syntax error, unexpected ':', expecting keyword_end
+	has_many: :playlists, through: :parties
+	         ^):
+  app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+  app/models/user.rb:3: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (80.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:13:26 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:13:28 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:13:28 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQB5IgXDeRYCsX2EWjEBW4t7z2F2YIYghop_UOw9A5IChp-nEUQvYMREKCsSTQfpHITGUmvn-rpcPD7qB6vqO8gU3k7YvIaxjBWcTE9AFzNV04eRiGgp2MoVgCDnkGiVubW5a7zjkark0AIMsmDetWd7uUvYlrc2-8pX_zaFUILS0eQJoIPuLiSTVR-hTGjJ5PgAEzi37AWo3nPP2wPHNo5OS12DcvTqiy6qwS2l14CPKHoOBvJ958MMobnZKQe28rj8pziaz45NPp3DkVnqmbOtprPYXsQQUUg-i5WKYsUgW55bi8W2gSHQa5r-Qvmp9JSIAj9STBaEMW4VCG1Tuf9MLjzTlrHFaQmX8_fVrwY0NRVvFRCSfQ&state=195dc46cd3c42a23ebccab3f34918aad78c675809e35848d" for 127.0.0.1 at 2014-07-22 12:13:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB5IgXDeRYCsX2EWjEBW4t7z2F2YIYghop_UOw9A5IChp-nEUQvYMREKCsSTQfpHITGUmvn-rpcPD7qB6vqO8gU3k7YvIaxjBWcTE9AFzNV04eRiGgp2MoVgCDnkGiVubW5a7zjkark0AIMsmDetWd7uUvYlrc2-8pX_zaFUILS0eQJoIPuLiSTVR-hTGjJ5PgAEzi37AWo3nPP2wPHNo5OS12DcvTqiy6qwS2l14CPKHoOBvJ958MMobnZKQe28rj8pziaz45NPp3DkVnqmbOtprPYXsQQUUg-i5WKYsUgW55bi8W2gSHQa5r-Qvmp9JSIAj9STBaEMW4VCG1Tuf9MLjzTlrHFaQmX8_fVrwY0NRVvFRCSfQ", "state"=>"195dc46cd3c42a23ebccab3f34918aad78c675809e35848d"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/christinebeaubrun/teamplaylister/app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+	has_many: :parties
+	         ^):
+  app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 107ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:14:46 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:14:48 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:14:48 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQBCJwqjGvukISFD3Plix0gUDW3dRJdg8CY5RQq-Zf2_l3Mnanh9l7es5bOhmEFCfwBy3h0Jt3BIhsS8wlDyKT5Nw9qjirX4jJDamg5x2Hm78bsJNGM8PslERdMhlxeZ7BKLxHjBjWUoZf92nWqVxgNhMh1sKFynRAkyzDrzsSM5ZZpBW-a32eZWx18xPGfV3wjCK5RefNlyipU76StGSCHmo_mhy4_4lu9TNW9we-EvpK3yGnepURYMszyTwQGITdXAnF3pWcI1Lp1uX8_6LcQYfhGBIgrsqHINug3oGmULUvn4X3bs0lvMDrEZ-h1FVumPGbiSmAEK1Z1mvUGpE_zfK1LjkrTapCbGIIq1ZsyGhEo1gJGy5Q&state=e19ea9dde71a6efbd05574ad924f285b08ccde8f48c06336" for 127.0.0.1 at 2014-07-22 12:14:48 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBCJwqjGvukISFD3Plix0gUDW3dRJdg8CY5RQq-Zf2_l3Mnanh9l7es5bOhmEFCfwBy3h0Jt3BIhsS8wlDyKT5Nw9qjirX4jJDamg5x2Hm78bsJNGM8PslERdMhlxeZ7BKLxHjBjWUoZf92nWqVxgNhMh1sKFynRAkyzDrzsSM5ZZpBW-a32eZWx18xPGfV3wjCK5RefNlyipU76StGSCHmo_mhy4_4lu9TNW9we-EvpK3yGnepURYMszyTwQGITdXAnF3pWcI1Lp1uX8_6LcQYfhGBIgrsqHINug3oGmULUvn4X3bs0lvMDrEZ-h1FVumPGbiSmAEK1Z1mvUGpE_zfK1LjkrTapCbGIIq1ZsyGhEo1gJGy5Q", "state"=>"e19ea9dde71a6efbd05574ad924f285b08ccde8f48c06336"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/christinebeaubrun/teamplaylister/app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+	has_many: :parties
+	         ^):
+  app/models/user.rb:2: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:15:27 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:15:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:15:27 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:15:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:15:28 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:15:29 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:15:30 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQB7WFP29K2Lh46ed2R_s8d151XE5Oh0LleuWAuxvwOBRo0-idAPCdubn03VCshEhh-5v5KYjWznIs-EQTHRjmZm9KcosGE5OvX25aCnP-rjmdKPW_OW6aU7LIB8ftwIss5v9BlmnVAPSS4Ocp_mIS7aTmSORIPY7Yyys6CXZmthjpGekB45-F06d9nTFBbZ3y3cud_d2WwUJoO26OxBoqadfBH3X4qwb0d2Nq_KiMM4zrKGxPDHxhtNIKVZJ2_F4kCrxrppbTqM-ommEwdIxMlbCsEqgJdky09bJ7uTEClrv-6rLcSN6cGXHsKwp9VJrTDAyQ0-aLVhbkT5UpElJGQRosSHhnkPmOULrQ2YJ-hr_OvnCdMNHA&state=e382e4fdabe573c1879248482bcd9d1310fecae68466a9d9" for 127.0.0.1 at 2014-07-22 12:15:30 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB7WFP29K2Lh46ed2R_s8d151XE5Oh0LleuWAuxvwOBRo0-idAPCdubn03VCshEhh-5v5KYjWznIs-EQTHRjmZm9KcosGE5OvX25aCnP-rjmdKPW_OW6aU7LIB8ftwIss5v9BlmnVAPSS4Ocp_mIS7aTmSORIPY7Yyys6CXZmthjpGekB45-F06d9nTFBbZ3y3cud_d2WwUJoO26OxBoqadfBH3X4qwb0d2Nq_KiMM4zrKGxPDHxhtNIKVZJ2_F4kCrxrppbTqM-ommEwdIxMlbCsEqgJdky09bJ7uTEClrv-6rLcSN6cGXHsKwp9VJrTDAyQ0-aLVhbkT5UpElJGQRosSHhnkPmOULrQ2YJ-hr_OvnCdMNHA", "state"=>"e382e4fdabe573c1879248482bcd9d1310fecae68466a9d9"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 37ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1):
+  app/models/user.rb:6:in `from_omniauth'
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:17:34 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:17:36 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:17:36 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQByCQCsgjeibeKFqUJUwi0bZidkgvDErUff4QNUO3EO6P3VrIe7Xhhy7bgjC0LK1-5Wu0rDtV2OYDGlXBN6a_CndNxN7I2xfBQtFx3FfdjOgOGZuJCENe7i0ZrruL4sVJ2jRCDCFG7CBT6S1mUwNJ1tJzQsE1VpQkr-osdBErUYr_B-Wc_S4HKfzxTK8uh4Sz6ll2XknxdtuHPfXwhku2pVL0etApc-SS_tynh_21iPlxci69YOdJj9Nh-Qrahje55r5-wk0wWfahEhPSu_ApVUSHlt4iH6OaVRq3pWRz1IPZEBo5xzaH7BMcop-XPOBZijZfy7jxQboy1Gq11TwilzpNOWmdnhlCnG2XDPDTZMsrLspDrWVQ&state=f6527dd42cf68dafd5c13db25b426f8b2c0ff492ee71861c" for 127.0.0.1 at 2014-07-22 12:17:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQByCQCsgjeibeKFqUJUwi0bZidkgvDErUff4QNUO3EO6P3VrIe7Xhhy7bgjC0LK1-5Wu0rDtV2OYDGlXBN6a_CndNxN7I2xfBQtFx3FfdjOgOGZuJCENe7i0ZrruL4sVJ2jRCDCFG7CBT6S1mUwNJ1tJzQsE1VpQkr-osdBErUYr_B-Wc_S4HKfzxTK8uh4Sz6ll2XknxdtuHPfXwhku2pVL0etApc-SS_tynh_21iPlxci69YOdJj9Nh-Qrahje55r5-wk0wWfahEhPSu_ApVUSHlt4iH6OaVRq3pWRz1IPZEBo5xzaH7BMcop-XPOBZijZfy7jxQboy1Gq11TwilzpNOWmdnhlCnG2XDPDTZMsrLspDrWVQ", "state"=>"f6527dd42cf68dafd5c13db25b426f8b2c0ff492ee71861c"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1):
+  app/models/user.rb:6:in `from_omniauth'
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePlaylistSongs (20140721180345)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (9.9ms)[0m  DROP TABLE "playlist_songs"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140721180345'[0m
+  [1m[35m (7.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePlaylistSongs (20140721180345)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "playlist_songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "playlist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721180345"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 12:18:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 99ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:18:18 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:18:19 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:18:20 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQDYjCLy3j6b4Law7tQz1u1cwEWtQKf35d7_IZxC7ibCh7hFozoiyCsAvWwpIoGlHyPylQmQlTE2P1EEr7aE1pCSSW42onHuwPqfAbWl8uVoQD0EWvCZeDAhIm8wLCYIXyDaC1ktR7OtmuVzrih7y_IPaBSyh3ukZ_lVEEgdOoHERrJYieh1XHxgHQDInfhHGD6QZn_4IDrnrO6lo3pun6MhZxJ2NmbH5mPSkiBA4jf8mpMPw5gtZ0eqcpE1AVEAYREfrzZjK632rzw9UEVEFunXjfHu8H6J0L3WyXTVZsHeQjMSXaKi2XM8Cddn2Y80zjqblfhitxIsS-dnHoIdkBxwTQjS5U_FPsJQ15FnSPSiIbWwvUnKTw&state=d7c8227b0982af18161e7fc26a36a2bd24f3302eb6888e67" for 127.0.0.1 at 2014-07-22 12:18:20 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDYjCLy3j6b4Law7tQz1u1cwEWtQKf35d7_IZxC7ibCh7hFozoiyCsAvWwpIoGlHyPylQmQlTE2P1EEr7aE1pCSSW42onHuwPqfAbWl8uVoQD0EWvCZeDAhIm8wLCYIXyDaC1ktR7OtmuVzrih7y_IPaBSyh3ukZ_lVEEgdOoHERrJYieh1XHxgHQDInfhHGD6QZn_4IDrnrO6lo3pun6MhZxJ2NmbH5mPSkiBA4jf8mpMPw5gtZ0eqcpE1AVEAYREfrzZjK632rzw9UEVEFunXjfHu8H6J0L3WyXTVZsHeQjMSXaKi2XM8Cddn2Y80zjqblfhitxIsS-dnHoIdkBxwTQjS5U_FPsJQ15FnSPSiIbWwvUnKTw", "state"=>"d7c8227b0982af18161e7fc26a36a2bd24f3302eb6888e67"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 9ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1):
+  app/models/user.rb:6:in `from_omniauth'
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePlaylistSongs (20140721180345)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  DROP TABLE "playlist_songs"
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140721180345'[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePlaylistSongs (20140721180345)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "playlist_songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "playlist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721180345"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:24:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/spotify/callback?code=AQB-BuxdRJ3j39yzKQbZph5XrviowMF7X0ENw4f9Idrxx-gR3yPk-Usd5_wINy5zgMav-k6BvXZQldkKOlmBThof3KR4pa5VeXlL7ws9PUPutNFeSlBGDm0u7F35czB9Cd50wTdgEluAELrcMPX3PqPD3sXYT40lMrzILvyRgUZE0nmDB_AAbLiFMnNUSemBrM5CSw8uIWvtZSb9Tie99g9I6OF6G7AHDVV_n_Y7Ey_s9kvTKcGlbwRtssJBTxGhHFvj28Us1JIv6wWlyRHnk9aXKfVCsPL8_OjR604NkUTOE3NOoUiEyLBexR5PW-XdFEFASyIPbtT-lJx01YHy2wPa_L8U-s1_Nn0CWgCRT6_IqI7bpB4FWg&state=7f942099959d884be190deb3d4d586150ee8178d10ac30cb" for 127.0.0.1 at 2014-07-22 12:24:35 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB-BuxdRJ3j39yzKQbZph5XrviowMF7X0ENw4f9Idrxx-gR3yPk-Usd5_wINy5zgMav-k6BvXZQldkKOlmBThof3KR4pa5VeXlL7ws9PUPutNFeSlBGDm0u7F35czB9Cd50wTdgEluAELrcMPX3PqPD3sXYT40lMrzILvyRgUZE0nmDB_AAbLiFMnNUSemBrM5CSw8uIWvtZSb9Tie99g9I6OF6G7AHDVV_n_Y7Ey_s9kvTKcGlbwRtssJBTxGhHFvj28Us1JIv6wWlyRHnk9aXKfVCsPL8_OjR604NkUTOE3NOoUiEyLBexR5PW-XdFEFASyIPbtT-lJx01YHy2wPa_L8U-s1_Nn0CWgCRT6_IqI7bpB4FWg", "state"=>"7f942099959d884be190deb3d4d586150ee8178d10ac30cb"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 24126ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1):
+  app/models/user.rb:7:in `from_omniauth'
+  app/controllers/sessions_controller.rb:4:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+  [1m[36m (52.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140721175937)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140721175937)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "token" text, "refresh_token" text, "image" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721175937"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePlaylists (20140721175951)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721175951"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSongs (20140721180023)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "artist" varchar(255), "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721180023"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateParties (20140721180322)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "parties" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "playlists_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721180322"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePlaylistSongs (20140721180345)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "playlist_songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "playlist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140721180345"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:26:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/spotify/callback?code=AQBMMgt-7H_3o4OCQdA86b_d1v8Zbd9K14AndmwU5eAFZ0fNoJPnMuVjoP-CAGEajdiRAo9Pf5tWPnyqhpD4YLVbvTOMLqdvsDvQ8lByRjft6f-YdmXa4KdECQhTpN4I99icw6-hgEic2r770nO_0nU8JgvhaIgEZHIaekD3_XNpyw0mR-W5At5cU_BMciHWUhDX7iDGTtWl18O_xqX-CqcS4D5AqTB4AcBQSEN2lG3h0Cm74eh803P5diZCSHvKm7eGhME1Bs1bPVBJKAZMA5z1sr42-QgtQToGTzOMIdutx96O3YYq6Iddj790b1yk5um9-BS-t3lB9Lxct560HJvvRo5d9bONgu2hmqvdECNv-XkoqrRJ-g&state=0b6279a57522df43f32adb132b696be3ce8c6499b81e6ec9" for 127.0.0.1 at 2014-07-22 12:26:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBMMgt-7H_3o4OCQdA86b_d1v8Zbd9K14AndmwU5eAFZ0fNoJPnMuVjoP-CAGEajdiRAo9Pf5tWPnyqhpD4YLVbvTOMLqdvsDvQ8lByRjft6f-YdmXa4KdECQhTpN4I99icw6-hgEic2r770nO_0nU8JgvhaIgEZHIaekD3_XNpyw0mR-W5At5cU_BMciHWUhDX7iDGTtWl18O_xqX-CqcS4D5AqTB4AcBQSEN2lG3h0Cm74eh803P5diZCSHvKm7eGhME1Bs1bPVBJKAZMA5z1sr42-QgtQToGTzOMIdutx96O3YYq6Iddj790b1yk5um9-BS-t3lB9Lxct560HJvvRo5d9bONgu2hmqvdECNv-XkoqrRJ-g", "state"=>"0b6279a57522df43f32adb132b696be3ce8c6499b81e6ec9"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "name", "refresh_token", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-07-22 16:26:33.756965"], ["name", "beaubrun"], ["refresh_token", "AQANRSCgJhVxLaRyMLN41ItdwNlC05dpvw8ebMi5Nmnowhk_tax_PQT0SAy0zBEZ_VIzDCGDV2fpMaDi3ztjd3eM4UkJqepIzW-bDhv1wFCTaoQbF7zuzQAV6Apb99Tvogk"], ["token", "BQDt_oRKVlJWf06f-yMGdMnw8hg3nmvkfqzt-Le1-emJuv4tzdbpFmVrfwSrhTTweP-ZXqJYVEHRbXnUWBczskE3l5yb-ARhr0dFMSWHD1ZbpyDa2NAdbMSsaFXUgu65j0gHWt-oI3Nz_46FEGh9V8OJ5KM-tewjZ5BqI7xzV8zBsQ9ldGgWE-xWMGXECdY0DrxYkkscCAxdpQ"], ["uid", "beaubrun"], ["updated_at", "2014-07-22 16:26:33.756965"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 21664ms
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x007ff67edbda18>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/auth/spotify/callback?code=AQBMMgt-7H_3o4OCQdA86b_d1v8Zbd9K14AndmwU5eAFZ0fNoJPnMuVjoP-CAGEajdiRAo9Pf5tWPnyqhpD4YLVbvTOMLqdvsDvQ8lByRjft6f-YdmXa4KdECQhTpN4I99icw6-hgEic2r770nO_0nU8JgvhaIgEZHIaekD3_XNpyw0mR-W5At5cU_BMciHWUhDX7iDGTtWl18O_xqX-CqcS4D5AqTB4AcBQSEN2lG3h0Cm74eh803P5diZCSHvKm7eGhME1Bs1bPVBJKAZMA5z1sr42-QgtQToGTzOMIdutx96O3YYq6Iddj790b1yk5um9-BS-t3lB9Lxct560HJvvRo5d9bONgu2hmqvdECNv-XkoqrRJ-g&state=0b6279a57522df43f32adb132b696be3ce8c6499b81e6ec9" for 127.0.0.1 at 2014-07-22 12:27:38 -0400
+
+OAuth2::Error (invalid_grant: Invalid authorization code
+{"error":"invalid_grant","error_description":"Invalid authorization code"}):
+  oauth2 (1.0.0) lib/oauth2/client.rb:113:in `request'
+  oauth2 (1.0.0) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (1.0.0) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/christinebeaubrun/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.8ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:27:49 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:27:50 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQD1bxYwb7dN271m8UyhkZS8QZz4WlpqrYvpBvyHFVv8ekkJ32ZWYZohv0JR0nHyvQicN_n5oSvZ_SzLlJF7q0RqkjdNhNVOBZVNpseBkaOYv3eCd-gbLZYv2YMZAZJsixej4y1bIYFilALwVgUIEnY_4y3rxXlhuk9RAGAzk-1nAGs6BIUOlKqoSrE7zs6aQ3bALhDBMbQtskgvVxVNPowxD5iy5mryp91htSo0cHz6LveGhtL8NvWTkSYN85hA2XUnIslWRuTkgebAYfSsJwMerOGi848LkZoXzwdhZySckpZFCw6tHFB2Q2gbL9eH6D60M4x3LGzq7_uGIdtDq0QcIDlRAuxIS6Gm_B5cMyhKQ1koU2LGxg&state=5726165bb2270152555f50d3c49ac56f6ca160257ae03ef6" for 127.0.0.1 at 2014-07-22 12:27:50 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQD1bxYwb7dN271m8UyhkZS8QZz4WlpqrYvpBvyHFVv8ekkJ32ZWYZohv0JR0nHyvQicN_n5oSvZ_SzLlJF7q0RqkjdNhNVOBZVNpseBkaOYv3eCd-gbLZYv2YMZAZJsixej4y1bIYFilALwVgUIEnY_4y3rxXlhuk9RAGAzk-1nAGs6BIUOlKqoSrE7zs6aQ3bALhDBMbQtskgvVxVNPowxD5iy5mryp91htSo0cHz6LveGhtL8NvWTkSYN85hA2XUnIslWRuTkgebAYfSsJwMerOGi848LkZoXzwdhZySckpZFCw6tHFB2Q2gbL9eH6D60M4x3LGzq7_uGIdtDq0QcIDlRAuxIS6Gm_B5cMyhKQ1koU2LGxg", "state"=>"5726165bb2270152555f50d3c49ac56f6ca160257ae03ef6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 28ms
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x007ff67eeadba8>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.9ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:28:21 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:28:22 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQBxepcGHQqgGCAOlKtn7yC7_dSxQ8WsBSMx8UyAEh7_6eLqXwAXAC7shrAb0cIewtiX9XhDxmSTpSxy9GpoDZLfNIrBLPAkPNPJ8Fnvf-GogvE5CidkmocDrNO3_1EKofw54Z3UFzV3ebw2fzkibVCdagDNw3JbC-Xg_aQ0MXrsC3kK-SjWnVBCZ1lcDc0EenMwGKass53kV-wuazauix8uD_76CvQbBfTVJPO2al2vkMo5nmaKzzfgVrEcMX1w1-5lN-2W2QP1RPmbnIh75WcrdwG5oUgwEqwfF8YSGnRYRNINb1sFS_S1ocYY7tyDWb3KiFCDg5BWE3jxCTg8v5LgJhuFFBcWof079R0xOlLqp1nvvHsXIw&state=c39336beb1f44ac8f4bbfdcdd4835e81d8aa3154b888afbc" for 127.0.0.1 at 2014-07-22 12:28:22 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBxepcGHQqgGCAOlKtn7yC7_dSxQ8WsBSMx8UyAEh7_6eLqXwAXAC7shrAb0cIewtiX9XhDxmSTpSxy9GpoDZLfNIrBLPAkPNPJ8Fnvf-GogvE5CidkmocDrNO3_1EKofw54Z3UFzV3ebw2fzkibVCdagDNw3JbC-Xg_aQ0MXrsC3kK-SjWnVBCZ1lcDc0EenMwGKass53kV-wuazauix8uD_76CvQbBfTVJPO2al2vkMo5nmaKzzfgVrEcMX1w1-5lN-2W2QP1RPmbnIh75WcrdwG5oUgwEqwfF8YSGnRYRNINb1sFS_S1ocYY7tyDWb3KiFCDg5BWE3jxCTg8v5LgJhuFFBcWof079R0xOlLqp1nvvHsXIw", "state"=>"c39336beb1f44ac8f4bbfdcdd4835e81d8aa3154b888afbc"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 12861ms
+
+NameError (undefined local variable or method `user_index' for #<SessionsController:0x007ff67ea15ca8>):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/christinebeaubrun/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.6ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:29:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 12:29:14 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQDpxNGXZohD7EhV79gyCb50eZgLEjeumEq9dJ0wx5OB6mYFcoF8gTNFXV-qzMDVygMUi9k-UdD6CzRSrv4Rfl7evqHZEHOBozIh_uU2abDK8J4sgeoV7zgxkyZcYYLgUzagc0FLbBu_H1Bv7ado2x34hNuNFemWRdcO57Zp2xv5N1bPqtIWmWW8QyKQOQi8OLSCVvmRHE9z79abUid4zi1p09c7r16EZlkfdJZOrzmFHRtn-oJIZWn_DRmXiqoYoW23bbBcBRapG5XIrp6o7VpTnvPGbfxpJ47rfLDer3WPAMqQFwhi8Bt0sNCDudPjw0I7cSWJeQ3hXVYwWSrEpYQFpxu8cEVDndaG2Cy8qH0LGuMmfHQxZA&state=b9b9d07bbdb8f42934756baab5c55f6c1dc90bcd442602c8" for 127.0.0.1 at 2014-07-22 12:29:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDpxNGXZohD7EhV79gyCb50eZgLEjeumEq9dJ0wx5OB6mYFcoF8gTNFXV-qzMDVygMUi9k-UdD6CzRSrv4Rfl7evqHZEHOBozIh_uU2abDK8J4sgeoV7zgxkyZcYYLgUzagc0FLbBu_H1Bv7ado2x34hNuNFemWRdcO57Zp2xv5N1bPqtIWmWW8QyKQOQi8OLSCVvmRHE9z79abUid4zi1p09c7r16EZlkfdJZOrzmFHRtn-oJIZWn_DRmXiqoYoW23bbBcBRapG5XIrp6o7VpTnvPGbfxpJ47rfLDer3WPAMqQFwhi8Bt0sNCDudPjw0I7cSWJeQ3hXVYwWSrEpYQFpxu8cEVDndaG2Cy8qH0LGuMmfHQxZA", "state"=>"b9b9d07bbdb8f42934756baab5c55f6c1dc90bcd442602c8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = 'beaubrun'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/user/index
+Completed 302 Found in 5901ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 12:29:22 -0400
