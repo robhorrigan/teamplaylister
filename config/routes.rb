@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'user#index'
 
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
   get 'songs/index'
 
   get 'songs/create'

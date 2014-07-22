@@ -7,4 +7,9 @@ class SessionsController < ApplicationController
     flash[:notice] = "You are signed in as #{@user.name}"
   end
 
+  def destroy
+  	session[:user_id] = nil
+  	redirect_to root_url, notice: "signed out!"
+  end
+
 end
