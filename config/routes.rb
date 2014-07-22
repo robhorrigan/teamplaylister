@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'user#index'
+
   get 'songs/index'
 
   get 'songs/create'
