@@ -4788,3 +4788,418 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:23:46 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:23:46 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:26:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/auth/spotify/callback?code=AQAxzxGdlXnrhkhNfrxQIv4oMwnF_UCYZPpWa88KyO_DOc8jYbS1nJ1abkzglRmhAuzobQ4cQh-i1h2s3_AEAuHoH31m78ZEbnfyX2KeXqezyfhHZgQCZeh785MrdHOOxFqLDJL6KebyLqQVZRvx9IY22cxIkp1wA9DW4XNIZjLHL6W9aJuzhxZ60XAbtjofOdFCJEiGoVQmiWRzmdHSd3H6WOwYE_sI3Uww7xh4JLnSOki4SdG2awLhx7m5TW6zRQa9KrvZW1Kj0cFk70qEhkzd6_08Y3exFBIP_VM8JR1IqWvCCDlqzIQbtRBbq5tHrn1-VkWqF0iDnk8CknjYYebyFKddNdbPxL44WZ_yR6ZbPyOxHiabyA&state=be11898812fa8152725e4c6e6cf2c523379e6648501b88d0" for 127.0.0.1 at 2014-07-22 15:26:33 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAxzxGdlXnrhkhNfrxQIv4oMwnF_UCYZPpWa88KyO_DOc8jYbS1nJ1abkzglRmhAuzobQ4cQh-i1h2s3_AEAuHoH31m78ZEbnfyX2KeXqezyfhHZgQCZeh785MrdHOOxFqLDJL6KebyLqQVZRvx9IY22cxIkp1wA9DW4XNIZjLHL6W9aJuzhxZ60XAbtjofOdFCJEiGoVQmiWRzmdHSd3H6WOwYE_sI3Uww7xh4JLnSOki4SdG2awLhx7m5TW6zRQa9KrvZW1Kj0cFk70qEhkzd6_08Y3exFBIP_VM8JR1IqWvCCDlqzIQbtRBbq5tHrn1-VkWqF0iDnk8CknjYYebyFKddNdbPxL44WZ_yR6ZbPyOxHiabyA", "state"=>"be11898812fa8152725e4c6e6cf2c523379e6648501b88d0"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:26:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:08 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:28:13 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:28:13 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQD7tF3c1qIgRajPZrCtQF4bi39INgdE2WMGroQ64uTiJXIv7mP8H3rKUkexGPwHHBqk6FIBq3Caj36S9kKhNpY7I22AzOvvsi35S44l4kgHbbeDoU3_CHZwjhbmxhSzmcpSljzbJLSEnSqyXKJ3xosImcf1ypik4RuaZzD9SMQ1y7qS5b862WPpsPssd25TF-cM0zAtRQEuCvFD_L52Z_Bw6mdftZToXjqZZZ05FXHQ2Tsd83S-7o8vq8_JYo4llB36PPu0DGEwT9QClRl3oZ98uDExD3QawGWZa2VRvE8g0huciCNt7O0_9l0NrW27L9wXzHbHMjNkmMlaXvql0WMdb4r7mYTfIzBFGCJ5ziVYRRwpwCNzoA&state=2293c897341b1c818d068517d9abac96abfc6a0305491b99" for 127.0.0.1 at 2014-07-22 15:28:13 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQD7tF3c1qIgRajPZrCtQF4bi39INgdE2WMGroQ64uTiJXIv7mP8H3rKUkexGPwHHBqk6FIBq3Caj36S9kKhNpY7I22AzOvvsi35S44l4kgHbbeDoU3_CHZwjhbmxhSzmcpSljzbJLSEnSqyXKJ3xosImcf1ypik4RuaZzD9SMQ1y7qS5b862WPpsPssd25TF-cM0zAtRQEuCvFD_L52Z_Bw6mdftZToXjqZZZ05FXHQ2Tsd83S-7o8vq8_JYo4llB36PPu0DGEwT9QClRl3oZ98uDExD3QawGWZa2VRvE8g0huciCNt7O0_9l0NrW27L9wXzHbHMjNkmMlaXvql0WMdb4r7mYTfIzBFGCJ5ziVYRRwpwCNzoA", "state"=>"2293c897341b1c818d068517d9abac96abfc6a0305491b99"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:28:20 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:32:13 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:32:14 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQDDmQbdd93HxYPRipevzlgW0xBIpxiXYEZ2FRuWSrBGK4sM5zTvJacsWeAwMd8tfojoUdreyo2OPeX_dWm1Xph6Yt1zndFZ1_JRaug7ADBat2If8Dg-mLE64GW0drmsjRKh5pJSrC5Reh1KkOA6fO0ExJ2B-7HnseM7TONsi5pYzK2duaGftzoaQUbr3tOiwfRvwPbo7DhLxddolup3bZ9XusB7Pz4d5aISzwAHYyjWZC3YL-NQy55wcsGhNpckQxRf12iYQoCK9CH1RbCilPJqH24YyV_7ETsURZQCR1wZUgx1KDVsrvWC0GXvYs2-aALwUTdNCb2hMA7Ytgf09BBfUDsD2Y6xd9ar7LolOLUmLY7oWZQmag&state=0a6421afe3d005456f81472d2cba4829998291e492739490" for 127.0.0.1 at 2014-07-22 15:32:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDDmQbdd93HxYPRipevzlgW0xBIpxiXYEZ2FRuWSrBGK4sM5zTvJacsWeAwMd8tfojoUdreyo2OPeX_dWm1Xph6Yt1zndFZ1_JRaug7ADBat2If8Dg-mLE64GW0drmsjRKh5pJSrC5Reh1KkOA6fO0ExJ2B-7HnseM7TONsi5pYzK2duaGftzoaQUbr3tOiwfRvwPbo7DhLxddolup3bZ9XusB7Pz4d5aISzwAHYyjWZC3YL-NQy55wcsGhNpckQxRf12iYQoCK9CH1RbCilPJqH24YyV_7ETsURZQCR1wZUgx1KDVsrvWC0GXvYs2-aALwUTdNCb2hMA7Ytgf09BBfUDsD2Y6xd9ar7LolOLUmLY7oWZQmag", "state"=>"0a6421afe3d005456f81472d2cba4829998291e492739490"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:32:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:41:04 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00000105a69270>:0x00000105a68370>):
+    1: <h1>This is the User#index</h1>
+    2: <p>Everyone starts here.</p>
+    3: 
+    4: <% if current_user %>
+    5:   Welcome <%= current_user.name %>!
+    6: <% else %>
+    7:   <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+  app/views/user/index.html.erb:4:in `_app_views_user_index_html_erb___4248255922408338099_2194871940'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:42:20 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `id' for :user:Symbol):
+    1: <h1>This is the User#index</h1>
+    2: <p>Everyone starts here.</p>
+    3: 
+    4: <% if current_user %>
+    5:   Welcome <%= current_user.name %>!
+    6: <% else %>
+    7:   <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/views/user/index.html.erb:4:in `_app_views_user_index_html_erb___4248255922408338099_2194871940'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:42:23 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `id' for :user:Symbol):
+    1: <h1>This is the User#index</h1>
+    2: <p>Everyone starts here.</p>
+    3: 
+    4: <% if current_user %>
+    5:   Welcome <%= current_user.name %>!
+    6: <% else %>
+    7:   <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/views/user/index.html.erb:4:in `_app_views_user_index_html_erb___4248255922408338099_2194871940'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered user/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
