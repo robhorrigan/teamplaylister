@@ -1,6 +1,11 @@
 <h1>This is the User#index</h1>
 <p>Everyone starts here.</p>
 
-<%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+<% else %>
+  <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+<% end %>
+
 <br>
 <%= link_to 'Join a party', party_show_path %>
