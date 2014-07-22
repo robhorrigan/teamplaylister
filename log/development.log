@@ -5203,3 +5203,222 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:43:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:57:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered user/index.html.erb within layouts/application (6420.2ms)
+Completed 500 Internal Server Error in 6439ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/user/index.html.erb:4:in `_app_views_user_index_html_erb__999097508790185169_2163540100'
+
+
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:57:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered user/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 34ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/views/user/index.html.erb:4:in `_app_views_user_index_html_erb__3334032481191208691_2177420900'
+
+
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-22 15:57:46 -0400
+
+SyntaxError (/Users/katebrender/Development/code/group_project/teamplaylister/app/controllers/sessions_controller.rb:14: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:14: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/katebrender/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:07 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:58:10 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-22 15:58:10 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQBUB5T8vGxb9VlKL_hy_AKMA8vfiQZzw7yO25sE3zhTOp3PWN15tAeGFcSbbPaygwGA4ThKbITBsNsOEZNx-TbWYvSgUwd_BaRsnOclX8FKIGIj4vT65D72XnrMZjFzXJficDaMCu_-1nHQ4jYtIBXeHUNVMk--ylnnr-AsG56ng4pVqgT80sJ_1gHeF7HsWlElx111LoY_H_1iKlLckv1D7wnXCIOJrpfW0oT1yxtdonzqQ3uLWLVkBPzQhTY2myPBLu09GpqgKztc8oanO3zjzkq4dTo8PCpSlczTm5qsNIakUL__Ai9sJSjVZNWJBGLx8_6hqwiluOpMgybQPKp9ZCLTAqJBOq8ofj2hhDlAeCKBuZ9k4g&state=b5e7fa551f35c96e873397b19e00cf7551b8e9775763906c" for 127.0.0.1 at 2014-07-22 15:58:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBUB5T8vGxb9VlKL_hy_AKMA8vfiQZzw7yO25sE3zhTOp3PWN15tAeGFcSbbPaygwGA4ThKbITBsNsOEZNx-TbWYvSgUwd_BaRsnOclX8FKIGIj4vT65D72XnrMZjFzXJficDaMCu_-1nHQ4jYtIBXeHUNVMk--ylnnr-AsG56ng4pVqgT80sJ_1gHeF7HsWlElx111LoY_H_1iKlLckv1D7wnXCIOJrpfW0oT1yxtdonzqQ3uLWLVkBPzQhTY2myPBLu09GpqgKztc8oanO3zjzkq4dTo8PCpSlczTm5qsNIakUL__Ai9sJSjVZNWJBGLx8_6hqwiluOpMgybQPKp9ZCLTAqJBOq8ofj2hhDlAeCKBuZ9k4g", "state"=>"b5e7fa551f35c96e873397b19e00cf7551b8e9775763906c"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = 'kate.brender'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "refresh_token", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-07-22 19:58:12.509098"], ["name", "kate.brender"], ["refresh_token", "AQC_aMfv4bbY8joeAgZYJjGZVuRXczdpsK9G-Fw3mi_8elNX0Krl-_sybRN-0JtqebeNraVUDl2SzQUCEIjDi27Lnc4wEwLUYOfLpGKxJOrCN4snwVHGdQ1xLhvsNTuuaxM"], ["token", "BQCZ49PK6z0ahtoBF87KdCWG4E-XzSYsryxm1Wwp4gLfQZ-CTkOlZTBqFkwA_1HLOru8c6q_tYtu_RrVGaMK1MpymDSDTRQh9HdD-tKYP3qQ0woLfpEUUTVbjXtwOUhfp3LPYLIjU6CJf4EqHcLT508YWVlBya-zo69R_HdiKJ0klWMPgrzqOdmx54pG8oxQXhpDc-F7WNy3KFjxD6k"], ["uid", "kate.brender"], ["updated_at", "2014-07-22 19:58:12.509098"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 30ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered user/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 15:58:41 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-22 15:58:47 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 15:58:47 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
