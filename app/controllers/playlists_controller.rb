@@ -8,9 +8,11 @@ class PlaylistsController < ApplicationController
   end
 
   def show
-    @party = Party.new(params["party_name"])
-    @playlist = Playlist.new(@party, params["playlist_name"], params["vote_number"])
-    binding.pry
+    @party = Party.new(:name => params["party_name"])
+    @party.save
+    @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"], :code => rand(36**5).to_s(36))
+    @playlist.party = @party
+    @playlist.save
   end
 
   def update

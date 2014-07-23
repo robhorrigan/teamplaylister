@@ -1,6 +1,7 @@
 <h1><%=@playlist.name%></h1>
 <p>Find me in app/views/playlist/show.html.erb</p>
 
-<p>playlist code: <%=@playlist.code%></p>
-
-<p>number of votes allowed per guest: <%=@playlist.votes%></p>
+<p>this playlist belongs to the party: <%= @playlist.party.name%></p><br>
+<p>owner of this playlist: <%=@playlist.party.user%></p><br>
+<p>playlist code: <%=@playlist.code%></p><br>
+<p>number of votes allowed per guest: <%=@playlist.votes%></p><br>
