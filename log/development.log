@@ -12379,3 +12379,1270 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 13:55:26 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 13:55:26 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:00:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 736ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:20 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:00:28 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 256ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:29 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:00:46 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 259ms
+
+ActionView::Template::Error (undefined method `name' for #<String:0x00000106b06858>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.name %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2203592360'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.8ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:00:56 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2826ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:00:59 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:01:15 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 335ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:16 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:01:23 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 783ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:24 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:01:30 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1833ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:01:32 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:02:34 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 272ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:35 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:02:45 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3360ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:48 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:02:55 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1121ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:02:56 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:03:07 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3055ms
+
+ActionView::Template::Error (undefined method `all' for "name":String):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists["name"].all %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2191996120'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:03:17 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 1018ms
+
+ActionView::Template::Error (undefined method `all' for #<String:0x00000106b24510>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.all %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2203612320'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 218ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:03:23 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:06:20 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 680ms
+
+ActionView::Template::Error (undefined local variable or method `text' for #<#<Class:0x00000105404e70>:0x00000101f27720>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.parse(text) %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2163814660'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.8ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:06:34 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 216ms
+
+ActionView::Template::Error (undefined local variable or method `name' for #<#<Class:0x00000105404e70>:0x000001017f2b80>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.parse(name) %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2160023740'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:06:44 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 220ms
+
+ActionView::Template::Error (undefined method `parse' for #<String:0x000001012156e0>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.parse("name") %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2156902220'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.0ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:06:50 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 1265ms
+
+ActionView::Template::Error (undefined method `parse' for #<String:0x0000010546df10>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @user_playlists.parse %>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2191745160'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.1ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 222ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:06:58 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:07:33 -0400
+Processing by PlaylistsController#index as HTML
+Completed 500 Internal Server Error in 3437ms
+
+RestClient::GatewayTimeout (504 Gateway Timeout):
+  app/controllers/playlists_controller.rb:3:in `index'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 230ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:07:51 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:11:59 -0400
+Processing by PlaylistsController#index as HTML
+Completed 500 Internal Server Error in 688ms
+
+NameError (undefined local variable or method `string' for #<PlaylistsController:0x000001053ed270>):
+  app/controllers/playlists_controller.rb:4:in `index'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 669ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:12:51 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 653ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:05 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 223ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:13:11 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:13:59 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 647ms
+
+ActionView::Template::Error (undefined method `href' for #<Hash:0x00000105417bb0>):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <%= @my_list.href%>
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2191523040'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:14:31 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 247ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:32 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 277ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:41 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:14:48 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 286ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:14:49 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:15:42 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 758ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:15:43 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 216ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:08 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:16:26 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 685ms
+
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <h1>Playlist#index</h1>
+    2: <p>Find me in app/views/playlist/index.html.erb</p>
+    3: <% @my_list.each do |playlist|%>
+    4: <li><%=playlist["name"]%></li>
+    5: <%end%>
+  app/views/playlists/index.html.erb:4:in `[]'
+  app/views/playlists/index.html.erb:4:in `block in _app_views_playlists_index_html_erb___2256308438299225359_2163483940'
+  app/views/playlists/index.html.erb:3:in `each'
+  app/views/playlists/index.html.erb:3:in `_app_views_playlists_index_html_erb___2256308438299225359_2163483940'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 277ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:16:32 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:17:04 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 682ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:05 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:17:18 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 349ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:17:19 -0400
+
+
+Started GET "/playlists/index" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+Processing by PlaylistsController#index as HTML
+  Rendered playlists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 292ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-23 14:18:27 -0400
