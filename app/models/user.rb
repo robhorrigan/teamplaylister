@@ -3,7 +3,6 @@ class User < ActiveRecord::Base
 	# has_many: :playlists, through: :parties
   
   def self.from_omniauth(auth)
-    # where(auth.slice('uid')).first || create_from_omniauth(auth)
     where(auth.slice('uid')).first_or_initialize.tap do |user|
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
@@ -11,7 +10,7 @@ class User < ActiveRecord::Base
       user.refresh_token = auth["credentials"]["refresh_token"]
       user.image = auth["info"]["image"]
       user.save
-    end 
+    end
   end
 
   # def self.create_from_omniauth(auth)

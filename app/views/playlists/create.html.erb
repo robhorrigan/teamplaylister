@@ -6,6 +6,8 @@
 <%= form_tag("/playlists/show", :method => :post) do %>
 <p>What's the name of the party?</p>
 <input type="text_field" name="party_name" value="">
+<p>...and the name of the playlist?</p>
+<input type="text_field" name="playlist_name" value="">
 <p>How many upvotes is each person allowed?</p>
 	<select name="vote_number">
     <%= (1..5).each do |number| %>
