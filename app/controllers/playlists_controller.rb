@@ -6,9 +6,9 @@ class PlaylistsController < ApplicationController
   end
 
   def show
-    @vote_number = params["vote_number"]
-    @party_name = params["party_name"]
-    render 'show'
+    @party = Party.new(params["party_name"])
+    @playlist = Playlist.new(@party, params["playlist_name"], params["vote_number"])
+    binding.pry
   end
 
   def update
@@ -25,6 +25,6 @@ class PlaylistsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def playlist_params
-    params.require(:vote_number, :party_name)
+    params.require(:vote_number, :party_name, :playlist_name)
   end
 end
