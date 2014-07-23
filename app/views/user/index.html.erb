@@ -3,10 +3,11 @@
 
 <% if current_user %>
   Welcome <%= current_user.name %>!
-	<%= link_to 'sign out', signout_path %>
+	<%= link_to 'sign out', signout_path %>, <%= link_to 'start a new party', '/playlists/create'%> 
+
 <% else %>
   <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
 <% end %>
 
 <br>
-<%= link_to 'Join a party', party_show_path %>
+<%= link_to 'Join a party', '/party/show' %>
