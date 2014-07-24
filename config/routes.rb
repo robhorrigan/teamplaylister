@@ -4,41 +4,21 @@ Rails.application.routes.draw do
 
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  get 'playlist/show' => 'playlist#show'
-
   get '/auth/spotify/callback', to: 'sessions#create'
 
-  get 'songs/index'
+  resources :songs
+  resources :user
 
-  get 'songs/create'
-
-  get 'songs/show'
-
-  get 'songs/update'
-
-  get 'songs/delete'
+  get 'parties/new'
 
   resources :parties
 
-  get 'playlists/index'
-
-  get 'playlists/create'
-
-  post 'playlists/show' => 'playlists#show'
-  get 'playlists/show' => 'playlists#show'
-  get 'playlists/:party_code' => 'playlists#show'
-
-  get 'playlists/update'
-
-  get 'playlists/delete'
-
-  get 'user/index'
-
-  get 'user/create'
-
-  get 'user/show'
-
-  get 'user/delete'
+  # resources :parties, except: [:show] do
+  #   collection do
+  #     get 'invitation/:code' => 'parties#show', as: "invitation"
+  #   end
+  # end
+  get 'invitation/:code' => 'parties#show', as: "invitation"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
