@@ -11,29 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724152101) do
+ActiveRecord::Schema.define(version: 20140724210439) do
 
   create_table "parties", force: true do |t|
     t.integer  "user_id"
-    t.integer  "playlists_id"
+    t.string   "spotify_playlist_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "playlist_songs", force: true do |t|
-    t.integer  "song_id"
-    t.integer  "playlist_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "playlists", force: true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "party_code"
-    t.integer  "party_id"
-    t.integer  "user_id"
+    t.string   "code"
   end
 
   create_table "songs", force: true do |t|
