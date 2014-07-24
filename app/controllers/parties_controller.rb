@@ -25,7 +25,6 @@ class PartiesController < ApplicationController
   end
 
   def show
-    binding.pry
     party_id = @party.spotify_playlist_id
     uid = current_user.uid
     token = current_user.token
