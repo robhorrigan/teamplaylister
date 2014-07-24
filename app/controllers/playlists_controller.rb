@@ -10,9 +10,10 @@ class PlaylistsController < ApplicationController
   def show
     @party = Party.new(:name => params["party_name"], :user => current_user.name)
     @party.save
-    @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"], :code => rand(36**5).to_s(36))
+    @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"], :party_code => rand(36**5).to_s(36))
     @playlist.party = @party
     @playlist.save
+    binding.pry
 
     @user = User.find(session[:user_id])
     uid = @user.uid

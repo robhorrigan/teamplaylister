@@ -34,6 +34,7 @@ Rails.application.routes.draw do
 
   post 'playlists/show' => 'playlists#show'
   get 'playlists/show' => 'playlists#show'
+  get 'playlists/:party_code' => 'playlists#show'
 
   get 'playlists/update'
 
