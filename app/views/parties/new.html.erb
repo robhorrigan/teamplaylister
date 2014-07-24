@@ -1,9 +1,16 @@
-<h1>Playlist#create</h1>
-<p>Find me in app/views/playlist/create.html.erb</p>
+<h1>Parties#new</h1>
 
 <p>Here's a all of your options:</p>
 
-<%= form_tag("/playlists/show", :method => :post) do %>
+<%= form_for(@party) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.text_field :name %>
+	<%= 
+<% end %>
+
 <p>What's the name of the party?</p>
 <input type="text_field" name="party_name" value="">
 <p>...and the name of the playlist?</p>
@@ -17,5 +24,3 @@
    <%= submit_tag "Submit"%>
    <%end%>
  </form>
-
-

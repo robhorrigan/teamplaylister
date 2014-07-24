@@ -3,7 +3,7 @@ class Playlist < ActiveRecord::Base
 	belongs_to :party
 	belongs_to :user
 
-	attr_accessor :party, :name, :votes, :code
+	# attr_accessor :party, :name, :votes, :code
 
   # def self.uri_encode_parse(uid, playlist_name, token)
 

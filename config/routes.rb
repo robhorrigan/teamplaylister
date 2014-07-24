@@ -18,15 +18,7 @@ Rails.application.routes.draw do
 
   get 'songs/delete'
 
-  get 'party/index'
-
-  get 'party/create'
-
-  get 'party/show'
-
-  get 'party/update'
-
-  get 'party/delete'
+  resources :parties
 
   get 'playlists/index'
 
