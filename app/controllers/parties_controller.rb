@@ -4,27 +4,29 @@ class PartiesController < ApplicationController
     @playlists = JSON.parse(@user_playlists)
   end
 
-  def create
-  end
-
   def new
     @party = Party.new
   end
 
-  def show
-    @party = Party.new(:name => params["party_name"], :user => current_user.name)
-    @party.save
-    @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"])
-    @playlist.party = @party
-    @playlist.save
-
-    @user = User.find(session[:user_id])
-    uid = @user.uid
-    token = @user.token
-    spotify_data = Playlist.create_playlist(uid, params["playlist_name"], token)
-    playlist_id = Playlist.get_playlist_id(spotify_data)
+  def create
+    @party = Party.new(party_params)
+    uid = current_user.uid
+    token = current_user.token
+    spotify_data = Party.create_party(uid, params[:name], token)
+    playlist_id = Party.get_playlist_id(spotify_data)
     tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"
-    Playlist.add_tracks(uid, playlist_id, token)
+    if @party.save
+      redirect_to party_path(@party)
+    else
+      render :new, flash[:notice] = "Sorry, there was an error. Penguins attacked your page!"
+    end
+  end
+
+  def show
+    uid = current_user.uid
+    token = current_user.token
+    
+    Party.add_tracks(uid, party_id, token)
   end
 
   def update
@@ -35,12 +37,12 @@ class PartiesController < ApplicationController
 
   private
   # Use callbacks to share common setup or constraints between actions.
-  def set_playlist
-    @playlist = Playlist.find(params[:code])
+  def set_party
+    @party = Party.find(params[:code])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
-  def playlist_params
-    params.require(:vote_number, :party_name, :playlist_name)
+  def party_params
+    params.require(:party).permit(:name, :user_id)
   end
 end
