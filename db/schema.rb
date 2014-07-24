@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140721180345) do
+ActiveRecord::Schema.define(version: 20140724151045) do
 
   create_table "parties", force: true do |t|
     t.integer  "user_id"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20140721180345) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "party_code"
   end
 
   create_table "songs", force: true do |t|
