@@ -1,0 +1,11 @@
+# ignore tmp
+/tmp/*
+
+# ignore log
+/log/*
+/log/development.log
+
+# ignore db
+/db/development.sqlite3
+/db/test.sqlite3
+
