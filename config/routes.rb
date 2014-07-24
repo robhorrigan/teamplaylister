@@ -18,7 +18,9 @@ Rails.application.routes.draw do
   #     get 'invitation/:code' => 'parties#show', as: "invitation"
   #   end
   # end
-  get 'invitation/:code' => 'parties#show', as: "invitation"
+  # get 'invitation/:code' => 'parties#show', as: "invitation"
+
+  get '/:code' => 'parties#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -18212,3 +18212,337 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:06:48 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:06:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 17:55:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered user/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 914ms (Views: 897.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:41 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:42 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-24 17:55:43 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 17:55:43 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 17:55:44 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 17:55:45 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQAhNAFK_x1uuQ1QE4aIIXOwWVVBX4CeJxdU4BmW3hYV7oGEyoP6RNcQYURYd_FBf4O8pI5hHKRxVhTJvddDTShupXkgGVV5BG6NpqpUDS-l6Mf_D9ikpGRxfMyl4MxppaOq2OmPSvyX2Ps608V9GbMdROJzF--qURoMyXYjFQaFGo6lHGGyDNfljcnaQvVrQVORvOCg9X3Qsc0OFRMPQR1M2DpG1NWqSEzqHiB5D1WSyz2iq1za4uCpJtwLR58DQ4cAWdioCVO5uJpLguJRv9DQxz3F9ju-P-WCs1Otl7REQgW370V4L9mZ1JGNO5q-Umo0_X2cDRN8-noZ17h_epn2sDpbPBBDj74lT-r4G0iydUCR8o8keQ&state=dde09aba9babebac0ba63e0c4379f233cd9f1421e093b7d0" for 127.0.0.1 at 2014-07-24 17:55:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAhNAFK_x1uuQ1QE4aIIXOwWVVBX4CeJxdU4BmW3hYV7oGEyoP6RNcQYURYd_FBf4O8pI5hHKRxVhTJvddDTShupXkgGVV5BG6NpqpUDS-l6Mf_D9ikpGRxfMyl4MxppaOq2OmPSvyX2Ps608V9GbMdROJzF--qURoMyXYjFQaFGo6lHGGyDNfljcnaQvVrQVORvOCg9X3Qsc0OFRMPQR1M2DpG1NWqSEzqHiB5D1WSyz2iq1za4uCpJtwLR58DQ4cAWdioCVO5uJpLguJRv9DQxz3F9ju-P-WCs1Otl7REQgW370V4L9mZ1JGNO5q-Umo0_X2cDRN8-noZ17h_epn2sDpbPBBDj74lT-r4G0iydUCR8o8keQ", "state"=>"dde09aba9babebac0ba63e0c4379f233cd9f1421e093b7d0"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = '1212731423'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["refresh_token", "AQCABDXdOaUDSkr-T-x0cw71cB5YNwAHegpfWG1DpU2qKUBbmJwbELnmKEm4vQl7rLfMw5sHBxaLNRkfZvfyEFT2GZUDmoH3DGzQvaud987eEARIGVDswKszb6TEdQYoa0s"], ["token", "BQAHEEUXGM1Qnpp9cTxnCcHZTUa0OUE5-OT2d3LoeSDvTDUymtlQf5vRebbxcVEG3WJd2pw-9Tp2PlJ15peIncZR-3oh5OzxsBdvDcVR3RxomKf-4MfE0ywTQcxZWttExAcJbK5PnNQvZwY93CGiPjP8ohIui0JugXETybmMEfHCpR3x9my0FFeL2j7wVyPpU-wotfGcy3IhgCOk"], ["updated_at", "2014-07-24 21:55:47.426196"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/user
+Completed 302 Found in 23ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered user/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:47 -0400
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-07-24 17:55:48 -0400
+Processing by PartiesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered parties/new.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 45ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/parties" for 127.0.0.1 at 2014-07-24 17:55:55 -0400
+Processing by PartiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G71OyZL5UVg+pN8zEMriqF680R+IlQpaWc0g4JeXyE0=", "party"=>{"name"=>"hey", "user_id"=>"2"}, "commit"=>"Create Party"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "parties" ("code", "created_at", "name", "spotify_playlist_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "njcbj"], ["created_at", "2014-07-24 21:55:55.751278"], ["name", "hey"], ["spotify_playlist_id", "20M9UTH6kAumW7qWwmoUod"], ["updated_at", "2014-07-24 21:55:55.751278"], ["user_id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/invitation/njcbj
+Completed 302 Found in 290ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/invitation/njcbj" for 127.0.0.1 at 2014-07-24 17:55:55 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"njcbj"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'njcbj' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered parties/show.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 354ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:55:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered user/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 127ms (Views: 113.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+
+
+Started GET "/njcbj" for 127.0.0.1 at 2014-07-24 17:58:47 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"njcbj"}
+  [1m[36mParty Load (0.4ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'njcbj' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered parties/show.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 410ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:58:48 -0400
+
+
+Started GET "/njcbj" for 127.0.0.1 at 2014-07-24 17:59:24 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"njcbj"}
+  [1m[35mParty Load (1.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'njcbj' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered parties/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 846ms (Views: 33.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 17:59:25 -0400
