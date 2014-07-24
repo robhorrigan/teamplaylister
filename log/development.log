@@ -22087,3 +22087,2172 @@ Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 15:59:55 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 15:59:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 16:21:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered user/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 145ms (Views: 133.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 16:21:06 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered user/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:06 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:06 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:07 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-24 16:21:10 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 16:21:10 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:21:11 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:21:12 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQDBMD5SbCVijgBoG-kM-JL8qvfAP2Wr0rELQij4_YuvbNhVK75xLbTPO6hcMINudEegP2WdNZEebVR0m2QFjmwydq9j4NaPchlNq_CVgEhNRGTBy4yxektQ6u7EXTRcmFkmhpy-Gnrr9Gwc4B9vppAmFOMIzxDuI62pMiaVF3ggVJk03cPAnj__kZbexIlCr1TrJqd4nKqv1T_KLXruL3-KoUAQECFoxmMK0V3P_tTMZfUZikuNt8Vkab-r5mich-1LibFQ9vIXxd7yYz49ZGICygEt6Wt_V9zc8xvWl3EUNYld07BfUaHnwWnR9NDlornkPyh7fUT_fVR_lD80GfOQTjeI5ss2ErdaSos6NhXm5xsTfMLPyw&state=57f0f277a266e046dd47c7e706d7337590e553f2a9242571" for 127.0.0.1 at 2014-07-24 16:21:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDBMD5SbCVijgBoG-kM-JL8qvfAP2Wr0rELQij4_YuvbNhVK75xLbTPO6hcMINudEegP2WdNZEebVR0m2QFjmwydq9j4NaPchlNq_CVgEhNRGTBy4yxektQ6u7EXTRcmFkmhpy-Gnrr9Gwc4B9vppAmFOMIzxDuI62pMiaVF3ggVJk03cPAnj__kZbexIlCr1TrJqd4nKqv1T_KLXruL3-KoUAQECFoxmMK0V3P_tTMZfUZikuNt8Vkab-r5mich-1LibFQ9vIXxd7yYz49ZGICygEt6Wt_V9zc8xvWl3EUNYld07BfUaHnwWnR9NDlornkPyh7fUT_fVR_lD80GfOQTjeI5ss2ErdaSos6NhXm5xsTfMLPyw", "state"=>"57f0f277a266e046dd47c7e706d7337590e553f2a9242571"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["refresh_token", "AQBsbCA5wCVfOt4tOSgm1n1dX1M5yeMsQ1EoJ8oqYhVPVnj3NJBGd3HLtSh-_pUrR6nOsQjZ6qSaT-yhmFiquxkvEUu01MH2hA6rbdXitipynp2WWRb-hir8-cJbIyvjBhU"], ["token", "BQAihWu8-QdCKOnEpot5TIsliKsw9dbODP07LLzPaeTs06sfT1qs3wVTFklawlxl7i41cs6w2bacGeQlf-63yoTEYx33eELxUYIXJlR9nv0SsfznjSfWew2YfyEQcB8LQUuQ2Rb5-MdmhoxvlkCzWm1NpxSjfFChZi1LjRYsar33mIvj74ghiDb3LK-5fjn2ERO7RDqczTDqnSQ4"], ["updated_at", "2014-07-24 20:21:17.344165"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 15ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:17 -0400
+
+
+Started GET "/playlists/create" for 127.0.0.1 at 2014-07-24 16:21:21 -0400
+Processing by PlaylistsController#create as HTML
+  Rendered playlists/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.8ms)
+  Rendered songs/create.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:31 -0400
+
+
+Started GET "/songs/show?utf8=%E2%9C%93&q=another+one+bites+the+dust&commit=Search" for 127.0.0.1 at 2014-07-24 16:21:50 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"another one bites the dust", "commit"=>"Search"}
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 583ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:21:51 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:22:52 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:22:53 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQCAM45RfnyCsCDXkdUihLCXmw4A4RVl6ZEpFUhmg_dxA8c_8RNgkg1yt0wHvpdMfYvWd31jyylH5GtX-StdLBdbtCGZ2Y4pz-D1UhVEIjMkFjxoeSohBpf2ryF5nwLQt74NI0mjRGxviWo2bBM3eZjYsC_qMNK9yJ9BtBahwdFgwvZFzBKmjSqgTSsse8IyHta7q8bhdQizydfLQvZ_FOHWBcaWuM-rCzuy7n4ClEOFHyQu6XGl7AuZ_kOL622cuPijcpq5yLHn7c-SVRIFX10TZa2nDS0VEkMevwbIRQEhqEbpsNl6E39r6NwDW2cs5XMZclqFqlPnXBNzA6DxTCswfWaa6oQx1haRg3kP1qqhO8J_opOb2Q&state=21e75abfcf68accdd2fcc3c80da8f5ee17cb577077883961" for 127.0.0.1 at 2014-07-24 16:22:53 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCAM45RfnyCsCDXkdUihLCXmw4A4RVl6ZEpFUhmg_dxA8c_8RNgkg1yt0wHvpdMfYvWd31jyylH5GtX-StdLBdbtCGZ2Y4pz-D1UhVEIjMkFjxoeSohBpf2ryF5nwLQt74NI0mjRGxviWo2bBM3eZjYsC_qMNK9yJ9BtBahwdFgwvZFzBKmjSqgTSsse8IyHta7q8bhdQizydfLQvZ_FOHWBcaWuM-rCzuy7n4ClEOFHyQu6XGl7AuZ_kOL622cuPijcpq5yLHn7c-SVRIFX10TZa2nDS0VEkMevwbIRQEhqEbpsNl6E39r6NwDW2cs5XMZclqFqlPnXBNzA6DxTCswfWaa6oQx1haRg3kP1qqhO8J_opOb2Q", "state"=>"21e75abfcf68accdd2fcc3c80da8f5ee17cb577077883961"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["refresh_token", "AQAsuAfjeKdhnYr6-Nrvp7f2K3dzxn87W7vMwQAnJN6KV1kfQ3yCbDqQD4tYsZDsCZp-zn1z2YtOJlcN2zoTwdpC-bg_WZOmopA1aOA_Rr5p3mWwRwtpgdgZp2x6H9xiQjE"], ["token", "BQC_2RKtKZXJK_F4hrzxFtuGMGcSFT9C_zqYIWEDFAaIOB4dHqmNeB3Lq8LdP-y6H7GDQkvgmJtf1JlEgopjY60TeY1GVFUgGB93FsI3adCiA5_-1q87eXgH28SqoxpIiskTaubPk4nzwlTp4gTgtGEFShKz1pJGj8EXHASsdKOMjhVq8flEU3U9Rs0LAEUZjU37tukP04yq6Wb7"], ["updated_at", "2014-07-24 20:22:54.650763"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:22:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered user/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:03 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-24 16:23:05 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-24 16:23:05 -0400
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:23:36 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-24 16:23:36 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQC0xmT0dHW_fdh4rZ9Cz0HalWbBLfVOn6LuhqHx8uq7dDP8lf1dUZi5Po5AeWJ81wdBMxwrU7FXyQpOed1KEVC0CluazSAiUv-Hv3ZzD59r2efDA8JtZR2KDX_yaW3k1Qxu8gtfmY8L58Dz33CXeA8phfoT4JaffLp1M5gRDgOh8RxTGod70LjMXIi6utFtDovxKGSBE-jZvzqJ8Kr2nHoo1J3WNvmeC98Dz48Kp1AcKzy9BY632QDm0JVD5fEZfHVKkrfr46J2jzUpNhJvfmjiqjTm6GU7LPqAUyzFrraorlmh_3eQ14QgmdhMRU7qF1BPGaKaIoLdNmuVWnCWC7EIB8Knljd05xDC-IFwt-YuV2-Y12tIJQ&state=56fdf1e2c50a2a2d880f7261d92a2681f8a0af8e14f20dc6" for 127.0.0.1 at 2014-07-24 16:23:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQC0xmT0dHW_fdh4rZ9Cz0HalWbBLfVOn6LuhqHx8uq7dDP8lf1dUZi5Po5AeWJ81wdBMxwrU7FXyQpOed1KEVC0CluazSAiUv-Hv3ZzD59r2efDA8JtZR2KDX_yaW3k1Qxu8gtfmY8L58Dz33CXeA8phfoT4JaffLp1M5gRDgOh8RxTGod70LjMXIi6utFtDovxKGSBE-jZvzqJ8Kr2nHoo1J3WNvmeC98Dz48Kp1AcKzy9BY632QDm0JVD5fEZfHVKkrfr46J2jzUpNhJvfmjiqjTm6GU7LPqAUyzFrraorlmh_3eQ14QgmdhMRU7qF1BPGaKaIoLdNmuVWnCWC7EIB8Knljd05xDC-IFwt-YuV2-Y12tIJQ", "state"=>"56fdf1e2c50a2a2d880f7261d92a2681f8a0af8e14f20dc6"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["refresh_token", "AQC7YVR3ynm9EEjkxgZ-iAkt4t8mCYqe0ItsT8krlK9Gy9jCX0Cz0w7lk6pSxDQV7khMhDMU29NPuFuApzb3rQ_nrP8t4FUVmSbZxuhbQ3Opue3UOV3Iqex2FIA8U4RdBcc"], ["token", "BQAQSYkxU3bMRLiNInYUjn4lhq7QEYtMdgLDIfSeC4YsYaBIDieUBqHDWnq1RSE52n6N6g4qEuwy9u_XcCNdzFmFn4HWn-HjQ6hnK56DK-DhMJrFmZx2SyDEAHiKDcP1IXh4CDBuMfngD6aKH8Ecu6Mk2n6tcrKAwN5jCCQIActzYwqOYerGxPSwHSF4eXteewbeEze8h9IYM5J0"], ["updated_at", "2014-07-24 20:23:37.876719"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/user/show
+Completed 302 Found in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/user/show" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+Processing by UserController#show as HTML
+  Rendered user/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:37 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:38 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:38 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.6ms)
+  Rendered songs/create.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:42 -0400
+
+
+Started GET "/songs/show?utf8=%E2%9C%93&q=kesha&commit=Search" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"kesha", "commit"=>"Search"}
+  Rendered songs/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 125ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:23:48 -0400
+
+
+Started GET "/songs/show?utf8=%E2%9C%93&q=PBX&commit=Search" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"PBX", "commit"=>"Search"}
+  Rendered songs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 155ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:08 -0400
+
+
+Started GET "/songs/show?utf8=%E2%9C%93&q=skrillex&commit=Search" for 127.0.0.1 at 2014-07-24 16:24:23 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"skrillex", "commit"=>"Search"}
+  Rendered songs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 111ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:24:24 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:26:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.8ms)
+  Rendered songs/create.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/views/songs/create.html.erb:6:in `_app_views_songs_create_html_erb___3275593469503398259_2202509160'
+  actionview (4.1.3) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.3) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.3) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.3) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.3) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.3) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2187414560/variables" for 127.0.0.1 at 2014-07-24 16:26:06 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:26:10 -0400
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.6ms)
+  Rendered songs/create.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/views/songs/create.html.erb:6:in `_app_views_songs_create_html_erb___3275593469503398259_2202509160'
+  actionview (4.1.3) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.3) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.3) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.3) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.3) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.3) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.3) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2185810600/variables" for 127.0.0.1 at 2014-07-24 16:26:10 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:27:10 -0400
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.4ms)
+  Rendered songs/create.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 134ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:11 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=Skrillex&commit=Search" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Skrillex", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.8ms)
+  Rendered songs/create.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:15 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=Skrillex&commit=Search" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Skrillex", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:42 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.3ms)
+  Rendered songs/create.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:27:45 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.4ms)
+  Rendered songs/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:05 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.4ms)
+  Rendered songs/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:10 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:11 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:11 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:28:11 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (1.1ms)
+  Rendered songs/create.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 602ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:02 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 135ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:29:16 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:29:24 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2159683840/variables" for 127.0.0.1 at 2014-07-24 16:29:24 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:30:08 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 170ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:30:09 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:30:15 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2164028500/variables" for 127.0.0.1 at 2014-07-24 16:30:15 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:30:28 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2162315880/variables" for 127.0.0.1 at 2014-07-24 16:30:28 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:30:30 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2160372180/variables" for 127.0.0.1 at 2014-07-24 16:30:30 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:30:50 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2202033400/variables" for 127.0.0.1 at 2014-07-24 16:30:51 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:30:57 -0400
+Processing by SongsController#create as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `gsub' for nil:NilClass:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/models/song.rb:6:in `search_spotify'
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:7:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2160013560/variables" for 127.0.0.1 at 2014-07-24 16:30:57 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=Skrillex&commit=Search" for 127.0.0.1 at 2014-07-24 16:31:44 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Skrillex", "commit"=>"Search"}
+Completed 500 Internal Server Error in 4ms
+
+NameError - undefined local variable or method `track_to_add' for #<SongsController:0x00000104ce1cd8>:
+   () Users/roberthorrigan/Development/Labs/teamplaylister/app/controllers/songs_controller.rb:6:in `create'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/roberthorrigan/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2202851280/variables" for 127.0.0.1 at 2014-07-24 16:31:45 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=Skrillex&commit=Search" for 127.0.0.1 at 2014-07-24 16:32:23 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Skrillex", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 610ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:24 -0400
+
+
+Started GET "/songs/create" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+Processing by SongsController#create as HTML
+  Rendered songs/_form.html.erb (0.6ms)
+  Rendered songs/create.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:33 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 166ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:32:37 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=wannabe&commit=Search" for 127.0.0.1 at 2014-07-24 16:33:16 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"wannabe", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 921ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:17 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=california&commit=Search" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"california", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.4ms)
+  Rendered songs/create.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 174ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:24 -0400
+
+
+Started GET "/songs/create?utf8=%E2%9C%93&q=thriller&commit=Search" for 127.0.0.1 at 2014-07-24 16:33:37 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"thriller", "commit"=>"Search"}
+  Rendered songs/_form.html.erb (0.3ms)
+  Rendered songs/create.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1045ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-24 16:33:39 -0400
