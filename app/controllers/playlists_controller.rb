@@ -1,5 +1,6 @@
 class PlaylistsController < ApplicationController
   def index
+    @user = User.find(session[:user_id])
     @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{@user.uid}/playlists", { "Authorization" => "Bearer #{@user.token}"})
   end
 
