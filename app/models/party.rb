@@ -1,13 +1,13 @@
 class Party < ActiveRecord::Base
-	before_create :generate_code
+  before_create :generate_code
 
-	belongs_to :user 
-	
-	def generate_code
-		self.code = rand(36**5).to_s(36)
-	end
+  belongs_to :user
 
-	def self.create_party(uid, name, token)
+  def generate_code
+    self.code = rand(36**5).to_s(36)
+  end
+
+  def self.create_party(uid, name, token)
     RestClient.post("https://api.spotify.com/v1/users/#{uid}/playlists", {name: "#{name}", public: false}.to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{token}"})
   end
 

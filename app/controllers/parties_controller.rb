@@ -18,7 +18,7 @@ class PartiesController < ApplicationController
     @party.spotify_playlist_id = Party.get_party_id(spotify_data)
     tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"
     if @party.save
-      redirect_to invitation_path(@party.code)
+      redirect_to playlist_path(@party.code)
     else
       render :new, flash[:notice] = "Sorry, there was an error. Penguins attacked your page!"
     end

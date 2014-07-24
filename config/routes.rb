@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :songs
   resources :user
 
-  get 'parties/new'
+  # get 'parties/new'
 
   resources :parties
 
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # end
   # get 'invitation/:code' => 'parties#show', as: "invitation"
 
-  get '/:code' => 'parties#show'
+  get '/:code' => 'parties#show', as: 'playlist'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
