@@ -1,7 +1,6 @@
 class PlaylistsController < ApplicationController
   def index
-    user_playlists = RestClient.get('https://api.spotify.com/v1/users/1249884999/playlists', { "Authorization" => "Bearer BQDRVCoxVkx_q9sUa-P7paM76PQvfAZnVbABHkxlAYgRJ4TxrleO5QESpvY1C8iL8CCkVsYP2xaec8QldxLNHRZ8xY0l7V4g9bdtPkR8SawBErvqRbjdMB4xg_0Qh_t8P6DXkJlb8O7O-DQe-pbQ_tqz6pcoHGc1pONyjA0jFukTxf6TMxyvY6uQdliND2ftj7zGO6_cDon3BGtV"})
-    @my_list = JSON.parse(user_playlists)
+    @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{@user.uid}/playlists", { "Authorization" => "Bearer #{@user.token}"})
   end
 
   def create
@@ -13,6 +12,14 @@ class PlaylistsController < ApplicationController
     @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"], :code => rand(36**5).to_s(36))
     @playlist.party = @party
     @playlist.save
+
+    @user = User.find(session[:user_id])
+    uid = @user.uid
+    token = @user.token
+    spotify_data = Playlist.create_playlist(uid, params["playlist_name"], token)
+    playlist_id = Playlist.get_playlist_id(spotify_data)
+    tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"
+    Playlist.add_tracks(uid, playlist_id, token)
   end
 
   def update
