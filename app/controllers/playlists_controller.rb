@@ -1,7 +1,6 @@
 class PlaylistsController < ApplicationController
   def index
     @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{@user.uid}/playlists", { "Authorization" => "Bearer #{@user.token}"})
-    
   end
 
   def create
@@ -21,7 +20,6 @@ class PlaylistsController < ApplicationController
     playlist_id = Playlist.get_playlist_id(spotify_data)
     tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"
     Playlist.add_tracks(uid, playlist_id, token)
-    
   end
 
   def update

@@ -2,8 +2,5 @@ class Party < ActiveRecord::Base
 	belongs_to :user 
 	belongs_to :playlist
 
-	attr_accessor :name
-	
-	def initialize(name)
-	end
+	attr_accessor :name, :user
 end

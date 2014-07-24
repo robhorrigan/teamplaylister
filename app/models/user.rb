@@ -13,14 +13,4 @@ class User < ActiveRecord::Base
     end
   end
 
-  # def self.create_from_omniauth(auth)
-  #   create! do |user|
-  #     user.uid = auth["uid"]
-  #     user.name = auth["info"]["name"]
-  #     user.token = auth["credentials"]["token"]
-  #     user.refresh_token = auth["credentials"]["refresh_token"]
-  #     user.image = auth["info"]["image"]
-  #   end
-  # end
-
 end
