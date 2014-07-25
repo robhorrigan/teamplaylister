@@ -1,7 +1,8 @@
 class Party < ActiveRecord::Base
   before_create :generate_code
-
+  has_many :songs
   belongs_to :user
+  
 
   def generate_code
     self.code = rand(36**5).to_s(36)
