@@ -1,9 +1,13 @@
-<h1>Playlist#index</h1>
-<p>Find me in app/views/playlist/index.html.erb</p>
-<h2>Your Spotify Playlists:</h2>
+<h1>Parties#index</h1>
+<p>Find me in app/views/parties/index.html.erb</p>
+<h2>Your Playlists:</h2>
 
-<ul id="playlists">
-<% @playlists["items"].each do |playlist| %>
-	<li><%= playlist["name"] %></li>
+<ul id="parties">
+<% @parties.each do |party| %>
+		<% if party["code"] %>
+			<a href="/<%=party["code"]%>"><%=party["name"]%></a><br>
+		<%end%>
 <% end %>
 </ul>
+
+<%= link_to 'create a new party', new_party_path %>
