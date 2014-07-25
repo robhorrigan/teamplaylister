@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-	# has_many: :parties
-	# has_many: :playlists, through: :parties
+	 #has_many: :parties
+
   
   def self.from_omniauth(auth)
     where(auth.slice('uid')).first_or_initialize.tap do |user|
