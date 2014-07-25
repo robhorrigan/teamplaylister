@@ -1,11 +1,11 @@
 # ignore tmp
-/tmp/*
+tmp/*
 
 # ignore log
-/log/*
-/log/development.log
+log/*
+log/development.log
 
 # ignore db
-/db/development.sqlite3
-/db/test.sqlite3
+db/development.sqlite3
+db/test.sqlite3
 
