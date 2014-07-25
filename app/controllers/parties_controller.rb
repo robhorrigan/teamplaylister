@@ -26,8 +26,9 @@ class PartiesController < ApplicationController
 
   def show
     party_id = @party.spotify_playlist_id
-    uid = current_user.uid
-    token = current_user.token
+
+    uid = @party.user.uid
+    token = @party.user.token
     
     Party.add_tracks(uid, party_id, token)
   end
