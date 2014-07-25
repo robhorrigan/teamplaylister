@@ -13,11 +13,11 @@ class PlaylistsController < ApplicationController
     @playlist = Playlist.new(:name => params["playlist_name"], :votes => params["vote_number"], :party_code => rand(36**5).to_s(36))
     @playlist.party = @party
     @playlist.save
-    binding.pry
 
     @user = User.find(session[:user_id])
     uid = @user.uid
     token = @user.token
+
     spotify_data = Playlist.create_playlist(uid, params["playlist_name"], token)
     playlist_id = Playlist.get_playlist_id(spotify_data)
     tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"

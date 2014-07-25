@@ -1,6 +1,5 @@
 class Song < ActiveRecord::Base
-	#belongs_to: :playlist_songs
-	#has_many: :playlists, through: :playlist_songs
+	belongs_to :party
 
   def self.search_spotify(track_to_add)
     gsub_track_to_add = track_to_add.gsub(' ', '%20')
@@ -20,5 +19,4 @@ class Song < ActiveRecord::Base
 
     @songs_array
   end
-
 end
