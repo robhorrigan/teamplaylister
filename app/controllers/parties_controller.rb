@@ -38,11 +38,10 @@ class PartiesController < ApplicationController
       track = @track
       @party
       spotify_playlist_id = @party.spotify_playlist_id
-      user_id = @party.user_id 
+      user_id = @party.user 
       
-      user_object = User.find_by(user_id)
-      binding.pry
-      #token = Users.find_by(uid)
+      uid = user_id.uid
+      token = user_id.token
       
       Party.add_tracks(uid, spotify_playlist_id, token, track)
     end

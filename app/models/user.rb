@@ -1,5 +1,10 @@
 class User < ActiveRecord::Base
+<<<<<<< HEAD
 	has_many :parties
+=======
+	 #has_many: :parties
+
+>>>>>>> de89fbb6fa61fcf14bd1671bd2645ed3b61c30ed
   
   def self.from_omniauth(auth)
     where(auth.slice('uid')).first_or_initialize.tap do |user|
