@@ -2,8 +2,8 @@
 <p>Find me in app/views/playlist/index.html.erb</p>
 <h2>Your Spotify Playlists:</h2>
 
-<ul id="playlists">
-<% @playlists["items"].each do |playlist| %>
-	<li><%= playlist["name"] %></li>
+<ul id="parties">
+<% @parties["items"].each do |party| %>
+	<li><%=link_to '#{party["name"]}', 'parties/show' %></li>
 <% end %>
 </ul>
