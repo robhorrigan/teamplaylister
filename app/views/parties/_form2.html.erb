@@ -1,0 +1,33 @@
+<%= form_tag (playlist_path), :method => :get do %>
+
+<table id="songSelect" class="rowclick">
+  
+    <tr id="head">
+      <th scope="Row">Photo</th>
+      <th>Name</th>
+      <th>Track</th>
+      <th>Album</th>
+      <th>URI</th>
+    </tr>
+      
+
+  <tbody>
+ 
+      <tr>
+      <% @search_results.each do |song|%>
+        <td><img src="<%= song[:album_art] %>"></td>  
+        <td>Song: <%= song[:song_name] %></td> 
+        <td>Artist: <%= song[:song_artist] %></td> 
+        <td>Album: <%= song[:song_album] %></td> 
+        <td>Spotify URI: <%= song[:song_uri] %></td><br>
+        <td> <input type="radio" name="song_to_add" value="<%= song[:song_uri]%>"> </td>
+      </tr>
+    <%end%>
+  
+
+  </tbody>
+</table>
+
+<br>
+<center><%= submit_tag 'Select' %></center>
+<% end %>

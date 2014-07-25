@@ -4,3 +4,13 @@
 <p>this party belongs to the party: <%= @party.name%></p><br>
 <p>owner of this party: <%=@party.user.name%></p><br>
 <p>party code: <%=@party.code%></p><br>
+
+SEARCH
+<%= render 'form' %>
+
+SEARCH_RESULTS
+<% if @search_results%>
+<%= render 'form2' %>
+<%end%> 
+
+PLAYLIST  

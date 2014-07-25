@@ -18,7 +18,7 @@ class PartiesController < ApplicationController
     token = current_user.token
     spotify_data = Party.create_party(uid, params[:party][:name], token)
     @party.spotify_playlist_id = Party.get_party_id(spotify_data)
-    tracks = "spotify:track:3P5LP0QEswwTGJSlESoeB5"
+    
     if @party.save
       redirect_to playlist_path(@party.code)
     else
@@ -27,12 +27,26 @@ class PartiesController < ApplicationController
   end
 
   def show
-    party_id = @party.spotify_playlist_id
+    track_song = params[:q1]
+    track_artist = params[:q2]
+    if track_song || track_artist
+      @search_results = Song.search_spotify(track_song,track_artist)
+    end
 
-    uid = @party.user.uid
-    token = @party.user.token
-    
-    Party.add_tracks(uid, party_id, token)
+
+    @track = params[:song_to_add] 
+    if @track
+      track = @track
+      @party
+      spotify_playlist_id = @party.spotify_playlist_id
+      user_id = @party.user_id 
+      
+      user_object = User.find_by(user_id)
+      binding.pry
+      #token = Users.find_by(uid)
+      
+      Party.add_tracks(uid, spotify_playlist_id, token, track)
+    end
   end
 
   def update
