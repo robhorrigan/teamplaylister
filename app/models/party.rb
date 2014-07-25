@@ -16,13 +16,7 @@ class Party < ActiveRecord::Base
     parsed_spotify_data["id"]
   end
 
-  def self.add_tracks(uid, party_id,token)
-    encoded_url = URI.encode('uris=spotify:track:0mBkoM8r7KAQzZij5swTUL%2Cspotify:track:15uFqHGAOvaGCqikvgiW6w')
-    RestClient.post("https://api.spotify.com/v1/users/#{uid}/playlists/#{party_id}/tracks", ["spotify:track:0mBkoM8r7KAQzZij5swTUL", "spotify:track:15uFqHGAOvaGCqikvgiW6w"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{token}"})
-    # request = Typhoeus::Request.new(
-    #   "https://api.spotify.com/v1/users/#{uid}/playlists/#{playlist_id}/tracks?#{encoded_url}",
-    #   {:method => :post,
-    #   :headers => { "Content-Type" => "application/json", "Authorization" => "Bearer #{token}" }}
-    # )
+  def self.add_tracks(uid, spotify_playlist_id, token, track)
+    RestClient.post("https://api.spotify.com/v1/users/#{uid}/playlists/#{spotify_playlist_id}/tracks", ["#{track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{token}"})
   end
 end

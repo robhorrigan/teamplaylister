@@ -2,21 +2,20 @@ class SongsController < ApplicationController
   def index
   end
 
-  def create
-    track_to_add = params[:q]
-    if track_to_add
-      @search_results = Song.search_spotify(track_to_add)
-    end  
+  def create  
   end
 
   def show
-    track_to_add = params[:q]
-    if track_to_add
-      @search_results = Song.search_spotify(track_to_add)
-    end 
+
   end
 
   def update
+    
+     
+    
+     track = params{:song_to_add}
+
+     Party.add_tracks(uid, party_id, token, track)
   end
 
   def delete
