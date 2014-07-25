@@ -13,4 +13,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  def parties(user)
+    parties = Party.all(user.id == parties.user.id)
+  end
+
+
 end

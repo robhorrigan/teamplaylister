@@ -4,7 +4,8 @@ class PartiesController < ApplicationController
   def index
     # @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{current_user.uid}/playlists", { "Authorization" => "Bearer #{current_user.token}"})
     # @parties = JSON.parse(@user_playlists)
-    @parties = Party.all
+    binding.pry
+    @parties = current_user.parties
   end
 
   def new
