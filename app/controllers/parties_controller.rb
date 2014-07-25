@@ -2,8 +2,9 @@ class PartiesController < ApplicationController
   before_action :set_party, only: [:show]
 
   def index
-    @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{current_user.uid}/playlists", { "Authorization" => "Bearer #{current_user.token}"})
-    @parties = JSON.parse(@user_playlists)
+    # @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{current_user.uid}/playlists", { "Authorization" => "Bearer #{current_user.token}"})
+    # @parties = JSON.parse(@user_playlists)
+    @parties = Party.all
   end
 
   def new

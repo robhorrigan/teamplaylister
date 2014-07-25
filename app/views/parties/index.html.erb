@@ -3,7 +3,9 @@
 <h2>Your Spotify Playlists:</h2>
 
 <ul id="parties">
-<% @parties["items"].each do |party| %>
-	<li><%=link_to '#{party["name"]}', 'parties/show' %></li>
+<% @parties.each do |party| %>
+		<% if party["code"] %>
+			<a href="/<%=party["code"]%>"><%=party["name"]%></a><br>
+		<%end%>
 <% end %>
 </ul>
