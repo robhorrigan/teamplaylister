@@ -26,6 +26,7 @@ class PartiesController < ApplicationController
   end
 
   def show
+    binding.pry 
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
