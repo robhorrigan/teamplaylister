@@ -39,6 +39,7 @@ class PartiesController < ApplicationController
     if @track
 
       @song = Song.new({:title => @track, :party_id => @party.id})
+
       track = @track
       @party
       spotify_playlist_id = @party.spotify_playlist_id
@@ -69,6 +70,10 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
+<<<<<<< HEAD
     params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id)
+=======
+    params.require(:party).permit(:title, :user_id, :spotify_playlist_id)
+>>>>>>> codes will now be 5 digits and upcased
   end
 end
