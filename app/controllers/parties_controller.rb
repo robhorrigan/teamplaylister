@@ -31,14 +31,15 @@ class PartiesController < ApplicationController
     @party = Party.find_by(:code => params["code"])
     track_song = params[:q1]
     track_artist = params[:q2]
-    if track_song || track_artist
-      @search_results = Song.search_spotify(track_song, track_artist)
-    end
+
+    @search_results = Song.search_spotify(track_song, track_artist)
 
     @track = params[:song_to_add] 
     if @track
-
-      @song = Song.new({:title => @track, :party_id => @party.id})
+      @song = Song.new
+      @song.title = params["song_to_add"].split(" |; ")[0]
+      @song.artist = params["song_to_add"].split(" |; ")[1]
+      @song.spotify_uri = params["song_to_add"].split(" |; ")[2]
 
       track = @track
       @party
@@ -70,10 +71,7 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-<<<<<<< HEAD
     params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id)
-=======
-    params.require(:party).permit(:title, :user_id, :spotify_playlist_id)
->>>>>>> codes will now be 5 digits and upcased
+
   end
 end
