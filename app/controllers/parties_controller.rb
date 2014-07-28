@@ -26,6 +26,7 @@ class PartiesController < ApplicationController
   end
 
   def show
+    @songs = @party.songs
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
@@ -35,6 +36,8 @@ class PartiesController < ApplicationController
 
     @track = params[:song_to_add] 
     if @track
+      binding.pry
+      @song = Song.new({:title => @track, :party_id => @party.id})
       track = @track
       @party
       spotify_playlist_id = @party.spotify_playlist_id

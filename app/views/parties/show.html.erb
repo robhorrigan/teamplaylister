@@ -5,6 +5,12 @@
 <p>owner of this party: <%=@party.user.name%></p><br>
 <p>party code: <%=@party.code%></p><br>
 
+<% @songs.each do |song| %>
+<%= song.title %>
+<%end%>
+
+<br>
+
 SEARCH
 <%= render 'form' %>
 
