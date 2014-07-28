@@ -20,7 +20,7 @@
         <td>Artist: <%= song[:song_artist] %></td> 
         <td>Album: <%= song[:song_album] %></td> 
         <td>Spotify URI: <%= song[:song_uri] %></td><br>
-        <td> <input type="radio" name="song_to_add" value="<%= song[:song_uri]%>"> </td>
+        <td> <input type="radio" name="song_to_add" value="<%= song[:song_name]%> |; <%=song[:song_artist%> |; <%= song[:song_uri]%>"> </td>
       </tr>
     <%end%>
   

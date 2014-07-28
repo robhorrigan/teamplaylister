@@ -4,7 +4,7 @@ class Party < ActiveRecord::Base
   has_many :songs
 
   def generate_code
-    self.code = rand(36**5).to_s(36)
+    self.code = rand(36**4..36**5).to_s(36).upcase
   end
 
   def self.create_party(uid, name, token)
