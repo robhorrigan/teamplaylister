@@ -30,16 +30,15 @@ class PartiesController < ApplicationController
     @party = Party.find_by(:code => params["code"])
     track_song = params[:q1]
     track_artist = params[:q2]
-    if track_song || track_artist
-      @search_results = Song.search_spotify(track_song,track_artist)
-    end
+    @search_results = Song.search_spotify(track_song, track_artist)
+    binding.pry
 
     @track = params[:song_to_add] 
     if @track
-      # @song = Song.new
-      # @song.title = params["song_to_add"].split(" |; ")[0]
-      # @song.artist = params["song_to_add"].split(" |; ")[1]
-      # @song.spotify_uri = params["song_to_add"].split(" |; ")[2]
+      @song = Song.new
+      @song.title = params["song_to_add"].split(" |; ")[0]
+      @song.artist = params["song_to_add"].split(" |; ")[1]
+      @song.spotify_uri = params["song_to_add"].split(" |; ")[2]
 
       track = @track
       @party
