@@ -37,9 +37,10 @@ class PartiesController < ApplicationController
 
     @track = params[:song_to_add] 
     if @track
-      split_track = @track.split('|;')
 
-      track = split_track[3]
+      @song = Song.new({:title => @track, :party_id => @party.id})
+      track = @track
+      @party
       spotify_playlist_id = @party.spotify_playlist_id
       user_id = @party.user
       uid = user_id.uid

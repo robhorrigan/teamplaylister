@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140729203653) do
+=======
+ActiveRecord::Schema.define(version: 20140728180732) do
+>>>>>>> song listing in progress
 
   create_table "parties", force: true do |t|
     t.integer  "user_id"
@@ -37,8 +41,11 @@ ActiveRecord::Schema.define(version: 20140729203653) do
     t.datetime "updated_at"
     t.string   "spotify_uri"
     t.string   "party_id"
+<<<<<<< HEAD
     t.string   "album_art"
     t.string   "duration_ms"
+=======
+>>>>>>> song listing in progress
   end
 
   create_table "users", force: true do |t|

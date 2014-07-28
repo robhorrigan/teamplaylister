@@ -5,6 +5,9 @@
 <p>party code: <%=@party.code%></p><br>
 
 
+<% @songs.each do |song| %>
+<%= song.title %>
+<%end%>
 
 <br>
 
