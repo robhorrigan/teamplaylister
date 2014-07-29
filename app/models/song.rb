@@ -1,5 +1,6 @@
 class Song < ActiveRecord::Base
-	belongs_to :party
+    has_many :party_songs
+	has_many :parties, through: :party_songs
 
   def self.search_spotify(track_song='*', track_artist='')
     gsub_track_song = track_song.gsub(' ','%20')
@@ -23,7 +24,7 @@ class Song < ActiveRecord::Base
       @songs_array
   end
 
-  def self.persist_song(track)
+  def self.persist_song(track, party_code)
     split_track = track.split('|;')
 
     song = Song.new
@@ -33,7 +34,13 @@ class Song < ActiveRecord::Base
     song.spotify_uri = split_track[3]
     song.album_art = split_track[4]
     song.duration_ms = split_track[5]
-    binding.pry
+    @party = Party.find_by(code: party_code)
+    if !song.parties.include?(@party)
+        song.parties << @party
+    end
+    if !@party.songs.include?(song)
+        @party.songs << song
+    end
     song.save
   end
 
