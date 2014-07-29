@@ -11,3 +11,5 @@ db/test.sqlite3
 
 log/development.log
 db/development.sqlite3
+log/development.log
+app/NOTES

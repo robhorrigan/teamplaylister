@@ -26,17 +26,19 @@ class PartiesController < ApplicationController
   end
 
   def show
+    @songs = @party.songs
+    @party = Party.find_by(:code => params["code"])
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
-      @search_results = Song.search_spotify(track_song,track_artist)
+      @search_results = Song.search_spotify(track_song, track_artist)
     end
-
 
     @track = params[:song_to_add] 
     if @track
-      track = @track
-      @party
+      split_track = @track.split('|;')
+
+      track = split_track[3]
       spotify_playlist_id = @party.spotify_playlist_id
       user_id = @party.user 
       
@@ -45,6 +47,12 @@ class PartiesController < ApplicationController
       
       Party.add_tracks(uid, spotify_playlist_id, token, track)
     end
+
+    if @track
+      track = @track
+      Song.persist_song(track)
+    end
+
   end
 
   def update
@@ -61,6 +69,6 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-    params.require(:party).permit(:name, :user_id, :spotify_playlist_id)
+    params.require(:party).permit(:title, :user_id, :spotify_playlist_id)
   end
 end

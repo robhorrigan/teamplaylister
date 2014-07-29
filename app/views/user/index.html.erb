@@ -1,13 +1,5 @@
-<h1>This is the User#index</h1>
+<div id="react-title"></div>
 <p>Everyone starts here.</p>
-
-<% if current_user %>
-  Welcome <%= current_user.name %>!
-	<%= link_to 'sign out', signout_path %>, <%=link_to 'all your parties', parties_path %>, <%= link_to 'start a new party', new_party_path %> 
-
-<% else %>
-  <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
-<% end %>
 
 <br>
 

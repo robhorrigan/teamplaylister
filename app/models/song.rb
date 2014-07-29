@@ -8,19 +8,33 @@ class Song < ActiveRecord::Base
     songs_from_spotify = RestClient.get("https://api.spotify.com/v1/search?q=track:#{gsub_track_song}%20artist:#{gsub_track_artist}&limit=5&type=track")
     parsed_song = JSON.parse(songs_from_spotify)
   
-    @songs_array = []
+        @songs_array = []
     
-    parsed_song["tracks"]["items"].each do |song|
-      song_hash = {}
+        parsed_song["tracks"]["items"].each do |song|
+        song_hash = {}
         song_hash[:album_art] = song["album"]["images"][2]["url"]
         song_hash[:song_name] = song["name"]
         song_hash[:song_artist] = song["artists"][0]["name"] 
         song_hash[:song_album] = song["album"]["name"] 
-        song_hash[:song_uri] = song['uri'] 
+        song_hash[:song_uri] = song['uri']
+        song_hash[:duration_ms] = song["duration_ms"]
        @songs_array << song_hash
     end
+      @songs_array
+  end
 
-    @songs_array
+  def self.persist_song(track)
+    split_track = track.split('|;')
+
+    song = Song.new
+    song.title = split_track[0]
+    song.artist = split_track[1]
+    song.album = split_track[2]
+    song.spotify_uri = split_track[3]
+    song.album_art = split_track[4]
+    song.duration_ms = split_track[5]
+    binding.pry
+    song.save
   end
 
 end
