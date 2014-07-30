@@ -4,10 +4,9 @@
   
     <tr id="head">
       <th scope="Row">Photo</th>
-      <th>Name</th>
+      <th>Artist</th>
       <th>Track</th>
       <th>Album</th>
-      <th>URI</th>
     </tr>
       
 
@@ -16,8 +15,8 @@
       <tr>
       <% @search_results.each do |song|%>
         <td><img src="<%= song[:album_art] %>"></td>  
-        <td>Song: <%= song[:song_name] %></td> 
         <td>Artist: <%= song[:song_artist] %></td> 
+        <td>Song: <%= song[:song_name] %></td>
         <td>Album: <%= song[:song_album] %></td> 
         <br>
         <td> <input type="radio" name="song_to_add" value="<%=song[:song_name]%>|;<%=song[:song_artist]%>|;<%=song[:song_album]%>|;<%= song[:song_uri]%>|;<%= song[:album_art]%>|;<%= song[:duration_ms]%>"></td>
