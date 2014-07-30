@@ -26,9 +26,24 @@ class PartiesController < ApplicationController
     end
   end
 
+  def join_party
+    
+    code = params[:code]
+    binding.pry
+    if Party.find_by(:code => code)
+      redirect_to playlist_path(code)
+    else
+      redirect_to root_path flash[:notice] = "Sorry, not a valid party code! Please try again."
+    end
+
+
+  end
+
   def show
-    @songs = @party.songs
+
+    
     @party = Party.find_by(:code => params["code"])
+
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
