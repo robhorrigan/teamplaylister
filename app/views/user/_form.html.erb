@@ -1,0 +1,5 @@
+<%= form_tag(joinparty_path, method: "get") do %>
+  <%= label_tag(:code, "Input Party Code Here:") %>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Join a Party!") %>
+<% end %>

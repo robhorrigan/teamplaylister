@@ -2,5 +2,10 @@
 <p>Everyone starts here.</p>
 
 <br>
+<% if current_user%>
+    <p>Signed in as <%=current_user.name%>, <%= link_to 'all my parties', 'user/show'%></p>
+<%end%>
 
-<%= link_to 'Join a party', '/party/show' %>
+    <br>
+<%= render 'form' %>
+

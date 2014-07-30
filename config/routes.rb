@@ -10,9 +10,10 @@ Rails.application.routes.draw do
   resources :user
 
   # get 'parties/new'
+  get 'joinparty' => 'parties#join_party', as: 'joinparty'
 
   resources :parties
-
+ 
   # resources :parties, except: [:show] do
   #   collection do
   #     get 'invitation/:code' => 'parties#show', as: "invitation"

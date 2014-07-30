@@ -2,14 +2,14 @@
 tmp/*
 
 # ignore log
-log/*
-log/development.log
+/log/*
+/log/development.log
 
 # ignore db
-db/development.sqlite3
-db/test.sqlite3
+/db/development.sqlite3
+/db/test.sqlite3
 
-log/development.log
-db/development.sqlite3
-log/development.log
-app/NOTES
+/log/development.log
+/db/development.sqlite3
+/log/development.log
+/app/NOTES
