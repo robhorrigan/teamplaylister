@@ -3,4 +3,9 @@
 
 <br>
 
+<% if current_user%>
+	<p>Signed in as <%=current_user.name%>, <%= link_to 'all my parties', 'user/show'%></p>
+<%end%>
+
+	<br>
 <%= link_to 'Join a party', '/party/show' %>
