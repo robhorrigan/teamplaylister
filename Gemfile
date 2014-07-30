@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'restclient'
+gem 'rest_client'
 gem 'typhoeus'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.3'
