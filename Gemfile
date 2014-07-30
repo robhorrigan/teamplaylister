@@ -27,7 +27,6 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'rspotify'
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -38,9 +37,13 @@ gem 'rspotify'
 # gem 'debugger', group: [:development, :test]
 gem 'omniauth-spotify'
 gem 'pry'
-gem 'rspotify'
  group :development do
     gem 'better_errors'
     gem 'binding_of_caller'
     gem 'sqlite3'
+end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
 end
