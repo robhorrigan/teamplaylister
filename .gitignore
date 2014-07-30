@@ -1,15 +1,26 @@
-# ignore tmp
-tmp/*
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
 
-# ignore log
-/log/*
-/log/development.log
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/secrets.yml
 
-# ignore db
-/db/development.sqlite3
-/db/test.sqlite3
+## Environment normalisation:
+/.bundle
+/vendor/bundle
 
-/log/development.log
-/db/development.sqlite3
-/log/development.log
-/app/NOTES
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
