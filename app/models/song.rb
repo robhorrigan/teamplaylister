@@ -38,9 +38,6 @@ class Song < ActiveRecord::Base
     if !song.parties.include?(@party)
         song.parties << @party
     end
-    if !@party.songs.include?(song)
-        @party.songs << song
-    end
     song.save
   end
 
