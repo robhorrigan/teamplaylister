@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'joinparty' => 'parties#join_party', as: 'joinparty'
 
   resources :parties
+
+  post 'parties/delete' => 'parties#delete'
  
   # resources :parties, except: [:show] do
   #   collection do
