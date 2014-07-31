@@ -5,11 +5,8 @@
 <ul id="parties">
 <% @parties.each do |party| %>
 		<% if party["code"] %>
-			<a href="/<%=party["code"]%>"><%=party["name"]%>, <%=party["code"]%></a><br>
-			<%= form_tag("/parties/delete", method: "post") do %>
-  		<%= label_tag(:code, "") %>
-  		<%= submit_tag("Delete") %>
-			<% end %>
+			<a href="/<%=party["code"]%>"><%=party["name"]%>, <%=party["code"]%></a>
+		<%= button_to "delete", :method => :delete, :id => party.id%><br>
 		<%end%>
 <% end %>
 </ul>
