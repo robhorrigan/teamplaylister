@@ -54523,3 +54523,1618 @@ Processing by SongsController#up_vote as JS
   [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
   Rendered songs/up_vote.js.erb (0.2ms)
 Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/OWDCM?utf8=%E2%9C%93&song_to_add=Save+The+Hero+-+iTunes+bonus+track%7C%3BBeyonc%C3%A9%7C%3BI+AM...SASHA+FIERCE%7C%3Bspotify%3Atrack%3A3uyp8pBkmjsJCMjafjDsAi%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F9065d2fb00a000d5cddcc49dacbb1ff328b93d5c%7C%3B273880&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:40:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Save The Hero - iTunes bonus track|;Beyoncé|;I AM...SASHA FIERCE|;spotify:track:3uyp8pBkmjsJCMjafjDsAi|;https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c|;273880", "commit"=>"Add to Party Queue", "code"=>"OWDCM"}
+  [1m[35mParty Load (0.5ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["album", "I AM...SASHA FIERCE"], ["album_art", "https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c"], ["artist", "Beyoncé"], ["created_at", "2014-07-31 22:40:14.919998"], ["duration_ms", "273880"], ["spotify_uri", "spotify:track:3uyp8pBkmjsJCMjafjDsAi"], ["title", "Save The Hero - iTunes bonus track"], ["updated_at", "2014-07-31 22:40:14.919998"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-31 22:40:14.923507"], ["party_id", 47], ["song_id", 95], ["updated_at", "2014-07-31 22:40:14.923507"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered parties/_form3.html.erb (1.4ms)
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 47]]
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 47]]
+  Rendered parties/_form.html.erb (1.9ms)
+  Rendered parties/show.html.erb within layouts/application (28.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 635ms (Views: 106.4ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:15 -0400
+
+
+Started GET "/OWDCM?utf8=%E2%9C%93&song_to_add=Save+The+Hero+-+iTunes+bonus+track%7C%3BBeyonc%C3%A9%7C%3BI+AM...SASHA+FIERCE%7C%3Bspotify%3Atrack%3A3uyp8pBkmjsJCMjafjDsAi%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F9065d2fb00a000d5cddcc49dacbb1ff328b93d5c%7C%3B273880&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Save The Hero - iTunes bonus track|;Beyoncé|;I AM...SASHA FIERCE|;spotify:track:3uyp8pBkmjsJCMjafjDsAi|;https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c|;273880", "commit"=>"Add to Party Queue", "code"=>"OWDCM"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "I AM...SASHA FIERCE"], ["album_art", "https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c"], ["artist", "Beyoncé"], ["created_at", "2014-07-31 22:40:18.700371"], ["duration_ms", "273880"], ["spotify_uri", "spotify:track:3uyp8pBkmjsJCMjafjDsAi"], ["title", "Save The Hero - iTunes bonus track"], ["updated_at", "2014-07-31 22:40:18.700371"]]
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:40:18.703090"], ["party_id", 47], ["song_id", 96], ["updated_at", "2014-07-31 22:40:18.703090"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 47]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 47]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 383ms (Views: 19.9ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:40:18 -0400
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:21 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95[0m  [["updated_at", "2014-07-31 22:40:21.457016"], ["votes", 1]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:22 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:40:22.991369"], ["votes", 2]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.5ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:40:24 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93[0m  [["updated_at", "2014-07-31 22:40:24.460058"], ["votes", 17]]
+  [1m[35m (8.4ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 2.5ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=92" for 127.0.0.1 at 2014-07-31 18:40:26 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"92"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 92]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 92  [["updated_at", "2014-07-31 22:40:26.445220"], ["votes", 18]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 4.6ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:40:27 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93[0m  [["updated_at", "2014-07-31 22:40:27.252367"], ["votes", 18]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.8ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:40:28 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 93]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93  [["updated_at", "2014-07-31 22:40:28.932090"], ["votes", 19]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.6ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:40:30 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94[0m  [["updated_at", "2014-07-31 22:40:30.481094"], ["votes", 2]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 2.9ms | ActiveRecord: 10.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:32 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:40:32.216133"], ["votes", 3]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:33 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95[0m  [["updated_at", "2014-07-31 22:40:33.034767"], ["votes", 4]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:33 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.2ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:40:33.560548"], ["votes", 5]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:40:33 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95[0m  [["updated_at", "2014-07-31 22:40:33.811398"], ["votes", 6]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.7ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=96" for 127.0.0.1 at 2014-07-31 18:40:34 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"96"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 96]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 96  [["updated_at", "2014-07-31 22:40:34.723393"], ["votes", 1]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 10.1ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=96" for 127.0.0.1 at 2014-07-31 18:40:34 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"96"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 96[0m  [["updated_at", "2014-07-31 22:40:34.950924"], ["votes", 2]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 4.3ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:45:02 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[36mParty Load (0.6ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 94]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94  [["updated_at", "2014-07-31 22:45:02.813566"], ["votes", 3]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:45:03 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94[0m  [["updated_at", "2014-07-31 22:45:03.980073"], ["votes", 4]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:45:04 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 93]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93  [["updated_at", "2014-07-31 22:45:04.968973"], ["votes", 20]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 4.5ms | ActiveRecord: 9.6ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:45:07 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94[0m  [["updated_at", "2014-07-31 22:45:07.670828"], ["votes", 5]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.9ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:45:08 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:45:08.341189"], ["votes", 7]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 2.4ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=96" for 127.0.0.1 at 2014-07-31 18:45:09 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"96"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 96[0m  [["updated_at", "2014-07-31 22:45:09.869367"], ["votes", 3]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 3.1ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:45:10 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:45:10.674376"], ["votes", 8]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.0ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:45:11 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94[0m  [["updated_at", "2014-07-31 22:45:11.258979"], ["votes", 6]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.0ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:45:12 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 93]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93  [["updated_at", "2014-07-31 22:45:12.325334"], ["votes", 21]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/OWDCM?utf8=%E2%9C%93&song_to_add=Save+The+Hero+-+iTunes+bonus+track%7C%3BBeyonc%C3%A9%7C%3BI+AM...SASHA+FIERCE%7C%3Bspotify%3Atrack%3A3uyp8pBkmjsJCMjafjDsAi%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F9065d2fb00a000d5cddcc49dacbb1ff328b93d5c%7C%3B273880&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:45:28 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Save The Hero - iTunes bonus track|;Beyoncé|;I AM...SASHA FIERCE|;spotify:track:3uyp8pBkmjsJCMjafjDsAi|;https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c|;273880", "commit"=>"Add to Party Queue", "code"=>"OWDCM"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["album", "I AM...SASHA FIERCE"], ["album_art", "https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c"], ["artist", "Beyoncé"], ["created_at", "2014-07-31 22:45:29.137450"], ["duration_ms", "273880"], ["spotify_uri", "spotify:track:3uyp8pBkmjsJCMjafjDsAi"], ["title", "Save The Hero - iTunes bonus track"], ["updated_at", "2014-07-31 22:45:29.137450"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-31 22:45:29.142702"], ["party_id", 47], ["song_id", 97], ["updated_at", "2014-07-31 22:45:29.142702"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered parties/_form3.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 47]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 47]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 1131ms (Views: 16.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:45:29 -0400
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:45:30 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 93]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93  [["updated_at", "2014-07-31 22:45:30.875158"], ["votes", 22]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:45:32 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 94]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94[0m  [["updated_at", "2014-07-31 22:45:32.234466"], ["votes", 7]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 4.7ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=96" for 127.0.0.1 at 2014-07-31 18:47:39 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"96"}
+  [1m[36mParty Load (0.5ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 96]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 96  [["updated_at", "2014-07-31 22:47:39.930155"], ["votes", 4]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.5ms)
+Completed 200 OK in 22ms (Views: 5.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:47:46 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95[0m  [["updated_at", "2014-07-31 22:47:46.048553"], ["votes", 9]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:47:48 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.4ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:47:48.764265"], ["votes", 10]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:47:49 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 95]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95[0m  [["updated_at", "2014-07-31 22:47:49.402402"], ["votes", 11]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 3.9ms | ActiveRecord: 9.8ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=94" for 127.0.0.1 at 2014-07-31 18:47:50 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"94"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 94]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 94  [["updated_at", "2014-07-31 22:47:50.251246"], ["votes", 8]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=93" for 127.0.0.1 at 2014-07-31 18:47:52 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"93"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 93[0m  [["updated_at", "2014-07-31 22:47:52.973358"], ["votes", 23]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=95" for 127.0.0.1 at 2014-07-31 18:47:54 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"95"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 95]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 95  [["updated_at", "2014-07-31 22:47:54.679234"], ["votes", 12]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.2ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/songs/up_vote?code=OWDCM&song_id=96" for 127.0.0.1 at 2014-07-31 18:47:55 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"OWDCM", "song_id"=>"96"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'OWDCM' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 96]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 96[0m  [["updated_at", "2014-07-31 22:47:55.728218"], ["votes", 5]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-31 18:50:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered user/_form.html.erb (1.5ms)
+  Rendered user/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 124ms (Views: 111.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered user/_form.html.erb (0.5ms)
+  Rendered user/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:32 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+Processing by UserController#index as HTML
+  Rendered user/_form.html.erb (0.4ms)
+  Rendered user/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:34 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-31 18:50:36 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQDPStPAwxWlaY816fi_a2NftbZo1UcXX7_mW3XFfbIHVGvy8i8XA68fC8EwBqXsI_CdsOtt8jx9XhXu-fodEn1RFwXraPdXcjT25Gz5HW2wEnjP0TaUPt_VlAh9OsqGRWiic0UvSpxvswY3HYkw6746JQfzGdnZSC5-Jbq6wVzw8M8vPe6CO2tecJhLyfNBnBTRObTCN0VMKQRdmCICR-gtamNqweEZN2X2Cs9bBUzLFFEm1Chb_rL1ZevMnk45BXDVDiCkBsPoK7rwjKHkA9Jmz1jBuPxqoXujrau7NxCCZQvcX2w6MPA66yIgNrGTKA0g6y_CcutXT3joRnWjbiYi3exL22UnAxEPvCUKWrinbFKPJxdEhA&state=c086df864283120aa62e1c5bd57c380e68acce272e5d6e71" for 127.0.0.1 at 2014-07-31 18:50:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDPStPAwxWlaY816fi_a2NftbZo1UcXX7_mW3XFfbIHVGvy8i8XA68fC8EwBqXsI_CdsOtt8jx9XhXu-fodEn1RFwXraPdXcjT25Gz5HW2wEnjP0TaUPt_VlAh9OsqGRWiic0UvSpxvswY3HYkw6746JQfzGdnZSC5-Jbq6wVzw8M8vPe6CO2tecJhLyfNBnBTRObTCN0VMKQRdmCICR-gtamNqweEZN2X2Cs9bBUzLFFEm1Chb_rL1ZevMnk45BXDVDiCkBsPoK7rwjKHkA9Jmz1jBuPxqoXujrau7NxCCZQvcX2w6MPA66yIgNrGTKA0g6y_CcutXT3joRnWjbiYi3exL22UnAxEPvCUKWrinbFKPJxdEhA", "state"=>"c086df864283120aa62e1c5bd57c380e68acce272e5d6e71"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1212731423'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["refresh_token", "AQD5aqBM5fbmhSyXOEhJ1ey9_v3wmYCS3dZ2GuvaJIjFKp2l6Fydx1slPT9tUcHxWZb69TlDrmSvYEtIXGhneBYomS718vRWzhZ4i68CN-EqTtYbicX2y39zv1J29cOtWVE"], ["token", "BQCoTqM1RxCG71Okocq3Hnl2CKAYr02OTC1e_R0VKftJq390Q0Je5F2Dme5OxED2JjrEtHJ-v5kUAc5WKflbEJjg2XORFUYFBLGHacZplfc1I4Pbcr5qQXZArIctOLl24qvukk4F_ZGEcx3IL9yDl0gDDzDMEfPxOtcJ0ys5b-yKlx-QAZXmUAdl7tDZDk5lyF4-imQAs1BA6u8q"], ["updated_at", "2014-07-31 22:50:39.201641"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties
+Completed 302 Found in 16ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:39 -0400
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+Processing by PartiesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered parties/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:41 -0400
+
+
+Started POST "/parties" for 127.0.0.1 at 2014-07-31 18:50:47 -0400
+Processing by PartiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "party"=>{"name"=>"picklebacks", "user_id"=>"2"}, "commit"=>"Create Party"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "parties" ("code", "created_at", "name", "spotify_playlist_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["code", "HDNB6"], ["created_at", "2014-07-31 22:50:50.157124"], ["name", "picklebacks"], ["spotify_playlist_id", "0qyS4Wk1M8tLUfDJw3GUSU"], ["updated_at", "2014-07-31 22:50:50.157124"], ["user_id", 2]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/HDNB6
+Completed 302 Found in 2409ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/HDNB6" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"HDNB6"}
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  Rendered parties/_form3.html.erb (1.4ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  Rendered parties/_form.html.erb (1.5ms)
+  Rendered parties/show.html.erb within layouts/application (19.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 70ms (Views: 25.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:50 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&q1=&q2=bryonce&commit=Search" for 127.0.0.1 at 2014-07-31 18:50:55 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "q1"=>"", "q2"=>"bryonce", "commit"=>"Search", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  Rendered parties/_form3.html.erb (0.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.8ms)
+  Rendered parties/_form2.html.erb (1.2ms)
+  Rendered parties/show.html.erb within layouts/application (15.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 155ms (Views: 23.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:56 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&q1=&q2=beyonce&commit=Search" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "q1"=>"", "q2"=>"beyonce", "commit"=>"Search", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.6ms)
+  Rendered parties/_form2.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (5.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 197ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:50:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:00 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Save+The+Hero+-+iTunes+bonus+track%7C%3BBeyonc%C3%A9%7C%3BI+AM...SASHA+FIERCE%7C%3Bspotify%3Atrack%3A3uyp8pBkmjsJCMjafjDsAi%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F9065d2fb00a000d5cddcc49dacbb1ff328b93d5c%7C%3B273880&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:51:03 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Save The Hero - iTunes bonus track|;Beyoncé|;I AM...SASHA FIERCE|;spotify:track:3uyp8pBkmjsJCMjafjDsAi|;https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c|;273880", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "I AM...SASHA FIERCE"], ["album_art", "https://i.scdn.co/image/9065d2fb00a000d5cddcc49dacbb1ff328b93d5c"], ["artist", "Beyoncé"], ["created_at", "2014-07-31 22:51:04.128281"], ["duration_ms", "273880"], ["spotify_uri", "spotify:track:3uyp8pBkmjsJCMjafjDsAi"], ["title", "Save The Hero - iTunes bonus track"], ["updated_at", "2014-07-31 22:51:04.128281"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:51:04.130000"], ["party_id", 48], ["song_id", 98], ["updated_at", "2014-07-31 22:51:04.130000"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 845ms (Views: 11.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:04 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&q1=love&q2=&commit=Search" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "q1"=>"love", "q2"=>"", "commit"=>"Search", "code"=>"HDNB6"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/_form2.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (7.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 173ms (Views: 15.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:13 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:51:17.555675"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:51:17.555675"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:51:17.564228"], ["party_id", 48], ["song_id", 99], ["updated_at", "2014-07-31 22:51:17.564228"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.9ms)
+  Rendered parties/show.html.erb within layouts/application (8.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 380ms (Views: 14.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:51:17 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=98" for 127.0.0.1 at 2014-07-31 18:51:19 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"98"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 98]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 98[0m  [["updated_at", "2014-07-31 22:51:19.710139"], ["votes", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=98" for 127.0.0.1 at 2014-07-31 18:51:20 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"98"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 98]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 98  [["updated_at", "2014-07-31 22:51:20.699919"], ["votes", 2]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=99" for 127.0.0.1 at 2014-07-31 18:51:22 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"99"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 99]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 99[0m  [["updated_at", "2014-07-31 22:51:22.981880"], ["votes", 1]]
+  [1m[35m (8.4ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 4.0ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:52:36 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:52:38.312426"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:52:38.312426"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:52:38.314473"], ["party_id", 48], ["song_id", 100], ["updated_at", "2014-07-31 22:52:38.314473"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (1.0ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.4ms)
+  Rendered parties/show.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 1417ms (Views: 22.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:52:38 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=99" for 127.0.0.1 at 2014-07-31 18:52:40 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"99"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound - Couldn't find Song without an ID:
+  activerecord (4.1.3) lib/active_record/relation/finder_methods.rb:402:in `find_with_ids'
+  activerecord (4.1.3) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.3) lib/active_record/querying.rb:3:in `find'
+   () Users/edjasper/Desktop/Sites/teamplaylister/app/controllers/songs_controller.rb:23:in `up_vote'
+  actionpack (4.1.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.3) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.3) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.3) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.3) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.3) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/edjasper/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/edjasper/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/edjasper/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:57:28 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:57:29.044958"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:57:29.044958"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:57:29.046646"], ["party_id", 48], ["song_id", 101], ["updated_at", "2014-07-31 22:57:29.046646"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 494ms (Views: 13.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:57:29 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=99" for 127.0.0.1 at 2014-07-31 18:57:32 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"99"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 99]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 99[0m  [["updated_at", "2014-07-31 22:57:32.440412"], ["votes", 2]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.6ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:58:04 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:58:05.170451"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:58:05.170451"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:58:05.176643"], ["party_id", 48], ["song_id", 102], ["updated_at", "2014-07-31 22:58:05.176643"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.8ms)
+  Rendered parties/show.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 865ms (Views: 18.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:05 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=100" for 127.0.0.1 at 2014-07-31 18:58:07 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"100"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 100]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 100[0m  [["updated_at", "2014-07-31 22:58:07.360868"], ["votes", 1]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.7ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:58:09 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:58:10.671866"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:58:10.671866"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:58:10.673622"], ["party_id", 48], ["song_id", 103], ["updated_at", "2014-07-31 22:58:10.673622"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.4ms)
+  Rendered parties/show.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 1396ms (Views: 12.7ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:10 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=99" for 127.0.0.1 at 2014-07-31 18:58:12 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"99"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 99]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 99[0m  [["updated_at", "2014-07-31 22:58:12.802944"], ["votes", 3]]
+  [1m[35m (18.6ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 3.4ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:58:13 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:58:15.878895"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:58:15.878895"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 22:58:15.880816"], ["party_id", 48], ["song_id", 104], ["updated_at", "2014-07-31 22:58:15.880816"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  [1m[35mSong Load (0.1ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.4ms)
+  Rendered parties/show.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 1966ms (Views: 23.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:16 -0400
+
+
+Started GET "/HDNB6?utf8=%E2%9C%93&song_to_add=Love+Back%7C%3BArtist+Vs+Poet%7C%3BSake+of+Love%7C%3Bspotify%3Atrack%3A1LA4r1sRtHZ75K7KZoK71Y%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2F65ddcd04e6f418c4a908425760c34e848db174c3%7C%3B193500&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 18:58:57 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Love Back|;Artist Vs Poet|;Sake of Love|;spotify:track:1LA4r1sRtHZ75K7KZoK71Y|;https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3|;193500", "commit"=>"Add to Party Queue", "code"=>"HDNB6"}
+  [1m[35mParty Load (0.4ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["album", "Sake of Love"], ["album_art", "https://i.scdn.co/image/65ddcd04e6f418c4a908425760c34e848db174c3"], ["artist", "Artist Vs Poet"], ["created_at", "2014-07-31 22:58:57.933071"], ["duration_ms", "193500"], ["spotify_uri", "spotify:track:1LA4r1sRtHZ75K7KZoK71Y"], ["title", "Love Back"], ["updated_at", "2014-07-31 22:58:57.933071"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-31 22:58:57.936352"], ["party_id", 48], ["song_id", 105], ["updated_at", "2014-07-31 22:58:57.936352"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 48]]
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 48]]
+  Rendered parties/_form.html.erb (0.7ms)
+  Rendered parties/show.html.erb within layouts/application (14.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 417ms (Views: 20.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 18:58:58 -0400
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=99" for 127.0.0.1 at 2014-07-31 18:58:59 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"99"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 99]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 99  [["updated_at", "2014-07-31 22:58:59.800976"], ["votes", 4]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.6ms)
+Completed 200 OK in 15ms (Views: 2.6ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=98" for 127.0.0.1 at 2014-07-31 18:59:00 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"98"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 98]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 98[0m  [["updated_at", "2014-07-31 22:59:00.772260"], ["votes", 3]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 4.4ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=101" for 127.0.0.1 at 2014-07-31 18:59:01 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"101"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 101  [["updated_at", "2014-07-31 22:59:01.840577"], ["votes", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=101" for 127.0.0.1 at 2014-07-31 18:59:02 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"101"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 101[0m  [["updated_at", "2014-07-31 22:59:02.264217"], ["votes", 2]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 3.4ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=101" for 127.0.0.1 at 2014-07-31 18:59:02 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"101"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 101  [["updated_at", "2014-07-31 22:59:02.517613"], ["votes", 3]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 4.2ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=101" for 127.0.0.1 at 2014-07-31 18:59:02 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"101"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 101[0m  [["updated_at", "2014-07-31 22:59:02.689436"], ["votes", 4]]
+  [1m[35m (9.2ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 3.1ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=101" for 127.0.0.1 at 2014-07-31 18:59:02 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"101"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1[0m
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 101  [["updated_at", "2014-07-31 22:59:02.856897"], ["votes", 5]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 2.8ms | ActiveRecord: 9.6ms)
+
+
+Started POST "/songs/up_vote?code=HDNB6&song_id=100" for 127.0.0.1 at 2014-07-31 18:59:20 -0400
+Processing by SongsController#up_vote as JS
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "code"=>"HDNB6", "song_id"=>"100"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = 'HDNB6' LIMIT 1
+  [1m[36mSong Load (0.1ms)[0m  [1mSELECT  "songs".* FROM "songs"  WHERE "songs"."id" = ? LIMIT 1[0m  [["id", 100]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "songs" SET "updated_at" = ?, "votes" = ? WHERE "songs"."id" = 100[0m  [["updated_at", "2014-07-31 22:59:20.731497"], ["votes", 2]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  Rendered songs/up_vote.js.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 8.8ms)
