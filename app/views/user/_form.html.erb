@@ -1,5 +1,47 @@
-<%= form_tag(joinparty_path, method: "get") do %>
-  <%= label_tag(:code, "Input Party Code Here:") %>
-  <%= text_field_tag(:code) %>
-  <%= submit_tag("Join a Party!") %>
-<% end %>
+<%#= form_tag(joinparty_path, method: "get") do %>
+  <%#= label_tag(:code, "Input Party Code Here:") %>
+  <%#= text_field_tag(:code) %>
+  <%#= submit_tag("Join a Party!") %>
+<%# end %>
+<div class="body">
+    <form class="no-margin"
+          action="index.html" method="get">
+        <fieldset>
+            <!-- <div class="form-group no-margin">
+                <label for="email" >Email</label>
+
+                <div class="input-group input-group-lg">
+                        <span class="input-group-addon">
+                            <i class="eicon-user"></i>
+                        </span>
+                    <input id="email" type="email" class="form-control input-lg"
+                           placeholder="Your Email">
+                </div>
+
+            </div> -->
+
+            <div class="form-group">
+                <header class="text-align-center">
+                    <label for="password" >PARTY CODE</label>
+                </header>
+                <div class="input-group input-group-lg">
+                        <span class="input-group-addon">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    <input id="password" type="password" class="form-control input-lg"
+                           placeholder="Your party code">
+                </div>
+
+            </div>
+        </fieldset>
+        <header class="text-align-center">
+            <h2>OR</h2>
+        </header>
+        <div class="form-actions spotify.">
+            <button type="submit" class="btn btn-block btn-lg btn-danger">
+                <span class="small-circle"><i class="fa fa-caret-right"></i></span>
+                <small>SPOTIFY</small>
+            </button>
+        </div>
+    </form>
+</div>
