@@ -21,8 +21,13 @@ class SongsController < ApplicationController
   def delete
   end
 
+  def vote_up
+    song = Song.find(params:party_code)
+    song.vote!(request.remote_ip)
+  end
 
-   def songs_params
+  private 
+  def songs_params
     params.require(:song).permit(:title, :artist, :album, :spotify_uri, :album_art, :duration_ms)
   end
 end
