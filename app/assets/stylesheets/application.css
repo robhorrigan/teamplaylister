@@ -12,5 +12,8 @@
  *
  *= require_tree .
  *= require_self
- *= require login
+ *= require application-theme
+ *= require nv.d3
+ *= require fontello
+ *= require font-awesome
  */
