@@ -2,7 +2,8 @@
 
 <p>Party Code:<%=@party.code%></p>
 <%= render 'form3' %>
-<h2>Party Queue!</h2>   
+<h2>Party Queue!</h2>
+<% if @party.songs.count > 0%>   
 <table id="playlistQueue" class="rowclick">
     <tr id="head">
       <th scope="Row"></th>
@@ -22,6 +23,9 @@
     <%end%>
   </tbody>
 </table>
+<%else%>
+  Your queue is empty.
+<%end%>
 <br>
 <h2>Search for Songs</h2>
 <%= render 'form' %>
