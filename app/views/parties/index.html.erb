@@ -5,9 +5,19 @@
 <ul id="parties">
 <% @parties.each do |party| %>
 		<% if party["code"] %>
-			<a href="/<%=party["code"]%>"><%=party["name"]%></a><br>
+			<a href="/<%=party["code"]%>"><%=party["name"]%>, <%=party["code"]%></a><br>
+			<%= form_tag("/parties/delete", method: "post") do %>
+  		<%= label_tag(:code, "") %>
+  		<%= submit_tag("Delete") %>
+			<% end %>
 		<%end%>
 <% end %>
 </ul>
 
 <%= link_to 'create a new party', new_party_path %>
+<p>OR</p>
+<%= form_tag(joinparty_path, method: "get") do %>
+  <%= label_tag(:code, "Input Party Code Here:") %>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Join a Party!") %>
+<% end %>

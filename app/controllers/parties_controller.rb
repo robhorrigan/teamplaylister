@@ -4,7 +4,13 @@ class PartiesController < ApplicationController
   def index
     # @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{current_user.uid}/playlists", { "Authorization" => "Bearer #{current_user.token}"})
     # @parties = JSON.parse(@user_playlists)
-    @parties = current_user.parties
+    @parties = Party.where("user_id" => current_user)
+  end
+
+  def delete
+    @party = Party.find_by(:code => params["code"])
+    @party.delete
+    redirect_to 'parties#index'
   end
 
   def new
