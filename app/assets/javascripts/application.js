@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap.min
+//= require jquery.icheck.min
+//= require waypoints.min
+//= require jquery.malihu.PageScroll2id
+//= require jquery.address-1.6.min
+//= require scrollTo.min
 //= require_tree .
