@@ -50,6 +50,8 @@
 //= require app
 //= require index
 //= require chat
-
+//= require_tree .
+//= require_self
+//
 
 
