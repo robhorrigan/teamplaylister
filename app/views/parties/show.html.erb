@@ -23,9 +23,10 @@
           <td>Artist: <%= song.artist %></td> 
           <td>Track: <%= song.title %></td>
           <td>Album: <%= song.album %></td>
-          <td>Total Votes: <td>
-          <td><%= button_to "Plus 1", remote: true %><td>
+          <td>Total Votes: <span id="vote_count"><%= song.votes %></span> <td>
+          <td><%= button_to "Plus 1", upvote_path(song_id: song, code: @party.code), remote: true %><td>
         </tr>
+
       <%end%>
     </tbody>
   </table>

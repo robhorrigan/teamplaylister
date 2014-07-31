@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20140731193806) do
     t.string   "party_id"
     t.string   "album_art"
     t.string   "duration_ms"
-    t.integer  "votes"
+    t.integer  "votes",       default: 0
   end
 
   create_table "users", force: true do |t|
