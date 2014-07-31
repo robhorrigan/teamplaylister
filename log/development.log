@@ -36314,6 +36314,7 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30
 Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-07-31 13:27:39 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by UserController#index as HTML
@@ -38831,3 +38832,711 @@ ActionController::RoutingError (No route matches [POST] "/MS2OH"):
   Rendered /Users/edjasper/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
   Rendered /Users/edjasper/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
   Rendered /Users/edjasper/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+=======
+Started GET "/" for 127.0.0.1 at 2014-07-31 12:53:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered user/_form.html.erb (1.2ms)
+  Rendered user/index.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 152ms (Views: 137.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered user/_form.html.erb (0.5ms)
+  Rendered user/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:39 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-07-31 12:53:41 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-31 12:53:41 -0400
+Processing by UserController#index as HTML
+  Rendered user/_form.html.erb (0.9ms)
+  Rendered user/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:41 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-31 12:53:42 -0400
+
+
+Started GET "/auth/spotify" for 127.0.0.1 at 2014-07-31 12:53:42 -0400
+
+
+Started GET "/auth/spotify/callback?code=AQAZW-9_JXneZ5xfS1_f_HpJT4h1LST17FVG55NgipSWmhzW5aaeJrp2fCP_bWAJPhPbPkr953iaxY8x8on_3YW6vQNyfXO3WcQX58mOSZvfowvfhm1tKFcSmi5aR8i3EvGOASN6gFcnaLnhNKNb0iT6l7llVNaF8XphTEiNHCJuCvfgjH8JHvqVkabMQ168rZUzRzoMaY8bQQt3tgyfchfLGUpMIIFPuUn1hUBjVVx-Db1VoZpRhqjJR7f2pVaH5WAvMebqUnGW-AAxxyutECUjUb36xGAOKSta-8hd0oXTMicywlSzryCSmt6RLs71MWHPJx0kxuIj30qHA2uw9Tx3CjJybE0WzXYVrboenS14mVIRoMZwug&state=94e21f42c3d227baa21462170a421d6a8c71357b2cd6ffc8" for 127.0.0.1 at 2014-07-31 12:53:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAZW-9_JXneZ5xfS1_f_HpJT4h1LST17FVG55NgipSWmhzW5aaeJrp2fCP_bWAJPhPbPkr953iaxY8x8on_3YW6vQNyfXO3WcQX58mOSZvfowvfhm1tKFcSmi5aR8i3EvGOASN6gFcnaLnhNKNb0iT6l7llVNaF8XphTEiNHCJuCvfgjH8JHvqVkabMQ168rZUzRzoMaY8bQQt3tgyfchfLGUpMIIFPuUn1hUBjVVx-Db1VoZpRhqjJR7f2pVaH5WAvMebqUnGW-AAxxyutECUjUb36xGAOKSta-8hd0oXTMicywlSzryCSmt6RLs71MWHPJx0kxuIj30qHA2uw9Tx3CjJybE0WzXYVrboenS14mVIRoMZwug", "state"=>"94e21f42c3d227baa21462170a421d6a8c71357b2cd6ffc8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."uid" = '1249884999'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "refresh_token" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["refresh_token", "AQAbbk5Pu_qPfNDtW-vMWnoFOGCx3EC6pYwEa9ahgeGRS6tJBNqgtyzDu3bVloTHtRkvO41PMEe3Dm7THA2zTtgBkMavxgCtzlnITaraRqkhp11tzVy6hUuIed8hxUnwO_o"], ["token", "BQBvxaJ_mpEXyVImeLgphA3Mn00esfxtFQocaZZJgutxO9HTJ7gDPlelKPAQPuA_lPrKC8ze1NmjAVjIFycpaIAMtWhK6OrOzEdCiLWl7AtoG6oDJ_FxiwomkylMjj2w3QBjWst00-8yJ9yQlXo-5MA5zys3uKm1J7lGcKvEs8SVRhorbEFNfVBLX3GMPIG7BJHjBO1ILqEkjczh"], ["updated_at", "2014-07-31 16:53:44.668617"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties
+Completed 302 Found in 46ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 3[0m
+  Rendered parties/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 37ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:44 -0400
+
+
+Started POST "/parties/index?id=8&method=delete" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SE16plhMiwW+aRVAgJfx3Iqbx+1gZsC+M+TjhSiSmDU=", "id"=>"8", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 8]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 3[0m
+  Rendered parties/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:46 -0400
+
+
+Started POST "/parties/index?id=9&method=delete" for 127.0.0.1 at 2014-07-31 12:53:49 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SE16plhMiwW+aRVAgJfx3Iqbx+1gZsC+M+TjhSiSmDU=", "id"=>"9", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 9]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:53:49 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 3[0m
+  Rendered parties/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:49 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:50 -0400
+
+
+Started POST "/parties/index?id=10&method=delete" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SE16plhMiwW+aRVAgJfx3Iqbx+1gZsC+M+TjhSiSmDU=", "id"=>"10", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 10]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 3[0m
+  Rendered parties/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:53:51 -0400
+
+
+Started GET "/1C4E5" for 127.0.0.1 at 2014-07-31 13:00:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"1C4E5"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  Rendered parties/_form3.html.erb (2.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  Rendered parties/_form.html.erb (2.6ms)
+  Rendered parties/show.html.erb within layouts/application (53.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 257ms (Views: 122.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:00:55 -0400
+
+
+Started GET "/1C4E5" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"code"=>"1C4E5"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  Rendered parties/_form3.html.erb (0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  [1m[35mSong Load (0.2ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.6ms)
+  Rendered parties/show.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:45 -0400
+
+
+Started GET "/1C4E5?utf8=%E2%9C%93&q1=Thriller&q2=michael+jackson&commit=Search" for 127.0.0.1 at 2014-07-31 13:02:57 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "q1"=>"Thriller", "q2"=>"michael jackson", "commit"=>"Search", "code"=>"1C4E5"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  Rendered parties/_form3.html.erb (0.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.8ms)
+  Rendered parties/_form2.html.erb (1.5ms)
+  Rendered parties/show.html.erb within layouts/application (9.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 713ms (Views: 18.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:02:58 -0400
+
+
+Started GET "/1C4E5?utf8=%E2%9C%93&song_to_add=Thriller%7C%3BMichael+Jackson%7C%3BMichael+Jackson%27s+This+Is+It%7C%3Bspotify%3Atrack%3A1D9KEXIrlmPUkMTdYzqgX4%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2Fe08164b6c54a69ce122c10320a3e8a74e3fe6466%7C%3B357493&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 13:03:03 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Thriller|;Michael Jackson|;Michael Jackson's This Is It|;spotify:track:1D9KEXIrlmPUkMTdYzqgX4|;https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466|;357493", "commit"=>"Add to Party Queue", "code"=>"1C4E5"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Michael Jackson's This Is It"], ["album_art", "https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466"], ["artist", "Michael Jackson"], ["created_at", "2014-07-31 17:03:03.960719"], ["duration_ms", "357493"], ["spotify_uri", "spotify:track:1D9KEXIrlmPUkMTdYzqgX4"], ["title", "Thriller"], ["updated_at", "2014-07-31 17:03:03.960719"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 17:03:03.963115"], ["party_id", 41], ["song_id", 62], ["updated_at", "2014-07-31 17:03:03.963115"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.6ms)
+  Rendered parties/show.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 452ms (Views: 17.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+
+
+Started GET "/1C4E5?utf8=%E2%9C%93&song_to_add=Thriller%7C%3BMichael+Jackson%7C%3BMichael+Jackson%27s+This+Is+It%7C%3Bspotify%3Atrack%3A1D9KEXIrlmPUkMTdYzqgX4%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2Fe08164b6c54a69ce122c10320a3e8a74e3fe6466%7C%3B357493&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 13:03:04 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Thriller|;Michael Jackson|;Michael Jackson's This Is It|;spotify:track:1D9KEXIrlmPUkMTdYzqgX4|;https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466|;357493", "commit"=>"Add to Party Queue", "code"=>"1C4E5"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["album", "Michael Jackson's This Is It"], ["album_art", "https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466"], ["artist", "Michael Jackson"], ["created_at", "2014-07-31 17:03:05.405969"], ["duration_ms", "357493"], ["spotify_uri", "spotify:track:1D9KEXIrlmPUkMTdYzqgX4"], ["title", "Thriller"], ["updated_at", "2014-07-31 17:03:05.405969"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-31 17:03:05.408253"], ["party_id", 41], ["song_id", 63], ["updated_at", "2014-07-31 17:03:05.408253"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  Rendered parties/_form3.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.5ms)
+  Rendered parties/show.html.erb within layouts/application (6.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 435ms (Views: 15.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:05 -0400
+
+
+Started GET "/1C4E5?utf8=%E2%9C%93&song_to_add=Thriller%7C%3BMichael+Jackson%7C%3BMichael+Jackson%27s+This+Is+It%7C%3Bspotify%3Atrack%3A1D9KEXIrlmPUkMTdYzqgX4%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2Fe08164b6c54a69ce122c10320a3e8a74e3fe6466%7C%3B357493&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 13:03:06 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Thriller|;Michael Jackson|;Michael Jackson's This Is It|;spotify:track:1D9KEXIrlmPUkMTdYzqgX4|;https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466|;357493", "commit"=>"Add to Party Queue", "code"=>"1C4E5"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["album", "Michael Jackson's This Is It"], ["album_art", "https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466"], ["artist", "Michael Jackson"], ["created_at", "2014-07-31 17:03:08.305422"], ["duration_ms", "357493"], ["spotify_uri", "spotify:track:1D9KEXIrlmPUkMTdYzqgX4"], ["title", "Thriller"], ["updated_at", "2014-07-31 17:03:08.305422"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-31 17:03:08.307061"], ["party_id", 41], ["song_id", 64], ["updated_at", "2014-07-31 17:03:08.307061"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.6ms)
+  Rendered parties/show.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 1776ms (Views: 16.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/1C4E5?utf8=%E2%9C%93&song_to_add=Thriller%7C%3BMichael+Jackson%7C%3BMichael+Jackson%27s+This+Is+It%7C%3Bspotify%3Atrack%3A1D9KEXIrlmPUkMTdYzqgX4%7C%3Bhttps%3A%2F%2Fi.scdn.co%2Fimage%2Fe08164b6c54a69ce122c10320a3e8a74e3fe6466%7C%3B357493&commit=Add+to+Party+Queue" for 127.0.0.1 at 2014-07-31 13:03:08 -0400
+Processing by PartiesController#show as HTML
+  Parameters: {"utf8"=>"✓", "song_to_add"=>"Thriller|;Michael Jackson|;Michael Jackson's This Is It|;spotify:track:1D9KEXIrlmPUkMTdYzqgX4|;https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466|;357493", "commit"=>"Add to Party Queue", "code"=>"1C4E5"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."code" = '1C4E5' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("album", "album_art", "artist", "created_at", "duration_ms", "spotify_uri", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["album", "Michael Jackson's This Is It"], ["album_art", "https://i.scdn.co/image/e08164b6c54a69ce122c10320a3e8a74e3fe6466"], ["artist", "Michael Jackson"], ["created_at", "2014-07-31 17:03:09.164201"], ["duration_ms", "357493"], ["spotify_uri", "spotify:track:1D9KEXIrlmPUkMTdYzqgX4"], ["title", "Thriller"], ["updated_at", "2014-07-31 17:03:09.164201"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "party_songs" ("created_at", "party_id", "song_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-31 17:03:09.166240"], ["party_id", 41], ["song_id", 65], ["updated_at", "2014-07-31 17:03:09.166240"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  Rendered parties/_form3.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?  [["party_id", 41]]
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs" INNER JOIN "party_songs" ON "songs"."id" = "party_songs"."song_id" WHERE "party_songs"."party_id" = ?[0m  [["party_id", 41]]
+  Rendered parties/_form.html.erb (0.7ms)
+  Rendered parties/show.html.erb within layouts/application (7.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 851ms (Views: 15.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 13:03:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVotes (20140731173348)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "party_code" varchar(255), "ip" varchar(255)) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140731173348"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 63968569b6c58a26b450c37fa2e90db69837763a
