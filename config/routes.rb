@@ -8,14 +8,18 @@ Rails.application.routes.draw do
 
   get 'parties/index' => 'parties#index'
 
+  post 'parties/index' => 'parties#destroy'
+
   resources :songs
   resources :user
 
   # get 'parties/new'
   get 'joinparty' => 'parties#join_party', as: 'joinparty'
 
+  # post 'parties/index' => 'parties#index'
+
   resources :parties
- 
+
   # resources :parties, except: [:show] do
   #   collection do
   #     get 'invitation/:code' => 'parties#show', as: "invitation"
