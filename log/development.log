@@ -34919,3 +34919,1396 @@ Started GET "/assets/header_title.js" for 127.0.0.1 at 2014-07-31 12:39:08 -0400
 
 
 Started GET "/assets/header_title.js" for 127.0.0.1 at 2014-07-31 12:39:08 -0400
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-07-31 12:51:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.8ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 182ms (Views: 132.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:19 -0400
+
+
+Started POST "/parties/index?id=11&method=delete" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"11", "method"=>"delete"}
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 11]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:22 -0400
+
+
+Started POST "/parties/index?id=12&method=delete" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"12", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 12]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 15ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:25 -0400
+
+
+Started POST "/parties/index?id=13&method=delete" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"13", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 13]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:51:26 -0400
+
+
+Started POST "/parties/index?id=15&method=delete" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"15", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 15]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 15ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.4ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:05 -0400
+
+
+Started POST "/parties/index?id=16&method=delete" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"16", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 16]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:06 -0400
+
+
+Started POST "/parties/index?id=17&method=delete" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"17", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 17]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 12ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:07 -0400
+
+
+Started POST "/parties/index?id=18&method=delete" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"18", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 18]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:20 -0400
+
+
+Started POST "/parties/index?id=19&method=delete" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"19", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 19]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:21 -0400
+
+
+Started POST "/parties/index?id=20&method=delete" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"20", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 20]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 14ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.4ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started POST "/parties/index?id=21&method=delete" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"21", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 21]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:22 -0400
+
+
+Started POST "/parties/index?id=29&method=delete" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"29", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 29]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 29]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:23 -0400
+
+
+Started POST "/parties/index?id=30&method=delete" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"30", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 30]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 12ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started POST "/parties/index?id=31&method=delete" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"31", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 31]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 31]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 12ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.4ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:24 -0400
+
+
+Started POST "/parties/index?id=32&method=delete" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"32", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 32]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 32]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+
+
+Started POST "/parties/index?id=33&method=delete" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"33", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 33]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:25 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started POST "/parties/index?id=34&method=delete" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"34", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 34]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 34]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:26 -0400
+
+
+Started POST "/parties/index?id=35&method=delete" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"35", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 35]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 35]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started POST "/parties/index?id=36&method=delete" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"36", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 36]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 13ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.4ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started POST "/parties/index?id=37&method=delete" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"37", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 37]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 37]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 11ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+
+
+Started POST "/parties/index?id=38&method=delete" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"38", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 38]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 38]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 12ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:28 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started POST "/parties/index?id=39&method=delete" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"39", "method"=>"delete"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 39]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 39]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 12ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:29 -0400
+
+
+Started POST "/parties/index?id=40&method=delete" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FqjldvWpIo13eeiDvSd597lH2TOmn7I7MN5xdky77MY=", "id"=>"40", "method"=>"delete"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 40]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 40]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/parties/index
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/parties/index" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+Processing by PartiesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"  WHERE "parties"."user_id" = 2[0m
+  Rendered parties/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/party.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/playlist.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/party.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/playlist.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
+
+
+Started GET "/assets/header_title.js?body=1" for 127.0.0.1 at 2014-07-31 12:52:30 -0400
