@@ -13,9 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require react-0.11.0
-//= require react-0.11.0
-//= require JSXTransformer-0.11.0
 //= require party
 //= require playlist
 //= require songs

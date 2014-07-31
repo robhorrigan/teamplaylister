@@ -52,6 +52,13 @@ class PartiesController < ApplicationController
       party_code = @party.code
       Song.persist_song(track, party_code)
     end
+
+    @phone_number = params[:phone_number]
+    @message = "http://www.groovwith.me/#{@party.code}"
+    if @phone_number 
+      Party.message(@phone_number, @message)
+    end
+
   end
 
   def join_party
@@ -70,7 +77,7 @@ class PartiesController < ApplicationController
   def destroy
     @party = Party.find(params["id"])
     @party.destroy
-    redirect_to 'parties/index'
+    redirect_to parties_index_path
   end
 
   private
