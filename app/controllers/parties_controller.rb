@@ -77,7 +77,7 @@ class PartiesController < ApplicationController
   def destroy
     @party = Party.find(params["id"])
     @party.destroy
-    redirect_to 'parties/index'
+    redirect_to parties_index_path
   end
 
   private
