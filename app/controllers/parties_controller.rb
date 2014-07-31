@@ -7,12 +7,6 @@ class PartiesController < ApplicationController
     @parties = Party.where("user_id" => current_user)
   end
 
-  def delete
-    @party = Party.find_by(:code => params["code"])
-    @party.delete
-    redirect_to 'parties#index'
-  end
-
   def new
     @party = Party.new
   end
@@ -73,7 +67,10 @@ class PartiesController < ApplicationController
   def update
   end
 
-  def delete
+  def destroy
+    @party = Party.find(params["id"])
+    @party.destroy
+    redirect_to 'parties/index'
   end
 
   private
