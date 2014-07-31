@@ -12,8 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require party
-//= require playlist
-//= require songs
-//= require user
+//= require_tree .
+//= require_self
+//
+
