@@ -1,47 +1,35 @@
 <h1><%=@party.name%></h1>
-<p>Find me in app/views/party/show.html.erb</p>
 
-<p>this party belongs to the party: <%= @party.name%></p><br>
-<p>party code: <%=@party.code%></p><br>
-
-
-
-<br>
-
-SEARCH
-<%= render 'form' %>
-
-SEARCH_RESULTS
-<% if @search_results%>
-<%= render 'form2' %>
-<%end%> 
-<br>
-PLAYLIST  
-
+<p>Party Code:<%=@party.code%></p>
+<%= render 'form3' %>
+<h2>Party Queue!</h2>   
 <table id="playlistQueue" class="rowclick">
-
     <tr id="head">
-      <th scope="Row">Photo</th>
+      <th scope="Row"></th>
       <th>Artist</th>
       <th>Track</th>
       <th>Album</th>
+      <th>Votes</th>
     </tr>
-
-
   <tbody>
-
       <tr>
       <% @party.songs.each do |song|%>
         <td><img src="<%= song.album_art %>"></td>  
         <td>Artist: <%= song.artist %></td> 
-        <td>Song: <%= song.title %></td>
+        <td>Track: <%= song.title %></td>
         <td>Album: <%= song.album %></td> 
-        <br>
-        <td> <input type="radio" name="song_to_add" value="<%=song[:song_name]%>|;<%=song[:song_artist]%>|;<%=song[:song_album]%>|;<%= song[:song_uri]%>|;<%= song[:album_art]%>|;<%= song[:duration_ms]%>"></td>
       </tr>
     <%end%>
-
-
   </tbody>
 </table>
+<br>
+<h2>Search for Songs</h2>
+<%= render 'form' %>
+<br>
+<h2>Search Results</h2>
+<% if @search_results%>
+<%= render 'form2' %>
+<%end%> 
+
+
  
