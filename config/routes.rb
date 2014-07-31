@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/auth/spotify/callback', to: 'sessions#create'
 
+  get 'parties/index' => 'parties#index'
+
   resources :songs
   resources :user
 
