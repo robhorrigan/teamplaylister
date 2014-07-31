@@ -3,6 +3,7 @@
 <p>Party Code: <%=@party.code%></p>
 <%= render 'form3' %>
 <h2>Party Queue!</h2>
+
 <% if @party.songs.count > 0%>   
   <table id="playlistQueue" class="rowclick">
       <tr id="head">
