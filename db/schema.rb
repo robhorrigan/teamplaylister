@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731173348) do
+ActiveRecord::Schema.define(version: 20140731193806) do
 
   create_table "parties", force: true do |t|
     t.integer  "user_id"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20140731173348) do
     t.string   "party_id"
     t.string   "album_art"
     t.string   "duration_ms"
+    t.integer  "votes",       default: 0
   end
 
   create_table "users", force: true do |t|
