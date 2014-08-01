@@ -12,18 +12,18 @@
         <th>Track</th>
         <th>Album</th>
         <th>Total Votes</th>
-        <th>Votes</th>
+        <th>Vote!</th>
       </tr>
     <tbody>
         <tr>
-        <% @party.songs.each do |song|%>
+        <% @songs.each do |song|%>
 
           
 <td><img src='<%= song.album_art %>'></td>  
-          <td>Artist: <%= song.artist %></td> 
-          <td>Track: <%= song.title %></td>
-          <td>Album: <%= song.album %></td>
-          <td>Total Votes: <span id="vote_count_<%=song.id%>"><%= song.votes %></span> </td>
+          <td><%= song.artist %></td> 
+          <td><%= song.title %></td>
+          <td><%= song.album %></td>
+          <td><span id="vote_count_<%=song.id%>"><%= song.votes %></span> </td>
 
           <td><%= button_to "Plus 1", upvote_path(song_id: song, code: @party.code), remote: true %></td>
         </tr>

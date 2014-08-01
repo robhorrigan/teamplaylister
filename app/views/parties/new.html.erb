@@ -1,14 +1,2 @@
-<h1>Parties#new</h1>
-
-<p>Here's all of your options:</p>
-
-<%= form_for(@party) do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-
-  <%= f.hidden_field :user_id, value: current_user.id %>
-
-  <%= f.submit %>
-<% end %>
 
 
