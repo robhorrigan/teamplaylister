@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   resources :parties
 
+  get 'about/index' => 'about#index'
+
   # resources :parties, except: [:show] do
   #   collection do
   #     get 'invitation/:code' => 'parties#show', as: "invitation"
