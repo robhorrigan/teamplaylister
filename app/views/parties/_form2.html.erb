@@ -1,28 +1,21 @@
 <%= form_tag (playlist_path), :method => :get do %>
-
-<table id="songSelect" class="rowclick">
-  
-    <tr id="head">
-      <th></th>
-      <th scope="Row"></th>
-      <th>Artist</th>
-      <th>Track</th>
-      <th>Album</th>
-    </tr>
-      
-  <tbody>
-      <tr>
+  <ul class="">
+    <% if @search_results%>
       <% @search_results.each do |song|%>
-        <td> <input type="radio" name="song_to_add" value="<%=song[:song_name]%>|;<%=song[:song_artist]%>|;<%=song[:song_album]%>|;<%= song[:song_uri]%>|;<%= song[:album_art]%>|;<%= song[:duration_ms]%>"></td>
-        <td><img src="<%= song[:album_art] %>"></td>  
-        <td>Artist: <%= song[:song_artist] %></td> 
-        <td>Track: <%= song[:song_name] %></td> 
-        <td>Album: <%= song[:song_album] %></td> 
-      </tr>
-    <%end%>
-  </tbody>
-</table>
-
-<br>
-<center><%= submit_tag 'Add to Party Queue' %></center>
+      <li>
+          <img src="<%= song[:album_art] %>" alt="" class="pull-left"/>
+          
+          <div class="news-item-info">
+              <div class=""><a href="#"> SONG:<%= song[:song_name] %></a></div>
+              <div class="position"> ARTIST: <%= song[:song_artist] %></div>
+              <div class="time"> ALBUM: <%= song[:song_album] %></div>
+              <div class="pull-right"><input class ="" type="radio" name="song_to_add" value="<%=song[:song_name]%>|;<%=song[:song_artist]%>|;<%=song[:song_album]%>|;<%= song[:song_uri]%>|;<%= song[:album_art]%>|;<%= song[:duration_ms]%>"></div>
+          </div>
+          <br>
+      </li>
+      </ul>
+      <%end%>
+      <br>
+      <div class="pull-right"><%= submit_tag 'Add to Party Queue' %></div>
+  <%end%>
 <% end %>
