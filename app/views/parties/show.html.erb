@@ -5,12 +5,15 @@
             </div>
        </div>
 </div>
+
 <div class="widget">
 <%= render 'form3' %>
 </div>
+
       <div class="">
                 <section class="widget widget-tabs">
                         <h4>Party Queue</h4>
+
                     
                         <div class="body">
                           <div id="chat" class="chat">
@@ -37,6 +40,7 @@
                                   <%else%>
                                     Your queue is empty.
                                   <%end%>
+
                                 </div>
                 </section>
             </div>
@@ -52,5 +56,13 @@
                         </div>
                     </div>
                 </section>
+
+<!--                 <section class="widget">
+                  <p>PLAY!</p>
+                   
+                   UNCOMMENT THIS AND ADD ERB TAGS BACK IN
+
+                   button_to"",{:method => :get, :id => @party.id, :play => true, :code => @party.code}, {:onclick => "return confirm('Are you sure you're ready for this?')", :form_class => "btn btn-delete"} %>
+                </section> -->
 
  
