@@ -36,6 +36,7 @@ class PartiesController < ApplicationController
       @search_results = Song.search_spotify(track_song, track_artist)
     end
     @track = params[:song_to_add] 
+
     if @track
       split_track = @track.split('|;')
 
@@ -46,7 +47,6 @@ class PartiesController < ApplicationController
       token = user_id.token
       Party.add_tracks(uid, spotify_playlist_id, token, track)
     end
-
     if @track
       track = @track
       party_code = @party.code
@@ -58,7 +58,6 @@ class PartiesController < ApplicationController
     if @phone_number 
       Party.message(@phone_number, @message)
     end
-
   end
 
   def join_party
