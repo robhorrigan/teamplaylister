@@ -1,47 +1,56 @@
-<h1><%=@party.name%></h1>
-
-<p>Party Code: <%=@party.code%></p>
+ <div class="content container">
+       <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title"><%=@party.name%> <small>Party Code:<%=@party.code%></small></h2>
+            </div>
+       </div>
+</div>
+<div class="widget">
 <%= render 'form3' %>
-<h2>Party Queue!</h2>
+</div>
+      <div class="">
+                <section class="widget widget-tabs">
+                        <h4>Party Queue</h4>
+                    
+                        <div class="body">
+                          <div id="chat" class="chat">
+                              <div id="chat-messages" class="chat-messages">
+                                  <div class="chat-message">
+                                    <% if @party.songs.count > 0%> 
+                                      <% @songs.each do |song|%>
+                                      <div class="sender pull-left">
+                                          <div class="icon">
+                                              <img src="<%= song.album_art %>" class="" alt="">
+                                          </div>
+                                      </div>
+                                          <div class="chat-message-body">
+                                            <span class="arrow"></span>
+                                            <div class="sender"><a href="#">SONG:<%= song.title %></a></div>
+                                            <div class="text">
+                                                ARTIST: <%= song.artist %> | ALBUM:<%= song.album %> | VOTES: <%#= song.votes %><span id="vote_count_<%=song.id%>"></span>
+                                                <div class="pull-right"><%= button_to "Plus 1", upvote_path(song_id: song, code: @party.code), remote: true %></div>
+                                              </div>
+                                                
+                                          </div>
+                                        <br>
+                                      <%end%>
+                                  <%else%>
+                                    Your queue is empty.
+                                  <%end%>
+                                </div>
+                </section>
+            </div>
 
-<% if @party.songs.count > 0%>   
-  <table id="playlistQueue" class="rowclick">
-      <tr id="head">
-        <th scope="Row"></th>
-        <th>Artist</th>
-        <th>Track</th>
-        <th>Album</th>
-        <th>Total Votes</th>
-        <th>Vote!</th>
-      </tr>
-    <tbody>
-        <tr>
-        <% @songs.each do |song|%>
-
-          
-<td><img src='<%= song.album_art %>'></td>  
-          <td><%= song.artist %></td> 
-          <td><%= song.title %></td>
-          <td><%= song.album %></td>
-          <td><span id="vote_count_<%=song.id%>"><%= song.votes %></span> </td>
-
-          <td><%= button_to "Plus 1", upvote_path(song_id: song, code: @party.code), remote: true %></td>
-        </tr>
-
-      <%end%>
-    </tbody>
-  </table>
-<%else%>
-  Your queue is empty.
-<%end%>
-<br>
-<h2>Search for Songs</h2>
-<%= render 'form' %>
-<br>
-<h2>Search Results</h2>
-<% if @search_results%>
-  <%= render 'form2' %>
-<%end%> 
-
+                <section class="widget">
+                    <div class="body tab-content">
+                        <div id="stats" class="tab-pane active clearfix">
+                            <h5 class="tab-header"><span class="label label-primary"><i class="fa fa-spotify"></i></span> SEARCH FOR SONGS</h5>
+                                <%= render 'form2'%>
+                                <br>
+                                <%= render 'form' %>
+                            
+                        </div>
+                    </div>
+                </section>
 
  
