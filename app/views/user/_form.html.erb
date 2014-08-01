@@ -25,10 +25,10 @@
             <h2>OR</h2>
         </header>
         <div class="form-actions spotify">
-            <button type="submit" class="spotify btn btn-block btn-lg btn-danger">
-                <span class="small-circle"><i class="fa fa-spotify"></i></span>
-                <small>SPOTIFY</small>
-            </button>
+            <%= button_to "/auth/spotify", class: "spotify btn btn-block btn-lg btn-danger" do %>
+              <span class="small-circle"><i class="fa fa-spotify"></i></span>
+              <small>SPOTIFY</small>
+            <% end %>
         </div>
     </form>
 </div>
