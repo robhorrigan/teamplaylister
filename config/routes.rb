@@ -10,7 +10,10 @@ Rails.application.routes.draw do
 
   post 'parties/index' => 'parties#destroy'
 
+  post 'songs/up_vote/' => 'songs#up_vote', as: 'upvote'
+
   resources :songs
+
   resources :user
 
   # get 'parties/new'
