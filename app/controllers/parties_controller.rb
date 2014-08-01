@@ -34,7 +34,6 @@ class PartiesController < ApplicationController
     if track_song || track_artist
       @search_results = Song.search_spotify(track_song, track_artist)
     end
-
     @track = params[:song_to_add] 
     if @track
       split_track = @track.split('|;')

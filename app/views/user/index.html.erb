@@ -1,11 +1,8 @@
-<div id="react-title"></div>
-<p>Everyone starts here.</p>
+<h1 align="center">Groovwith.<strong>ME</strong></h1>
+<div class="single-widget-container">
+    <section class="widget login-widget">
+        <header class="text-align-center">
+            <h3>Join a Party</h3>
+        </header>
 
-<br>
-<% if current_user%>
-    <p>Signed in as <%=current_user.name%>, <%= link_to 'all my parties', 'user/show'%></p>
-<%end%>
-
-    <br>
 <%= render 'form' %>
-
