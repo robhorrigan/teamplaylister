@@ -1,20 +1,32 @@
-<h1>Parties#index</h1>
-<p>Find me in app/views/parties/index.html.erb</p>
-<h2>Your Playlists:</h2>
+<section class="widget">
+<h4>Your Playlists:</h4>
 
-<ul id="parties">
-<% @parties.each do |party| %>
-		<% if party["code"] %>
-			<a href="/<%=party["code"]%>"><%=party["name"]%>, <%=party["code"]%></a>
-		<%= button_to "delete", :method => :delete, :id => party.id%><br>
-		<%end%>
-<% end %>
-</ul>
+  <table class="table table-hover">
+    <tbody id="parties">
+    <div class="body">
+    <% @parties.each do |party| %>
+      <tr>
+    		<% if party["code"] %>
+      		<td><span class="label">	
+              <h4><a href="/<%=party["code"]%>"><%=party["name"]%> (Party Code: <%=party["code"]%>)</a></h4>
 
-<%= link_to 'create a new party', new_party_path %>
-<p>OR</p>
-<%= form_tag(joinparty_path, method: "get") do %>
-  <%= label_tag(:code, "Input Party Code Here:") %>
-  <%= text_field_tag(:code) %>
-  <%= submit_tag("Join a Party!") %>
-<% end %>
+              <h4><i class= 'fa fa-trash-o'><%= button_to "", {:method => :delete, :id => party.id}, :form_class => "btn btn-delete" %></i></h4>
+            </span>
+          </td>
+    		<%end%>
+        </tr>
+    <% end %>
+      </div>
+    </tbody>
+  </table>
+</section>
+
+<section class ="widget">
+    <table class = "table">
+      <div class = "body">
+        <h4><%= link_to 'Create a New Party', new_party_path %></h4>
+        <h4>OR</h4>
+        <%= render 'form4' %>
+      </div>
+    </table>
+</section>
