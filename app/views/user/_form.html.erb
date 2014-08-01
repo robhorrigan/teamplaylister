@@ -1,47 +1,34 @@
-<%#= form_tag(joinparty_path, method: "get") do %>
-  <%#= label_tag(:code, "Input Party Code Here:") %>
-  <%#= text_field_tag(:code) %>
-  <%#= submit_tag("Join a Party!") %>
-<%# end %>
+
+  
+ 
+ 
 <div class="body">
     <form class="no-margin"
           action="index.html" method="get">
         <fieldset>
-            <!-- <div class="form-group no-margin">
-                <label for="email" >Email</label>
-
-                <div class="input-group input-group-lg">
-                        <span class="input-group-addon">
-                            <i class="eicon-user"></i>
-                        </span>
-                    <input id="email" type="email" class="form-control input-lg"
-                           placeholder="Your Email">
-                </div>
-
-            </div> -->
-
             <div class="form-group">
+              <%= form_tag(joinparty_path, method: "get") do %>
                 <header class="text-align-center">
-                    <label for="password" >PARTY CODE</label>
+                    <!-- <label for="code" >PARTY CODE</label> -->
                 </header>
                 <div class="input-group input-group-lg">
                         <span class="input-group-addon">
-                            <i class="fa fa-lock"></i>
+                            <i class="fa fa-headphones"></i>
                         </span>
-                    <input id="password" type="password" class="form-control input-lg"
-                           placeholder="Your party code">
+                     <%= text_field_tag(:code, nil, class: "form-control input-lg", placeholder:"Input party code here") %>
                 </div>
-
+                  <%= submit_tag("Submit", class:"custom btn btn-lg btn-warning btn-block") %>
+                <% end %>
             </div>
         </fieldset>
         <header class="text-align-center">
             <h2>OR</h2>
         </header>
-        <div class="form-actions spotify.">
-            <button type="submit" class="btn btn-block btn-lg btn-danger">
-                <span class="small-circle"><i class="fa fa-caret-right"></i></span>
-                <small>SPOTIFY</small>
-            </button>
+        <div class="form-actions spotify">
+            <%= button_to "/auth/spotify", class: "spotify btn btn-block btn-lg btn-danger" do %>
+              <span class="small-circle"><i class="fa fa-spotify"></i></span>
+              <small>SPOTIFY</small>
+            <% end %>
         </div>
     </form>
 </div>

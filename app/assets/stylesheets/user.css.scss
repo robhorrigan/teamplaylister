@@ -1,3 +1,19 @@
 // Place all the styles related to the User controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+input.custom.btn.btn-lg.btn-warning.btn-block {
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(154,202,0);
+  border-color: rgb(154,202,0);
+}
+
+button.spotify.btn.btn-block.btn-lg.btn-danger {
+  background-color: rgb(154,202,0);
+  border-color: rgb(154,202,0);
+}
+
+h1.groovwithme {
+  color: white;
+}
