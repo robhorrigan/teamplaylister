@@ -10,26 +10,23 @@
               <%= form_tag(joinparty_path, method: "get") do %>
                 <header class="text-align-center">
                     <!-- <label for="code" >PARTY CODE</label> -->
-                    <%= label_tag(:code, "Input Party Code Here:") %>
                 </header>
                 <div class="input-group input-group-lg">
                         <span class="input-group-addon">
-                            <i class="fa fa-lock"></i>
+                            <i class="fa fa-headphones"></i>
                         </span>
-                    <input id="email" type="email" class="form-control input-lg"
-                                   placeholder="Your Email">
-                     <%= text_field_tag(:code) %>
+                     <%= text_field_tag(:code, nil, class: "form-control input-lg", placeholder:"Input party code here") %>
                 </div>
-                  <%= submit_tag("Join a Party!") %>
+                  <%= submit_tag("Submit", class:"custom btn btn-lg btn-warning btn-block") %>
                 <% end %>
             </div>
         </fieldset>
         <header class="text-align-center">
             <h2>OR</h2>
         </header>
-        <div class="form-actions spotify.">
-            <button type="submit" class="btn btn-block btn-lg btn-danger">
-                <span class="small-circle"><i class="fa fa-caret-right"></i></span>
+        <div class="form-actions spotify">
+            <button type="submit" class="spotify btn btn-block btn-lg btn-danger">
+                <span class="small-circle"><i class="fa fa-spotify"></i></span>
                 <small>SPOTIFY</small>
             </button>
         </div>

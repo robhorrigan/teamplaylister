@@ -17,7 +17,7 @@
     Welcome <%= current_user.name %>!
     <%= link_to 'sign out', signout_path %> 
   <% else %>
-    <%= link_to 'Sign in with Spotify', "/auth/spotify" %>
+    <%= button_to 'Sign in with Spotify', "/auth/spotify", class: "spotify btn btn-block btn-lg btn-danger" %>
   <% end %>
   
   <%= yield %>
