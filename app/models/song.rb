@@ -24,21 +24,21 @@ class Song < ActiveRecord::Base
       @songs_array
   end
 
-  def self.persist_song(track, party_code)
+  def self.persist_song(track, party)
     split_track = track.split('|;')
-
-    song = Song.new
-    song.title = split_track[0]
-    song.artist = split_track[1]
-    song.album = split_track[2]
-    song.spotify_uri = split_track[3]
-    song.album_art = split_track[4]
-    song.duration_ms = split_track[5]
-    @party = Party.find_by(code: party_code)
-    if !song.parties.include?(@party)
-        song.parties << @party
+    uri = split_track[3]
+    unless party.songs.any?{|element| element.spotify_uri == uri}
+        binding.pry
+        song = Song.new
+        song.title = split_track[0]
+        song.artist = split_track[1]
+        song.album = split_track[2]
+        song.spotify_uri = split_track[3]
+        song.album_art = split_track[4]
+        song.duration_ms = split_track[5]
+        party.songs << song
+        song.save
     end
-    song.save
   end
 
  
