@@ -50,7 +50,7 @@ class PartiesController < ApplicationController
     if @track
       track = @track
       party_code = @party.code
-      Song.persist_song(track, party_code)
+      Song.persist_song(track, @party)
     end
 
     @phone_number = params[:phone_number]
