@@ -28,7 +28,6 @@ class Song < ActiveRecord::Base
     split_track = track.split('|;')
     uri = split_track[3]
     unless party.songs.any?{|element| element.spotify_uri == uri}
-        binding.pry
         song = Song.new
         song.title = split_track[0]
         song.artist = split_track[1]
