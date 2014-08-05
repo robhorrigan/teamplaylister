@@ -1,6 +1,5 @@
-
 <%= form_tag(playlist_path, method: "get") do %>
   <%= label_tag(:phone_number, "Text this party:") %></%>
-  <%= phone_field_tag(:phone_number) %>
+  <%= phone_field_tag(:phone_number, nil, placeholder: '(555) 555-1212') %>
   <%= submit_tag("Share the love", class: "btn btn-sm") %>
 <% end %>

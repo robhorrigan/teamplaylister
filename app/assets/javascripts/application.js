@@ -36,6 +36,7 @@
 //= require line
 //= require lineChart
 //= require stream_layers
+//= require search_click
 //= require underscore-min
 //= require backbone-min
 //= require backbone.localStorage-min
