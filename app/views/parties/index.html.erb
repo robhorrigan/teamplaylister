@@ -1,5 +1,5 @@
 <section class="widget">
-  <h4>Your Playlists:</h4>
+  <h4>Your Parties:</h4>
 
   <table class="table table-hover">
     <tbody id="parties">
@@ -10,7 +10,7 @@
       		<td><span class="label">	
               <h4><a href="/<%=party["code"]%>"><%=party["name"]%> (Party Code: <%=party["code"]%>)</a></h4>
 
-              <h4><i class= 'fa fa-trash-o'><%= button_to"",{:method => :delete, :id => party.id}, {:onclick => "return confirm('Are you sure?')", :form_class => "btn btn-delete"} %></i></h4>
+              <h4><span class="trash_icon"><i class= 'fa fa-trash-o'></span><%= button_to"",{:method => :delete, :id => party.id}, {:onclick => "return confirm('Are you sure you want to delete this item?')", :form_class => "btn btn-delete"} %></i></h4>
             </span>
           </td>
     		<%end%>
