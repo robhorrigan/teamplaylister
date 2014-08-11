@@ -55,7 +55,7 @@ class PartiesController < ApplicationController
     end
 
     @phone_number = params[:phone_number]
-    @message = "http://teamplaylister.192.168.1.10.xip.io/#{@party.code}"
+    @message = "http://www.groovwith.me/#{@party.code}"
     if @phone_number 
       Party.message(@phone_number, @message)
     end
