@@ -43,16 +43,12 @@ class PartiesController < ApplicationController
     end
 
     if params["party"] && params["party"]["user_id"] == "play_party"
+      while @songs.size > 0 do
+        RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@songs.first}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+        sleep(@songs.first.duration/1000 - 15)
+        @songs.first.destroy
+      end
     end
-=begin
-
-play_method stuff
-    spotify_playlist_id = @party.spotify_playlist_id
-    user_id = @party.user
-    uid = user_id.uid
-    token = user_id.token
-    Party.add_tracks(uid, spotify_playlist_id, token, track)
-=end
 
     @phone_number = params[:phone_number]
     @message = "http://www.groovwith.me/#{@party.code}"
