@@ -37,6 +37,14 @@
                                           </div>
                                         <br>
                                       <%end%>
+                                      <div>
+                                        <% if current_user == @party.user %>
+                                      <%= form_for(@party, url: playparty_path) do |f| %>
+                                        <%= f.hidden_field :user_id, value: "play_party" %>
+    <%= f.submit 'Start the party!', :class => 'btn btn-info btn-sm' %>
+                                      <%end%>
+                                      <%end%>
+                                    </div>
                                   <%else%>
                                     Your queue is empty.
                                   <%end%>

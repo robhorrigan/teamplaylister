@@ -36,23 +36,23 @@ class PartiesController < ApplicationController
     if track_song || track_artist
       @search_results = Song.search_spotify(track_song, track_artist)
     end
+
     @track = params[:song_to_add] 
     if @track
-      split_track = @track.split('|;')
-
-      track = split_track[3]
-      spotify_playlist_id = @party.spotify_playlist_id
-      user_id = @party.user
-      uid = user_id.uid
-      token = user_id.token
-      Party.add_tracks(uid, spotify_playlist_id, token, track)
+      Song.persist_song(@track, @party)
     end
 
-    if @track
-      track = @track
-      party_code = @party.code
-      Song.persist_song(track, @party)
+    if params["party"] && params["party"]["user_id"] == "play_party"
     end
+=begin
+
+play_method stuff
+    spotify_playlist_id = @party.spotify_playlist_id
+    user_id = @party.user
+    uid = user_id.uid
+    token = user_id.token
+    Party.add_tracks(uid, spotify_playlist_id, token, track)
+=end
 
     @phone_number = params[:phone_number]
     @message = "http://www.groovwith.me/#{@party.code}"
@@ -89,6 +89,6 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id)
+    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
   end
 end
