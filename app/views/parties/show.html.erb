@@ -8,46 +8,6 @@
 
 <div class="widget">
 <%= render 'form3' %>
-<h2>Party Queue!</h2>
-
-<% if @party.songs.count > 0%>   
-  <table id="playlistQueue" class="rowclick">
-      <tr id="head">
-        <th scope="Row"></th>
-        <th>Artist</th>
-        <th>Track</th>
-        <th>Album</th>
-        <th>Total Votes</th>
-        <th>Vote!</th>
-      </tr>
-    <tbody>
-        <tr>
-        <% @songs.each do |song|%>
-
-          
-<td><img src='<%= song.album_art %>'></td>  
-          <td><%= song.artist %></td> 
-          <td><%= song.title %></td>
-          <td><%= song.album %></td>
-          <td><span id="vote_count_<%=song.id%>"><%= song.votes %></span> </td>
-
-          <td><%= button_to "Plus 1", upvote_path(song_id: song, code: @party.code), class:"plus1btn", remote: true %></td>
-        </tr>
-
-      <%end%>
-    </tbody>
-  </table>
-<%else%>
-  Your queue is empty.
-<%end%>
-<br>
-<h2>Search for Songs</h2>
-<%= render 'form' %>
-<br>
-<h2>Search Results</h2>
-<% if @search_results%>
-  <%= render 'form2' %>
-<%end%> 
 </div>
 
       <div class="">
