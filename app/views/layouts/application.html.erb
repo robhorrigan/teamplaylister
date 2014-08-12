@@ -14,8 +14,9 @@
   <% end %>
 
   <% if current_user %>
-    Welcome <%= current_user.name %>!
-    <%= link_to 'sign out', signout_path %> 
+    Welcome, <%= current_user.name %>!
+    <%= link_to 'my parties', parties_index_path %> |
+    <%= link_to 'sign out', signout_path %>
   <% end %>
   
   <%= yield %>

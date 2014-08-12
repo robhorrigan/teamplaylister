@@ -30,27 +30,24 @@ class PartiesController < ApplicationController
   def show
     @party = Party.find_by(:code => params["code"])
     @songs = @party.songs.order(votes: :desc)
+
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
       @search_results = Song.search_spotify(track_song, track_artist)
     end
+
     @track = params[:song_to_add] 
     if @track
-      split_track = @track.split('|;')
-
-      track = split_track[3]
-      spotify_playlist_id = @party.spotify_playlist_id
-      user_id = @party.user
-      uid = user_id.uid
-      token = user_id.token
-      Party.add_tracks(uid, spotify_playlist_id, token, track)
+      Song.persist_song(@track, @party)
     end
 
-    if @track
-      track = @track
-      party_code = @party.code
-      Song.persist_song(track, @party)
+    if params["party"] && params["party"]["user_id"] == "play_party"
+      while @songs.size > 0 do
+        RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@songs.first}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+        sleep(@songs.first.duration/1000 - 15)
+        @songs.first.destroy
+      end
     end
 
     @phone_number = params[:phone_number]
@@ -88,6 +85,6 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id)
+    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
   end
 end

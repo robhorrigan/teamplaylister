@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
   post 'songs/up_vote/' => 'songs#up_vote', as: 'upvote'
 
+  post 'parties/:id' => 'parties#show'
+
+  patch '/:code' => 'parties#show', as: 'playparty'
+
   resources :songs
 
   resources :user

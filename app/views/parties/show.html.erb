@@ -1,6 +1,12 @@
-<h1><%=@party.name%></h1>
+ <div class="content container">
+       <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title"><%=@party.name%> <small>Party Code:<%=@party.code%></small></h2>
+            </div>
+       </div>
+</div>
 
-<p>Party Code: <%=@party.code%></p>
+<div class="widget">
 <%= render 'form3' %>
 <h2>Party Queue!</h2>
 
@@ -42,6 +48,69 @@
 <% if @search_results%>
   <%= render 'form2' %>
 <%end%> 
+</div>
 
+      <div class="">
+                <section class="widget widget-tabs">
+                        <h4>Party Queue</h4>
+
+                    
+                        <div class="body">
+                          <div id="chat" class="chat">
+                              <div id="chat-messages" class="chat-messages">
+                                  <div class="chat-message">
+                                    <% if @party.songs.count > 0%> 
+                                      <% @songs.each do |song|%>
+                                      <div class="sender pull-left">
+                                          <div class="icon">
+                                              <img src="<%= song.album_art %>" class="" alt="">
+                                          </div>
+                                      </div>
+                                          <div class="chat-message-body">
+                                            <span class="arrow"></span>
+                                            <div class="sender"><a href="#">SONG:<%= song.title %></a></div>
+                                            <div class="text">
+                                                ARTIST: <%= song.artist %> | ALBUM:<%= song.album %> | VOTES: <%#= song.votes %><span id="vote_count_<%=song.id%>"></span>
+                                                <div class=""><%= button_to "+1", upvote_path(song_id: song, code: @party.code), remote: true, class: "btn btn-sm" %></div>
+                                              </div>
+                                                
+                                          </div>
+                                        <br>
+                                      <%end%>
+                                      <div>
+                                        <% if current_user == @party.user %>
+                                      <%= form_for(@party, url: playparty_path) do |f| %>
+                                        <%= f.hidden_field :user_id, value: "play_party" %>
+    <%= f.submit 'Start the party!', :class => 'btn btn-info btn-sm' %>
+                                      <%end%>
+                                      <%end%>
+                                    </div>
+                                  <%else%>
+                                    Your queue is empty.
+                                  <%end%>
+
+                                </div>
+                </section>
+            </div>
+
+                <section class="widget">
+                    <div class="col-md-12">
+                        <div id="" class="tab-pane active clearfix">
+                            <h5 class="tab-header"><span class="label label-primary"><i class="fa fa-spotify"></i></span> SEARCH FOR SONGS</h5><br>
+                                <%= render 'form2'%>
+                                <br>
+                                <%= render 'form' %>
+                            
+                        </div>
+                    </div>
+                </section>
+
+<!--                 <section class="widget">
+                  <p>PLAY!</p>
+                   
+                   UNCOMMENT THIS AND ADD ERB TAGS BACK IN
+
+                   button_to"",{:method => :get, :id => @party.id, :play => true, :code => @party.code}, {:onclick => "return confirm('Are you sure you're ready for this?')", :form_class => "btn btn-delete"} %>
+                </section> -->
 
  
