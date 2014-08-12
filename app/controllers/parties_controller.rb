@@ -28,8 +28,8 @@ class PartiesController < ApplicationController
   end
 
   def show
-    @songs = @party.songs.order(votes: :desc)
     @party = Party.find_by(:code => params["code"])
+    @songs = @party.songs.order(votes: :desc)
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
