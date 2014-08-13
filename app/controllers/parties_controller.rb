@@ -27,11 +27,12 @@ class PartiesController < ApplicationController
   end
 
   def show
-    if params["code"]
-      @party = Party.find_by(:code => params["code"])
-    else 
+    if params["party_code"]
       @party = Party.find_by(:code => params["party_code"])
+    else
+      @party = Party.find_by(:code => params["code"])      
     end
+    binding.pry
     @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
@@ -44,6 +45,7 @@ class PartiesController < ApplicationController
     if @track
       Song.persist_song(@track, @party)
       @songs = @party.songs
+      binding.pry
       RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
     end
 
