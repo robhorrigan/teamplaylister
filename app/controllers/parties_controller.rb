@@ -30,7 +30,7 @@ class PartiesController < ApplicationController
     else
       @party = Party.find_by(:code => params["code"])      
     end
-    @songs = @party.songs.order(votes: :desc)
+    # @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
     track_artist = params[:q2]
