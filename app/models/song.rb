@@ -37,9 +37,18 @@ class Song < ActiveRecord::Base
         song.duration_ms = split_track[5]
         party.songs << song
         song.save
+        spotify_playlist_id = party.spotify_playlist_id
+        uid = party.user.uid
+        token = party.user.token
+        Party.add_tracks(uid, spotify_playlist_id, token, song.spotify_uri)
     end
   end
 
- 
+      #   spotify_playlist_id = @party.spotify_playlist_id
+      # user_id = @party.user
+      # uid = user_id.uid
+      # token = user_id.token
+      # binding.pry
+      # Party.add_tracks(uid, spotify_playlist_id, token, track)
 
 end

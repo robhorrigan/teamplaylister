@@ -41,9 +41,22 @@ class PartiesController < ApplicationController
     @track = params[:song_to_add] 
     if @track
       Song.persist_song(@track, @party)
-      @songs = @party.songs
-      RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["spotify:track:#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+      # track = split_track[3]
+      # spotify_playlist_id = @party.spotify_playlist_id
+      # user_id = @party.user
+      # uid = user_id.uid
+      # token = user_id.token
+      # binding.pry
+      # Party.add_tracks(uid, spotify_playlist_id, token, track)
     end
+
+      
+      @songs = @party.songs
+    #   RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+    # end
+
+
+
 
 #   eventual 'play method'
     # if params["party"] && params["party"]["user_id"] == "play_party"
@@ -53,6 +66,8 @@ class PartiesController < ApplicationController
     #     @songs.first.destroy
     #   end
     # end
+
+    
 
     @phone_number = params[:phone_number]
     @message = "http://www.groovwith.me/#{@party.code}"
