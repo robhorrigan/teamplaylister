@@ -14,7 +14,6 @@
  *= require theme
  *= require nv.d3
  *= require fontello
- *= require font-awesome
  *= require bootstrap.css
  *= require_tree .
  */
@@ -22,3 +21,4 @@
  .black-text{
   color: #262626;
  }
+
