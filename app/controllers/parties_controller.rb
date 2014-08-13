@@ -28,7 +28,8 @@ class PartiesController < ApplicationController
   end
 
   def show
-    @party = Party.find_by(:code => params["code"])
+    @party = Party.find_by(:code => params["party_code"])
+    binding.pry
     @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
@@ -85,6 +86,6 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
+    params.require(:party).permit(:party_code, :title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
   end
 end
