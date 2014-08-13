@@ -54,4 +54,9 @@
 //= require_self
 //
 
+$(document).ready(function() {
+  $('.plus1btn').onClick(function() {
+    alert("hey");
+  });
+});
 

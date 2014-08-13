@@ -5,5 +5,6 @@ class Vote < ActiveRecord::Base
     unless Vote.recent.exists?(:ip => ip, :party_code => party_code)
       increment!(:votes_up)
       Vote.create(:ip => ip, :party_code => party_code)
+    end
   end
 end

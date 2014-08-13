@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   post 'parties/:id' => 'parties#show'
 
+  patch '/:code' => 'parties#show', as: 'playparty'
+
   resources :songs
 
   resources :user

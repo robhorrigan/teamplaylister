@@ -1,7 +1,3 @@
-
-  
- 
- 
 <div class="body">
     <form class="no-margin"
           action="index.html" method="get">
@@ -15,7 +11,7 @@
                         <span class="input-group-addon">
                             <i class="fa fa-headphones"></i>
                         </span>
-                     <%= text_field_tag(:code, nil, class: "form-control input-lg", placeholder:"Input party code here") %>
+                        <input class="form-control input-lg" type="text" id="code" name="party_code" placeholder="Input party code here" value="" maxlength="5">
                 </div>
                   <%= submit_tag("Submit", class:"custom btn btn-lg btn-warning btn-block") %>
                 <% end %>

@@ -3,13 +3,10 @@ class PartiesController < ApplicationController
 
   def index
     @party = Party.new
-    # @user_playlists = RestClient.get("https://api.spotify.com/v1/users/#{current_user.uid}/playlists", { "Authorization" => "Bearer #{current_user.token}"})
-    # @parties = JSON.parse(@user_playlists)
     @parties = Party.where("user_id" => current_user)
   end
 
   def new
-    
   end
 
   def create
@@ -28,42 +25,43 @@ class PartiesController < ApplicationController
   end
 
   def show
-    @party = Party.find_by(:code => params["code"])
+    if params["party_code"]
+      @party = Party.find_by(:code => params["party_code"])
+    else
+      @party = Party.find_by(:code => params["code"])      
+    end
     @songs = @party.songs.order(votes: :desc)
-    
+
     track_song = params[:q1]
     track_artist = params[:q2]
     if track_song || track_artist
       @search_results = Song.search_spotify(track_song, track_artist)
     end
+
     @track = params[:song_to_add] 
     if @track
-      split_track = @track.split('|;')
-
-      track = split_track[3]
-      spotify_playlist_id = @party.spotify_playlist_id
-      user_id = @party.user
-      uid = user_id.uid
-      token = user_id.token
-      Party.add_tracks(uid, spotify_playlist_id, token, track)
+      Song.persist_song(@track, @party)
+      @songs = @party.songs
+      RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["spotify:track:#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
     end
 
-    if @track
-      track = @track
-      party_code = @party.code
-      Song.persist_song(track, @party)
-    end
+#   eventual 'play method'
+    # if params["party"] && params["party"]["user_id"] == "play_party"
+    #   while @songs.size > 0 do
+    #     RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@songs.first}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+    #     sleep(@songs.first.duration/1000 - 15)
+    #     @songs.first.destroy
+    #   end
+    # end
 
     @phone_number = params[:phone_number]
-    @message = "http://teamplaylister.192.168.1.10.xip.io/#{@party.code}"
+    @message = "http://www.groovwith.me/#{@party.code}"
     if @phone_number 
       Party.message(@phone_number, @message)
     end
-
   end
 
   def join_party
-
     code = params[:code]
     if Party.find_by(:code => code)
       redirect_to playlist_path(code)
@@ -89,6 +87,6 @@ class PartiesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
-    params.require(:party).permit(:title, :name, :uid, :user_id, :spotify_playlist_id)
+    params.require(:party).permit(:party_code, :title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
   end
 end
