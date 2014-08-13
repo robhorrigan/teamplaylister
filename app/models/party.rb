@@ -5,6 +5,7 @@ class Party < ActiveRecord::Base
   has_many :songs, through: :party_songs 
 
   def generate_code
+    binding.pry
     self.code = rand(36**4..36**5).to_s(36).upcase
   end
 
