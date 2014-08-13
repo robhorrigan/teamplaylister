@@ -16,10 +16,8 @@ class PartiesController < ApplicationController
     token = current_user.token
     spotify_data = Party.create_party(uid, params[:party][:name], token)
     @party.spotify_playlist_id = Party.get_party_id(spotify_data)
-    binding.pry
     
     if @party.save
-      binding.pry
       redirect_to playlist_path(@party.code)
     else
       render :new, flash[:notice] = "Sorry, there was an error. Penguins attacked your page!"
@@ -32,7 +30,6 @@ class PartiesController < ApplicationController
     else
       @party = Party.find_by(:code => params["code"])      
     end
-    binding.pry
     @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
@@ -45,7 +42,6 @@ class PartiesController < ApplicationController
     if @track
       Song.persist_song(@track, @party)
       @songs = @party.songs
-      binding.pry
       RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
     end
 
