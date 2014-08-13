@@ -13,12 +13,16 @@
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
 
-  <% if current_user %>
+  <h5><% if current_user %>
     Welcome, <%= current_user.name %>!
-    <%= link_to 'my parties', parties_index_path %> |
-    <%= link_to 'sign out', signout_path %>
+    <strong><%= link_to 'my parties', parties_index_path %> |
+    <%= link_to 'sign out', signout_path %></strong></h5>
   <% end %>
   
   <%= yield %>
+
+<footer class="panel-footer black-text">
+              <center><h6>Built with &#9829; at <a class="flatiron-link" href="http://flatironschool.com/">The Flatiron School</a> by NYC Web Development Fellows &copy; 2014<br><br><a href="http://wewritethemcodes.rob-on-rails.com" target="_blank" class="btn btn-default btn-sm">Meet The Developers</a></h6></center>
+</footer>
 </body>
 </html>

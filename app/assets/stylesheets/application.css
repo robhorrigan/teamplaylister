@@ -17,3 +17,7 @@
  *= require fontello
  *= require font-awesome
  */
+
+ .black-text{
+  color: #262626;
+ }
