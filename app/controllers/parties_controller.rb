@@ -42,7 +42,7 @@ class PartiesController < ApplicationController
     if @track
       Song.persist_song(@track, @party)
       @songs = @party.songs
-      RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
+      RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["spotify:track:#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
     end
 
 #   eventual 'play method'

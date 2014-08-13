@@ -18,7 +18,7 @@ class Party < ActiveRecord::Base
   end
 
   def self.add_tracks(uid, spotify_playlist_id, token, track)
-    RestClient.post("https://api.spotify.com/v1/users/#{uid}/playlists/#{spotify_playlist_id}/tracks", ["#{track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{token}"})
+    RestClient.post("https://api.spotify.com/v1/users/#{uid}/playlists/#{spotify_playlist_id}/tracks", ["spotify:track:#{track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{token}"})
   end
 
   def self.message(phone_number, message)
