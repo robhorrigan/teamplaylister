@@ -1,3 +1,9 @@
+ <h5><% if current_user %>
+    Welcome, <%= current_user.name %>!
+    <strong><%= link_to 'My parties', parties_index_path %> |
+    <%= link_to 'Sign out', signout_path %></strong></h5>
+  <% end %> 
+
  <div class="content container">
        <div class="row">
             <div class="col-md-12">
@@ -7,7 +13,7 @@
 </div>
 
 <div class="widget">
-<%= render 'form3' %>
+<%= render 'text_form' %>
 </div>
 
       <div class="">
@@ -57,10 +63,10 @@
                 <section class="widget">
                     <div class="col-md-12">
                         <div id="" class="tab-pane active clearfix">
-                            <h5 class="tab-header"><span class="label label-primary"><i class="fa fa-spotify fa-lg"></i></span> SEARCH FOR SONGS</h5><br>
-                                <%= render 'form2'%>
+                            <h3 class="tab-header"><i class="fa fa-spotify fa-2x"></i> SPOTIFY TRACK SEARCH</h3><br>
+                                <%= render 'queue'%>
                                 <br>
-                                <%= render 'form' %>
+                                <%= render 'search_form' %>
                             
                         </div>
                     </div>

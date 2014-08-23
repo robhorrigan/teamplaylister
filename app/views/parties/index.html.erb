@@ -1,3 +1,8 @@
+ <h5><% if current_user %>
+    Not <%= current_user.name %>?
+    <strong>
+    <%= link_to 'Sign out', signout_path %></strong></h5>
+  <% end %>
 <section class="widget">
   <h4>Your Parties:</h4>
 
@@ -24,9 +29,9 @@
 <section class ="widget">
     <table class = "table">
       <div class = "body">
-        <%= render 'form5'%>
+        <%= render 'party_form'%>
         <h4>OR</h4>
-        <%= render 'form4' %>
+        <%= render 'join_form' %>
       </div>
     </table>
 </section>

@@ -30,7 +30,6 @@ class PartiesController < ApplicationController
     else
       @party = Party.find_by(:code => params["code"])      
     end
-    # @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
     track_artist = params[:q2]
@@ -39,7 +38,7 @@ class PartiesController < ApplicationController
     end
 
     @track = params[:song_to_add] 
-    @songs = @party.songs
+    @songs = @party.songs.order(votes: :desc)
     @phone_number = params[:phone_number]
     @message = "http://www.groovwith.me/#{@party.code}"
 
