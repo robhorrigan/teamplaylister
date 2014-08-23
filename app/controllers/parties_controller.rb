@@ -14,13 +14,13 @@ class PartiesController < ApplicationController
     uid = current_user.uid
     name = params[:party][:name]
     token = current_user.token
-    spotify_data = Party.create_party(uid, params[:party][:name], token)
+    spotify_data = Party.create_party(uid, name, token)
     @party.spotify_playlist_id = Party.get_party_id(spotify_data)
-    
+  
     if @party.save
       redirect_to playlist_path(@party.code)
     else
-      render :new, flash[:notice] = "Sorry, there was an error. Penguins attacked your page!"
+      render :new, flash[:notice] = "Sorry, there is an error!"
     end
   end
 
@@ -39,26 +39,20 @@ class PartiesController < ApplicationController
     end
 
     @track = params[:song_to_add] 
+    @songs = @party.songs
+    @phone_number = params[:phone_number]
+    @message = "http://www.groovwith.me/#{@party.code}"
+
     if @track
       Song.persist_song(@track, @party)
-      # track = split_track[3]
-      # spotify_playlist_id = @party.spotify_playlist_id
-      # user_id = @party.user
-      # uid = user_id.uid
-      # token = user_id.token
-      # binding.pry
-      # Party.add_tracks(uid, spotify_playlist_id, token, track)
     end
+    
+    if @phone_number 
+      Party.message(@phone_number, @message)
+    end
+  end
 
-      
-      @songs = @party.songs
-    #   RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@track}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
-    # end
-
-
-
-
-#   eventual 'play method'
+    # TODO: eventual 'play method'? 
     # if params["party"] && params["party"]["user_id"] == "play_party"
     #   while @songs.size > 0 do
     #     RestClient.post("https://api.spotify.com/v1/users/#{@party.user.uid}/playlists/#{@party.spotify_playlist_id}/tracks", ["#{@songs.first}"].to_json, {"Content-Type" => "application/json", "Authorization" => "Bearer #{@party.user.token}"})
@@ -69,12 +63,7 @@ class PartiesController < ApplicationController
 
     
 
-    @phone_number = params[:phone_number]
-    @message = "http://www.groovwith.me/#{@party.code}"
-    if @phone_number 
-      Party.message(@phone_number, @message)
-    end
-  end
+ 
 
   def join_party
     code = params[:code]
