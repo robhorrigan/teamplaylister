@@ -25,12 +25,9 @@ class PartiesController < ApplicationController
   end
 
   def show
-    if params["party_code"]
-      @party = Party.find_by(:code => params["party_code"])
-    else
+    if params["code"]
       @party = Party.find_by(:code => params["code"])      
     end
-    # @songs = @party.songs.order(votes: :desc)
 
     track_song = params[:q1]
     track_artist = params[:q2]
@@ -39,12 +36,13 @@ class PartiesController < ApplicationController
     end
 
     @track = params[:song_to_add] 
-    @songs = @party.songs
+    @songs = @party.songs.order(votes: :desc)
     @phone_number = params[:phone_number]
     @message = "http://www.groovwith.me/#{@party.code}"
 
     if @track
       Song.persist_song(@track, @party)
+      Song.add_to_spotify(@track, @party)
     end
     
     if @phone_number 
@@ -61,10 +59,6 @@ class PartiesController < ApplicationController
     #   end
     # end
 
-    
-
- 
-
   def join_party
     code = params[:code]
     if Party.find_by(:code => code)
@@ -75,6 +69,7 @@ class PartiesController < ApplicationController
   end
 
   def update
+    # Maybe we can update refresh token here
   end
 
   def destroy
@@ -84,12 +79,10 @@ class PartiesController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
   def set_party
     @party = Party.find_by(:code => params[:code])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def party_params
     params.require(:party).permit(:party_code, :title, :name, :uid, :user_id, :spotify_playlist_id, :play_party)
   end

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Teamplaylister</title>
+  <title>GroovWith.Me</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
 </head>
+
 <body>
   <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
-
-  <h5><% if current_user %>
-    Welcome, <%= current_user.name %>!
-    <strong><%= link_to 'my parties', parties_index_path %> |
-    <%= link_to 'sign out', signout_path %></strong></h5>
-  <% end %>
-  
+ 
   <%= yield %>
 
 <footer class="panel-footer black-text">
-              <center><h6>Built with &#9829; at <a class="flatiron-link" href="http://flatironschool.com/">The Flatiron School</a> by NYC Web Development Fellows &copy; 2014<br><br><a href="http://wewritethemcodes.rob-on-rails.com" target="_blank" class="btn btn-default btn-sm">Meet The Developers</a></h6></center>
+              <center><h6>Built with &#9829; at <a class="flatiron-link" href="http://flatironschool.com/">The Flatiron School</a> by NYC Web Development Fellows &copy; 2014<br><br><a href="http://wewritethemcodes.com" target="_blank" class="btn btn-default btn-sm">Meet The Developers</a></h6></center>
 </footer>
 </body>
 </html>

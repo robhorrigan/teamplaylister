@@ -1,8 +1,14 @@
+ <h5><% if current_user %>
+    Welcome, <%= current_user.name %>!
+    <strong>
+    <%= link_to 'Sign out', signout_path %></strong></h5>
+  <% end %>
 <h1 align="center" class="groovwithme">Groovwith.<strong>ME</strong></h1>
+
 <div class="single-widget-container">
     <section class="widget login-widget">
         <header class="text-align-center">
             <h3>Join a Party</h3>
         </header>
 
-<%= render 'form' %>
+<%= render 'input_field' %>

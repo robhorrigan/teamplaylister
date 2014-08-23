@@ -1,30 +1,10 @@
-<div class="body">
-    <form class="no-margin"
-          action="index.html" method="get">
-        <fieldset>
-            <div class="form-group">
-              <%= form_tag(joinparty_path, method: "get") do %>
-                <header class="text-align-center">
-                    <!-- <label for="code" >PARTY CODE</label> -->
-                </header>
-                <div class="input-group input-group-lg">
-                        <span class="input-group-addon">
-                            <i class="fa fa-headphones"></i>
-                        </span>
-                        <input class="form-control input-lg" type="text" id="code" name="party_code" placeholder="Input party code here" value="" maxlength="5">
-                </div>
-                  <%= submit_tag("Submit", class:"custom btn btn-lg btn-warning btn-block") %>
-                <% end %>
-            </div>
-        </fieldset>
-        <header class="text-align-center">
-            <h2>OR</h2>
-        </header>
-        <div class="form-actions spotify">
-            <%= button_to "/auth/spotify", class: "spotify btn btn-block btn-lg btn-danger" do %>
-              <span class="small-circle"><i class="fa fa-spotify"></i></span>
-              <small>SPOTIFY</small>
-            <% end %>
-        </div>
-    </form>
-</div>
+<%= form_tag(joinparty_path, method: "get") do %>
+  <div class="input-group input-group-lg">
+    <span class="input-group-addon">
+      <i class="fa fa-headphones"></i>
+    </span>
+    <input class="form-control input-lg" type="text" id="code" name="code" placeholder="Input party code here" value="" maxlength="5">
+  </div>
+  <%= submit_tag("SUBMIT", class:"custom btn btn-lg btn-warning btn-block") %>
+<% end %>
+
