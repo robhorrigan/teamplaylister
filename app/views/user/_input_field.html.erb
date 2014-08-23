@@ -1,0 +1,20 @@
+<div class="body">
+    <div class="no-margin">
+        <div class="form-group">
+            <%= render 'form'%>
+        </div>
+        <header class="text-align-center">
+            <h2>OR</h2>
+        </header>
+        <div class="form-actions spotify">
+          <%= button_to "/auth/spotify", class: "spotify btn btn-block btn-lg btn-danger" do %>
+              <%if current_user %>
+                <small> VIEW MY PARTIES </small>
+              <%else%>
+                <i class="fa fa-spotify fa-lg"></i>
+                <small>LOG IN WITH SPOTIFY</small>
+              <%end%>
+            <%end%>
+        </div>
+    </div>
+</div>
