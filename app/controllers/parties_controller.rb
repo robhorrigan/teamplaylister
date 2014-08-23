@@ -62,7 +62,6 @@ class PartiesController < ApplicationController
     # end
 
   def join_party
-    binding.pry
     code = params[:code]
     if Party.find_by(:code => code)
       redirect_to playlist_path(code)
