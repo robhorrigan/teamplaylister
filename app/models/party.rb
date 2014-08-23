@@ -25,8 +25,8 @@ class Party < ActiveRecord::Base
     phone_numbers = []
     phone_numbers << phone_number
     phone_numbers.each do |number|
-      account_sid = "AC139f154ed289df71588b6b4fe2ba6c4c"
-      auth_token = "c54502782441b734c29477e19268ba62"
+      account_sid = ENV["TWILLIO_SID"]
+      auth_token = ENV["TWILLIO_AUTH_TOKEN"]
       client = Twilio::REST::Client.new account_sid, auth_token    
 
       from = "+17187171011" # 4DaysOut Twilio number
