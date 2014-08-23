@@ -1,0 +1,6 @@
+  <%= form_for(@party) do |f| %>
+    <%= f.text_field :name, :placeholder => "ex. My Awesome Party" %>
+
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.submit 'Create a Party!', :class => 'btn btn-info btn-sm' %>
+  <% end %>
