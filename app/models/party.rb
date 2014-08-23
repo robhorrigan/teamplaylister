@@ -29,7 +29,7 @@ class Party < ActiveRecord::Base
       auth_token = ENV["TWILLIO_AUTH_TOKEN"]
       client = Twilio::REST::Client.new account_sid, auth_token    
 
-      from = "+17187171011" # 4DaysOut Twilio number
+      from = ENV["TWILIO_NUMBER"]
 
       client.account.messages.create(
        :from => from,
