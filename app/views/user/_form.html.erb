@@ -1,12 +1,10 @@
 <%= form_tag(joinparty_path, method: "get") do %>
-  <header class="text-align-center">
-  </header>
   <div class="input-group input-group-lg">
-          <span class="input-group-addon">
-              <i class="fa fa-headphones"></i>
-          </span>
-          <input class="form-control input-lg" type="text" id="code" name="party_code" placeholder="Input party code here" value="" maxlength="5">
+    <span class="input-group-addon">
+      <i class="fa fa-headphones"></i>
+    </span>
+    <input class="form-control input-lg" type="text" id="code" name="code" placeholder="Input party code here" value="" maxlength="5">
   </div>
-    <%= submit_tag("SUBMIT", class:"custom btn btn-lg btn-warning btn-block") %>
-  <% end %>
+  <%= submit_tag("SUBMIT", class:"custom btn btn-lg btn-warning btn-block") %>
+<% end %>
 

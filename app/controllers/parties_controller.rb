@@ -25,9 +25,7 @@ class PartiesController < ApplicationController
   end
 
   def show
-    if params["party_code"]
-      @party = Party.find_by(:code => params["party_code"])
-    else
+    if params["code"]
       @party = Party.find_by(:code => params["code"])      
     end
 
