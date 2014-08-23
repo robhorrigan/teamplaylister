@@ -6,16 +6,15 @@ class SongsController < ApplicationController
   end
 
   def show
-
-
   end
 
   def update
-     track = params{:song_to_add}
-     Party.add_tracks(uid, party_id, token, track)
+   track = params{:song_to_add}
+   Party.add_tracks(uid, party_id, token, track)
   end
 
   def delete
+    # TODO: Party admin to delete tracks from Spotify using new remove API endpoint.
   end
 
   def up_vote
@@ -23,10 +22,12 @@ class SongsController < ApplicationController
     @song = Song.find(params[:song_id])
     @song.votes += 1
     @song.save
-    respond_to do |format|
-      format.html { redirect_to @party, notice: 'User was successfully created.' }
-      format.js   {}
-    end
+
+    # TODO: This is where we will make AJAX upvote feature that notify user of successful vote and reorder queue. 
+    # respond_to do |format|
+    #   format.html { redirect_to @party, notice: 'Thanks for voting!' }
+    #   format.js   {}
+    # end
   end
 
   private 
