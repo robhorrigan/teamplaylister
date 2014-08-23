@@ -45,6 +45,7 @@ class PartiesController < ApplicationController
 
     if @track
       Song.persist_song(@track, @party)
+      Song.add_to_spotify(@track, @party)
     end
     
     if @phone_number 
