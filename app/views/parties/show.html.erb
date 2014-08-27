@@ -1,6 +1,6 @@
  <h5><% if current_user %>
     Welcome, <%= current_user.name %>!
-    <strong><%= link_to 'My parties', parties_index_path %> |
+    <strong><%= link_to 'My parties', parties_path %> |
     <%= link_to 'Sign out', signout_path %></strong></h5>
   <% end %> 
 
