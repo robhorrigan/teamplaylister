@@ -11,16 +11,20 @@ class PartiesController < ApplicationController
 
   def create
     @party = Party.new(party_params)
-    uid = current_user.uid
-    name = params[:party][:name]
-    token = current_user.token
-    spotify_data = Party.create_party(uid, name, token)
-    @party.spotify_playlist_id = Party.get_party_id(spotify_data)
-  
+    
     if @party.save
+      uid = current_user.uid
+      name = params[:party][:name]
+      token = current_user.token 
+      spotify_data = Party.create_party(uid, name, token)
+      @party.spotify_playlist_id = Party.get_party_id(spotify_data)
+      
       redirect_to playlist_path(@party.code)
-    else
-      render :new, flash[:notice] = "Sorry, there is an error!"
+    else 
+      @party.destroy
+
+      flash[:notice] = "Your party needs a title!"
+      redirect_to(:back)
     end
   end
 
