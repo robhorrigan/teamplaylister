@@ -35,6 +35,7 @@ class Song < ActiveRecord::Base
       song.spotify_uri = split_track[3]
       song.album_art = split_track[4]
       song.duration_ms = split_track[5]
+      song.party_id = party.id
       party.songs << song
       song.save
     end
