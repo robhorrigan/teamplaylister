@@ -1,6 +1,5 @@
 class Song < ActiveRecord::Base
-  has_many :party_songs
-  has_many :parties, through: :party_songs
+  belongs_to :party
 
   def self.search_spotify(track_song='*', track_artist='')
     gsub_track_song = track_song.gsub(' ','%20')
