@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
 	has_many :parties
+  validates :uid, presence: true
+  validates :name, presence: true
+  validates :token, presence: true
+  validates :refresh_token, presence: true
   
   def self.from_omniauth(auth)
     where(auth.slice('uid')).first_or_initialize.tap do |user|
