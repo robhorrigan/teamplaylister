@@ -42,6 +42,9 @@ gem 'pry'
 
 group :test, :development do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  #gem 'shoulda-matchers' This gem makes testing for validations easier.
 end
 
 group :development do
