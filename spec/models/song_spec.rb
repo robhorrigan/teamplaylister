@@ -1,5 +1,6 @@
 require 'spec_helper'
  
-# RSpec.describe Song, :type => :model do
- 
-# end
+describe Song do
+  it "has a valid factory" do
+  	FactoryGirl.create(:song).should be_valid
+	end
